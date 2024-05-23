@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', serif;
 }
 
 section {
@@ -14,7 +14,7 @@ section {
   height: 100vh;
 }
 
-.home, .busca, .faqs {
+.home, .sobre, .faqs {
   background-color: white;
 }
 
@@ -68,5 +68,132 @@ section {
 }
 
 /*CSS para a home*/
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.home-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-texto p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #07A8B0;
+  text-align: center;
+  padding: 2% 15%;
+}
+
+#black {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.home-imagem {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-imagem img {
+  max-width: 50rem;
+  object-fit: cover;
+  height: 75vh;
+  width: 80%;
+}
+
+.btn-whatsapp {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 0.5rem 1.2rem;
+  margin-top: 1.2rem;
+  background-color: #07A8B0;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.btn-whatsapp:hover {
+  background-color: #065f64;
+}
+
+.home-texto i {
+  padding-left: 0.5rem;
+}
+
+.imagem-texto {
+  width: 80%;
+  background-color: #07A8B0;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+/*CSS para a Meu trabalho*/
+.trabalho {
+  padding: 4rem;
+  text-align: center;
+}
+
+.trabalho h2 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 300px;
+  background-color: #f9f9f9;
+  font-size: 1.3rem;
+  color: #07A8B0;
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  margin: 0;
+  padding: 0.2rem;
+}
+
+#cardBlack {
+  text-align: justify;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
 
 
