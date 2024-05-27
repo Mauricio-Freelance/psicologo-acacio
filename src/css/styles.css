@@ -14,6 +14,15 @@ section {
   height: 100vh;
 }
 
+footer {
+  background-color: #f5f5f5;
+  color: black;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .home, .sobre, .faqs {
   background-color: white;
 }
@@ -102,6 +111,7 @@ section {
 }
 
 .home-imagem {
+  margin-top: 3rem;
   width: 100%;
   flex: 1;
   display: flex;
@@ -136,6 +146,17 @@ section {
 
 .btn-whatsapp:hover {
   background-color: #065f64;
+}
+
+.inversion {
+  width: 15%;
+  background-color: white;
+  color: #07A8B0;
+  padding: 0.5rem;
+}
+
+.inversion:hover {
+  background-color: white;
 }
 
 .home-texto i {
@@ -250,6 +271,7 @@ section {
 }
 
 .caixa-texto {
+  height: 65vh;
   margin-left: 7%;
   min-width: 800px;
   width: 100%;
@@ -279,6 +301,7 @@ section {
 
 .caixa-texto p {
   margin-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .caixa-texto i {
@@ -292,13 +315,169 @@ section {
 }
 
 .sobre-imagem img {
+  height: 50vh;
   width: 100%;
-  min-width: 500px;
+  max-width: 400px;
   position: absolute;
   top: 38px;
   left: -120px;
   border-radius: 0.6rem;
   z-index: 10;
+}
+
+.posicionar {
+  border-radius: 0 0 0.6rem 0.6rem ;
+  top: 0px;
+  left: -120px;
+  position: relative;
+  top: 54vh; 
+  width: 72.2%;
+  text-align: center;
+  z-index: 20; 
+}
+
+/*CSS para beneficios*/
+.beneficios {
+  height: 190vh;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+.beneficios h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.cards-beneficios {
+  display: grid;
+  gap: 4rem;
+}
+
+.cards-beneficios h3 {
+  color: white;
+  font-size: 1.5rem;
+  grid-column: span 3; 
+}
+
+.card-beneficio {
+  height: 60vh;
+  background-color: #ffffff;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card-beneficio img {
+  padding: 2rem 0;
+  color: #07A8B0;
+  font-size: 4em;
+}
+
+.card-beneficio p {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #07A8B0;
+  padding: 1rem 2.5rem; 
+}
+
+/*CSS para as FAQS*/
+.faqs {
+
+  height: auto;
+  min-height: 100vh;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+.faqs h2 {
+  color: #07A8B0;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faqs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-card {
+  background-color: #f5f5f5;
+  color: #07A8B0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 1px;
+  box-shadow: 0 2px 4px #07a8b044;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.faq-question h3 {
+  padding-top: 0.2rem;
+}
+
+.faq-question i {
+  margin-top: 4px;
+  margin-right: 10px;
+  padding: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #07A8B0;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+.faq-answer a {
+  margin-left: 0;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.faq-answer i {
+  padding-left: 0.5rem;
+}
+
+/*CSS para contato*/
+.contato-texto p {
+  color: white;
+}
+
+.contato-imagem {
+  margin-top: 7rem;
+}
+
+.inversion-contato {
+  background-color: white;
+  color: #07A8B0;
+}
+
+
+/* Adiciona um layout de grade com três colunas */
+@media (min-width: 768px) {
+  .cards-beneficios {
+      grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 

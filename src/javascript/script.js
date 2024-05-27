@@ -15,3 +15,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
   mudarAtivo();
   window.addEventListener('scroll', mudarAtivo);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faqCards = document.querySelectorAll('.faq-card');
+
+  faqCards.forEach(card => {
+      const question = card.querySelector('.faq-question');
+      const answer = card.querySelector('.faq-answer');
+      const icon = card.querySelector('i');
+
+      question.addEventListener('click', () => {
+          const isVisible = answer.style.display === 'block';
+          answer.style.display = isVisible ? 'none' : 'block';
+          icon.classList.toggle('rotate', !isVisible);
+      });
+  });
+});
+
