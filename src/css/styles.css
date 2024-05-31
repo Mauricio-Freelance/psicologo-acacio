@@ -31,10 +31,16 @@ footer {
   background-color: #07A8B0;
 }  
 
+.container-main {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 /*CSS para o menu*/
 .menu {
+  max-width: 2000px;
   background-color: white;
-  color: white;
+  color: black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -60,6 +66,22 @@ footer {
   transition: color 0.3s;
 }
 
+.menu ul.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 5px 3px -1px gray;
+}
+
+.menu ul.active li {
+  text-align: center;
+  padding: 1rem;
+}
+
 .icones-direita {
   position: absolute;
   right: 0.8rem;
@@ -74,6 +96,20 @@ footer {
   font-size: 1.8rem; 
   padding-right: 1.5rem;
   color: #07A8B0;
+}
+
+.hamburger {
+  color: black;
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.hamburger.active i::before {
+  content: "\f00d"; 
 }
 
 /*CSS para a home*/
@@ -101,7 +137,7 @@ footer {
   font-weight: 700;
   line-height: 1.6;
   color: #07A8B0;
-  text-align: center;
+  text-align: justify;
   padding: 2% 15%;
 }
 
@@ -169,6 +205,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 0.2rem 0;
+  min-width: 25rem;
 }
 
 /*CSS para a Meu trabalho*/
@@ -180,14 +217,14 @@ footer {
 .trabalho h2 {
   font-size: 1.8rem;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 .card {
@@ -216,6 +253,19 @@ footer {
   font-size: 1.2rem;
   padding: 1rem 1.4rem;
 }
+
+.carousel-btn {
+  display: none;
+}
+
+.carousel-btn i {
+  display: none;
+}
+
+.carousel-btn[disabled] {
+  display: none;
+}
+
 
 /*CSS para a Sobre*/
 .sobre {
@@ -317,7 +367,7 @@ footer {
 .sobre-imagem img {
   height: 50vh;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   position: absolute;
   top: 38px;
   left: -120px;
@@ -331,7 +381,7 @@ footer {
   left: -120px;
   position: relative;
   top: 54vh; 
-  width: 72.2%;
+  width: 31.3rem;
   text-align: center;
   z-index: 20; 
 }
@@ -369,6 +419,7 @@ footer {
 }
 
 .card-beneficio img {
+  margin: 0 auto;
   padding: 2rem 0;
   color: #07A8B0;
   font-size: 4em;
@@ -461,6 +512,7 @@ footer {
 /*CSS para contato*/
 .contato-texto p {
   color: white;
+  text-align: center;
 }
 
 .contato-imagem {
@@ -474,10 +526,313 @@ footer {
 
 
 /* Adiciona um layout de grade com três colunas */
-@media (min-width: 768px) {
-  .cards-beneficios {
-      grid-template-columns: repeat(3, 1fr);
+
+@media (max-width: 1460px) {
+  .sobre-imagem {
+    display: none; 
+  }
+} 
+
+@media (max-width: 1250px) {
+  #beneficios h3 {
+    display: none;
+  }
+  .beneficios {
+    height: 100vh; /* Ajuste conforme necessário */
+    padding: 2rem 5rem;
+    text-align: center;
+  }
+  
+  .beneficios h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 2rem; /* Ajuste conforme necessário */
+  }
+  
+  .card {
+    max-height: 28rem;
+    min-width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .card-beneficio {
+    height: 60vh;
+    background-color: #ffffff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card-beneficio img {
+    padding: 2rem 0;
+    color: #07A8B0;
+    font-size: 4em;
+  }
+  
+  .card-beneficio p {
+    text-align: justify;
+    font-size: 1.5rem;
+    color: #07A8B0;
+    padding: 1rem 2.5rem; 
+  }
+  
+  .carousel-btn {
+    color: #07A8B0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .carousel-btn i {
+    display: block;
+  }
+  
+  .carousel-btn.prev {
+    left: 0;
+  }
+  
+  .carousel-btn.next {
+    right: 0;
+  }
+  
+  .carousel-btn i {
+    font-size: 1.5rem;
+  }
+  
+} 
+
+@media (max-width: 1000px) {
+  .home {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .container {
+    display: block;
+  }
+  .home-texto {
+    padding-top: 5rem;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .home-texto p {
+    padding: 2%;
+  }
+  
+  .home-imagem {
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .home-imagem img {
+    padding: 0;
+    margin: 0;
+    min-width: 25rem;
+  }
+
+  .caixa-texto {
+    min-width: 500px;
+    width: 100%;
+  }
+
+  .contato {
+    height: auto;
+    padding-bottom: 2rem;
   }
 }
 
+@media (min-width: 768px) {
+  .cards-beneficios {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+@media (max-width: 768px) {
+  /*CSS para o menu*/
+  
+  .menu ul {
+    display: none;
+    position: fixed;
+    top: 4.5rem; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 3px -1px gray;
+    flex-direction: column;
+    z-index: 800;
+  }
+
+  .menu ul.active {
+    display: flex;
+    width: 50%;
+    padding-top: 2rem;
+    background-color: white;
+  }
+
+  .menu ul li {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .icones-direita {
+    top: 1.2rem;
+  }
+
+  .icones-direita i {
+    color: black;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 900;
+  }
+
+  /*CSS para a home*/
+  .btn-whatsapp {
+    width: 50%;
+    padding: 0.5rem;
+  }
+
+  .home-imagem img {
+    height: 30rem;
+    padding: 0;
+    margin: 0;
+    min-width: 22rem;
+  }
+
+  .imagem-texto {
+    min-width: 22rem;
+  }
+
+  /*CSS Meu trabalho*/
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 5rem;
+  }
+
+  .card {
+    min-width: 100%;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 50rem;
+  }
+
+  .carousel-btn {
+    color: #07A8B0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .carousel-btn i {
+    display: block;
+  }
+
+  .carousel-btn.prev {
+    left: 0;
+  }
+
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  .carousel-btn i {
+    padding-top: 8rem;
+    font-size: 1.5rem;
+  }
+  /*CSS para Sobre*/
+  .caixa-texto {
+    min-width: auto;
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header-container {
+    margin-bottom: 1rem;
+  }
+  
+  .header-container h3 {
+    padding: 0.5rem 5rem; 
+    font-size: 1.2rem;
+  }
+
+  .beneficios {
+    padding: 2rem;
+  }
+  
+  .beneficios h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+  
+  .cards-beneficios {
+    gap: 4rem;
+  }
+  #contato {
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    max-height: 32rem;
+  }
+
+  .header-container h3 {
+    padding: 0.3rem 5rem; 
+    font-size: 1rem;
+  }
+
+  .caixa-texto {
+    height: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .caixa-texto p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn-whatsapp {
+    width: 80%;
+  }
+}
