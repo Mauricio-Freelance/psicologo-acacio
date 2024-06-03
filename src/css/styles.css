@@ -58,6 +58,7 @@ footer {
 
 .menu li {
   padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .menu a {
@@ -141,6 +142,10 @@ footer {
   padding: 2% 15%;
 }
 
+.aumentar-texto span {
+  font-size: 1.2rem;
+}
+
 #black {
   color: black;
 }
@@ -175,7 +180,7 @@ footer {
   text-decoration: none;
   border-radius: 0.5rem;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -234,7 +239,8 @@ footer {
   width: 100%;
   min-height: 400px;
   background-color: #f9f9f9;
-  font-size: 1.3rem;
+  font-size: 2rem;
+  font-weight: 600;
   color: #07A8B0;
   padding: 1.2rem;
   border: 1px solid #ddd;
@@ -243,7 +249,7 @@ footer {
 }
 
 .card p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0;
   padding: 0.2rem;
 }
@@ -251,7 +257,7 @@ footer {
 #cardBlack {
   text-align: justify;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 1rem 1.4rem;
   font-weight: 500;
 }
@@ -401,7 +407,7 @@ footer {
 .beneficios h2 {
   color: white;
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .cards-beneficios {
