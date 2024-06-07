@@ -11,7 +11,8 @@ body {
 
 section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
 }
 
 footer {
@@ -376,7 +377,7 @@ footer {
 }
 
 .sobre-imagem img {
-  height: 50vh;
+  height: 52vh;
   width: 100%;
   max-width: 500px;
   position: absolute;
@@ -391,7 +392,7 @@ footer {
   top: 0px;
   left: -120px;
   position: relative;
-  top: 54vh; 
+  top: 55vh; 
   width: 31.3rem;
   text-align: center;
   z-index: 20; 
@@ -441,6 +442,22 @@ footer {
   font-size: 1.5rem;
   color: #07A8B0;
   padding: 1rem 2.5rem; 
+}
+
+.cardB {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 400px;
+  background-color: #f9f9f9;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #07A8B0;
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 /*CSS para as FAQS*/
@@ -539,13 +556,71 @@ footer {
 
 /* Adiciona um layout de grade com três colunas */
 
+@media (min-width: 1800px) {
+  .card p {
+    font-size: 2.5rem;
+  }
+
+  #cardBlack {
+    font-size: 1.8rem;
+  }
+  .caixa-texto p {
+    font-size: 1.5rem;
+  }
+  .caixa-texto li {
+    font-size: 1.5rem;
+  }
+  .cardB p {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 1799px) {
+  .card p {
+    font-size: 2.2rem;
+  }
+
+  #cardBlack {
+    font-size: 1.6rem;
+  }
+
+  .cardB p {
+    font-size: 1.8rem;
+  }
+ 
+}
+
 @media (max-width: 1460px) {
+  .trabalho {
+    height: 120vh;
+  }
   .sobre-imagem {
     display: none; 
   }
+  .card p {
+    font-size: 1.8rem;
+  }
+
+  #cardBlack {
+    font-size: 1.4rem;
+  }
+  .caixa-texto p {
+    font-size: 1.8rem;
+  }
+  .caixa-texto li {
+    font-size: 1.8rem;
+  }
+
+  .cardB p {
+    font-size: 1.6rem;
+  }
+
 } 
 
 @media (max-width: 1250px) {
+  .trabalho {
+    height: 100vh;
+  }
   #beneficios h3 {
     display: none;
   }
@@ -573,10 +648,25 @@ footer {
   }
   
   .card {
-    max-height: 28rem;
+    max-height: 60vh;
     min-width: 100%;
     flex-shrink: 0;
     text-align: center;
+  }
+
+  .cardB {
+    max-height: 60vh;
+    min-width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 2.2rem;
+  }
+
+  #cardBlack {
+    font-size: 1.8rem;
   }
   
   .card-beneficio {
@@ -595,7 +685,7 @@ footer {
   
   .card-beneficio p {
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #07A8B0;
     padding: 1rem 2.5rem; 
   }
@@ -627,6 +717,16 @@ footer {
   
   .carousel-btn i {
     font-size: 1.5rem;
+  }
+  .caixa-texto p {
+    font-size: 1.6rem;
+  }
+  .caixa-texto li {
+    font-size: 1.6rem;
+  }
+
+  .cardB p {
+    font-size: 2.8rem;
   }
   
 } 
@@ -665,6 +765,18 @@ footer {
     min-width: 25rem;
   }
 
+  .card p {
+    font-size: 2rem;
+  }
+
+  .cardB p {
+    font-size: 2.4rem;
+  }
+
+  #cardBlack {
+    font-size: 1.6rem;
+  }
+
   .caixa-texto {
     min-width: 500px;
     width: 100%;
@@ -673,6 +785,12 @@ footer {
   .contato {
     height: auto;
     padding-bottom: 2rem;
+  }
+  .caixa-texto p {
+    font-size: 1.4rem;
+  }
+  .caixa-texto li {
+    font-size: 1.4rem;
   }
 }
 
@@ -752,18 +870,24 @@ footer {
   }
 
   .card {
+    height: 60vh;
     min-width: 100%;
     flex-shrink: 0;
-    max-height: 50rem;
+  }
+
+  .cardB {
+    height: 60vh;
+    min-width: 100%;
+    flex-shrink: 0;
   }
 
   .card p {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 
   #cardBlack {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     font-weight: 600;
   }
 
@@ -771,7 +895,7 @@ footer {
     color: #07A8B0;
     display: block;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
@@ -802,6 +926,13 @@ footer {
     width: 90%;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .caixa-texto p {
+    font-size: 1.3rem;
+  }
+  .caixa-texto li {
+    font-size: 1.3rem;
   }
 
   .header-container {
@@ -843,12 +974,64 @@ footer {
     font-size: 1.5rem;
     padding: 1rem 2.5rem; 
   }
+  .cardB p {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .card p {
+    font-size: 2.1rem;
+  }
+
+  #cardBlack {
+    font-size: 1.6rem;
+  }
+  .caixa-texto p {
+    font-size: 1.2rem;
+  }
+  .caixa-texto li {
+    font-size: 1.2rem;
+  }
+  .cardB p {
+    font-size: 2rem;
+  }
+} 
+
+@media (max-width: 450px) {
+  .card p {
+    font-size: 2rem;
+  }
+
+  #cardBlack {
+    font-size: 1.5rem;
+  }
+  .cardB p {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 420px) {
   .card {
     font-size: 1.2rem;
     max-height: 32rem;
+  }
+
+  .card p {
+    font-size: 1.8rem;
+  }
+
+  .cardB {
+    font-size: 1.2rem;
+    max-height: 32rem;
+  }
+
+  .cardB p {
+    font-size: 1.4rem;
+  }
+
+  #cardBlack {
+    font-size: 1.3rem;
   }
 
   .header-container h3 {
@@ -869,5 +1052,19 @@ footer {
   }
   .btn-whatsapp {
     width: 80%;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  #cardBlack {
+    font-size: 1.1rem;
+  }
+  .cardB p {
+    font-size: 1.3rem;
   }
 }

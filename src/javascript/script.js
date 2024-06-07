@@ -99,7 +99,17 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentIndex = 0;
   const totalCards = 6;
   let cardWidth = cards.children[1].offsetWidth; 
-  const offsetIncrement = 65; 
+  let offsetIncrement = 65;
+
+  function adjustOffsetIncrement() {
+    if (window.innerWidth > 768) {
+      offsetIncrement = 25; // ou qualquer valor que você deseja para janelas maiores
+    } else {
+      offsetIncrement = 65; // valor padrão para janelas menores
+    }
+  }
+
+  adjustOffsetIncrement();
 
   prevBtn.addEventListener('click', function() {
     if (currentIndex > 0) {
@@ -137,8 +147,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  window.addEventListener('resize', updateCarousel);
+  window.addEventListener('resize', function() {
+    adjustOffsetIncrement();
+    updateCarousel();
+  });
 
   updateCarousel();
   handleButtons();
 });
+
