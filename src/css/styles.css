@@ -577,15 +577,15 @@ footer {
 
 @media (max-width: 1799px) {
   .card p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   #cardBlack {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .cardB p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
  
 }
@@ -598,21 +598,21 @@ footer {
     display: none; 
   }
   .card p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   #cardBlack {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .caixa-texto p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .caixa-texto li {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .cardB p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
 } 
@@ -648,7 +648,7 @@ footer {
   }
   
   .card {
-    max-height: 60vh;
+    max-height: 50vh;
     min-width: 100%;
     flex-shrink: 0;
     text-align: center;
@@ -662,11 +662,11 @@ footer {
   }
 
   .card p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   #cardBlack {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   .card-beneficio {
@@ -726,7 +726,7 @@ footer {
   }
 
   .cardB p {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   
 } 
