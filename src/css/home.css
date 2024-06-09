@@ -131,4 +131,8 @@
   .container {
     padding-bottom: 3rem;
   }
+  .aumentar-texto span {
+    font-size: 1rem;
+    padding: 2rem;
+  }
 }
