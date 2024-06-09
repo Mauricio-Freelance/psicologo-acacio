@@ -101,10 +101,10 @@
 /* Adicionando media queries para escalas diferentes */
 @media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
   body, footer, .menu li, .home-texto p, .btn-whatsapp, .imagem-texto {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .menu li, .home-texto p, .btn-whatsapp, .imagem-texto {
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .home {
     height: auto;
@@ -131,8 +131,19 @@
   .container {
     padding-bottom: 3rem;
   }
-  .aumentar-texto span {
+  .aumentar-texto {
     font-size: 1rem;
-    padding: 2rem;
   }
 }
+
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  .imagem-texto {
+    font-size: 1.4rem;
+  }
+  .home-texto p {
+    font-size: 1.8rem;
+  }
+}
+
+
