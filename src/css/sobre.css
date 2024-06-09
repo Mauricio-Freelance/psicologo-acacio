@@ -52,7 +52,7 @@
 }
 
 .caixa-texto {
-  height: 74vh;
+  height: 80vh;
   margin-left: 7%;
   min-width: 800px;
   width: 100%;
@@ -70,7 +70,7 @@
   color: #07A8B0;
   text-align: center;
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 .caixa-texto ul {
@@ -78,12 +78,12 @@
 }
 
 .caixa-texto li {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 
 .caixa-texto p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-top: 1rem;
   margin-bottom: 1.2rem;
 }
@@ -151,6 +151,9 @@
 }
 
 @media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
+  .sobre {
+    height: 200vh;
+  }
   .caixa-texto h2 {
     font-size: 1.5rem;
   }
@@ -168,6 +171,7 @@
   }
   .caixa-texto {
     height: 92vh;
+    margin-left: 0;
   }
   .sobre-container {
     width: 50%;
@@ -176,8 +180,39 @@
     padding: 0.2rem;
     font-size: 1.2rem;
   }
+  .sobre-imagem {
+    margin: 0 auto;
+    margin-left: 20vw;
+  }
 }
 
 @media (min-width: 1350px) and (max-width: 1399px) {
+  .caixa-texto {
+    height: 90vh;
+    margin-left: 7%;
+    min-width: 400px;
+    width: 100%;
+    
+  }
+  .caixa-texto h2 {
+    font-size: 1.5rem;
+  }
   
+  .caixa-texto li {
+    font-size: 1.3rem;
+  }
+  
+  .caixa-texto p {
+    font-size: 1.2rem;
+  }
+  .caixa-texto a {
+    font-size: 0.2rem;
+    padding: 0.5rem;
+  }
+  .caixa-texto i {
+    font-size: 1rem;
+  }
+  .sobre-imagem {
+    margin-top: 3rem;
+  }
 }

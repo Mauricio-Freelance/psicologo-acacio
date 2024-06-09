@@ -1,0 +1,15 @@
+/*CSS para contato*/
+.contato-texto p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contato-imagem {
+  margin-top: 7rem;
+}
+
+.inversion-contato {
+  background-color: white;
+  color: #07A8B0;
+}
