@@ -135,7 +135,7 @@ footer {
 }
 
 .home-texto p {
-  font-size: 1.7em;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.6;
   color: #07A8B0;
@@ -215,6 +215,7 @@ footer {
 }
 
 /*CSS para a Meu trabalho*/
+/*
 .trabalho {
   padding: 4rem 2rem;
   text-align: center;
@@ -277,6 +278,7 @@ footer {
 
 
 /*CSS para a Sobre*/
+/*
 .sobre {
   padding: 2rem;
   padding-top: 5rem;
@@ -313,11 +315,11 @@ footer {
 }
 
 .header-container h3::before {
-  top: 0; /* Linha superior */
+  top: 0; 
 }
 
 .header-container h3::after {
-  bottom: 0; /* Linha inferior */
+  bottom: 0; 
 }
 
 .sobre-container {
@@ -399,6 +401,7 @@ footer {
 }
 
 /*CSS para beneficios*/
+/*
 .beneficios {
   height: 190vh;
   padding: 2rem 5rem;
@@ -461,6 +464,7 @@ footer {
 }
 
 /*CSS para as FAQS*/
+/*
 .faqs {
 
   height: auto;
@@ -538,6 +542,7 @@ footer {
 }
 
 /*CSS para contato*/
+/*
 .contato-texto p {
   color: white;
   text-align: center;
@@ -556,7 +561,7 @@ footer {
 
 /* Adiciona um layout de grade com três colunas */
 
-@media (min-width: 1800px) {
+/*@media (min-width: 1800px) {
   .card p {
     font-size: 2.5rem;
   }
@@ -573,8 +578,9 @@ footer {
   .cardB p {
     font-size: 2.1rem;
   }
-}
+}*/
 
+/*
 @media (max-width: 1799px) {
   .card p {
     font-size: 1.8rem;
@@ -625,7 +631,7 @@ footer {
     display: none;
   }
   .beneficios {
-    height: 100vh; /* Ajuste conforme necessário */
+    height: 100vh; 
     padding: 2rem 5rem;
     text-align: center;
   }
@@ -644,7 +650,7 @@ footer {
   .cards {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    margin-top: 2rem; /* Ajuste conforme necessário */
+    margin-top: 2rem; 
   }
   
   .card {
@@ -802,6 +808,7 @@ footer {
 
 @media (max-width: 768px) {
   /*CSS para o menu*/
+  /*
   
   .menu ul {
     display: none;
@@ -840,7 +847,7 @@ footer {
     z-index: 900;
   }
 
-  /*CSS para a home*/
+  /*CSS para a home*/ /*
   .btn-whatsapp {
     width: 50%;
     padding: 0.5rem;
@@ -857,7 +864,7 @@ footer {
     min-width: 22rem;
   }
 
-  /*CSS Meu trabalho*/
+  /*CSS Meu trabalho*/ /*
   .carousel-container {
     position: relative;
     overflow: hidden;
@@ -920,7 +927,7 @@ footer {
     padding-top: 8rem;
     font-size: 1.5rem;
   }
-  /*CSS para Sobre*/
+  /*CSS para Sobre*/ /*
   .caixa-texto {
     min-width: auto;
     width: 90%;
