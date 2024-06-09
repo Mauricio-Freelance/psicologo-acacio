@@ -1,0 +1,183 @@
+/*CSS para a Sobre*/
+.sobre {
+  padding: 2rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.header-container h3 {
+  margin: 0;
+  padding: 1rem 5rem; 
+  color: #07A8B0;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.header-container h3::before,
+.header-container h3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #07A8B0;
+  left: 0;
+}
+
+.header-container h3::before {
+  top: 0; 
+}
+
+.header-container h3::after {
+  bottom: 0; 
+}
+
+.sobre-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.caixa-texto {
+  height: 74vh;
+  margin-left: 7%;
+  min-width: 800px;
+  width: 100%;
+  flex: 1;
+  padding: 1.5rem 0;
+  padding-left: 5rem;
+  padding-right: 10rem;
+  border: 3px solid #07A8B0;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  text-align: justify;
+}
+
+.caixa-texto h2 {
+  color: #07A8B0;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.caixa-texto ul {
+  padding-left: 1.5rem;
+}
+
+.caixa-texto li {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.caixa-texto p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.caixa-texto i {
+  padding-left: 0.5rem;
+}
+
+.sobre-imagem {
+  flex: 1;
+  position: relative;
+  z-index: 0;
+}
+
+.sobre-imagem img {
+  height: 52vh;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 38px;
+  left: -120px;
+  border-radius: 0.6rem;
+  z-index: 10;
+}
+
+
+
+.posicionar {
+  top: 0px;
+  left: -120px;
+  position: relative;
+  top: 56vh; 
+  width: 31.3rem;
+  text-align: center;
+  z-index: 20; 
+}
+
+
+@media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
+  .caixa-texto h2 {
+    font-size: 1.8rem;
+  }
+  
+  .caixa-texto li {
+    font-size: 1.6rem;
+  }
+  
+  .caixa-texto p {
+    font-size: 1.6rem;
+  }
+  .caixa-texto a {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .caixa-texto {
+    height: 92vh;
+  }
+  .imagem-texto {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+  }
+  .sobre-imagem {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
+  .caixa-texto h2 {
+    font-size: 1.5rem;
+  }
+  
+  .caixa-texto li {
+    font-size: 1.2rem;
+  }
+  
+  .caixa-texto p {
+    font-size: 1.2rem;
+  }
+  .caixa-texto a {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .caixa-texto {
+    height: 92vh;
+  }
+  .sobre-container {
+    width: 50%;
+  }
+  .imagem-texto {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 1399px) {
+  
+}
