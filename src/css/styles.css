@@ -942,6 +942,9 @@ footer {
     font-size: 1.5rem;
   }
   /*CSS para Sobre*/ 
+  .sobre {
+    height: 100vh;
+  }
   .caixa-texto {
     min-width: auto;
     margin: 0;
