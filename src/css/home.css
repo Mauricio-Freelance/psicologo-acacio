@@ -169,3 +169,21 @@
 
 
 
+@media (max-width: 768px) {
+  /*CSS para a home*/ 
+  .btn-whatsapp {
+    width: 50%;
+    padding: 0.5rem;
+  }
+
+  .home-imagem img {
+    height: 30rem;
+    padding: 0;
+    margin: 0;
+    min-width: 22rem;
+  }
+
+  .imagem-texto {
+    min-width: 22rem;
+  }
+}

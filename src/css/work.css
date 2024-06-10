@@ -56,15 +56,34 @@
 
 .carousel-btn {
   display: none;
+  visibility: hidden; 
+  opacity: 0; 
+  width: 0; 
+  height: 0; 
+  overflow: hidden;
+  border: none; 
+  margin: 0; 
+  padding: 0;
 }
 
 .carousel-btn i {
-  display: none;
+  display: none; 
+  visibility: hidden; 
+  opacity: 0;
+  width: 0; 
+  height: 0; 
+  overflow: hidden; 
 }
 
 .carousel-btn[disabled] {
-  display: none;
+  display: none; 
+  visibility: hidden; 
+  opacity: 0; 
+  width: 0; 
+  height: 0; 
+  overflow: hidden; 
 }
+
 
 @media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
   .card p {
@@ -110,5 +129,162 @@
   
   #cardBlack {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /*CSS Meu trabalho*/ 
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 5rem;
+  }
+
+  .card {
+    height: 60vh;
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .cardB {
+    height: 60vh;
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .card p {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  #cardBlack {
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .carousel-btn {
+    color: #07A8B0;
+    display: block;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .carousel-btn i {
+    display: block;
+  }
+
+  .carousel-btn.prev {
+    left: 0;
+  }
+
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  .carousel-btn i {
+    padding-top: 8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .card p {
+    font-size: 2.1rem;
+  }
+
+  #cardBlack {
+    font-size: 1.6rem;
+  }
+  .caixa-texto p {
+    font-size: 1.2rem;
+  }
+  .caixa-texto li {
+    font-size: 1.2rem;
+  }
+  .cardB p {
+    font-size: 2rem;
+  }
+} 
+
+@media (max-width: 450px) {
+  .card p {
+    font-size: 2rem;
+  }
+
+  #cardBlack {
+    font-size: 1.5rem;
+  }
+  .cardB p {
+    font-size: 1.7rem;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .card {
+    font-size: 1.2rem;
+    max-height: 32rem;
+  }
+
+  .card p {
+    font-size: 1.8rem;
+  }
+
+  .cardB {
+    font-size: 1.2rem;
+    max-height: 32rem;
+  }
+
+  .cardB p {
+    font-size: 1.4rem;
+  }
+
+  #cardBlack {
+    font-size: 1.3rem;
+  }
+
+  .header-container h3 {
+    padding: 0.3rem 5rem; 
+    font-size: 1rem;
+  }
+
+  .caixa-texto {
+    height: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .caixa-texto p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn-whatsapp {
+    width: 80%;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  #cardBlack {
+    font-size: 1.1rem;
+  }
+  .cardB p {
+    font-size: 1.3rem;
   }
 }
