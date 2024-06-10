@@ -943,7 +943,7 @@ footer {
   }
   /*CSS para Sobre*/ 
   .sobre {
-    height: 100vh;
+    max-height: 110vh;
   }
   .caixa-texto {
     min-width: auto;
