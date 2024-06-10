@@ -100,14 +100,11 @@
 
 /* Adicionando media queries para escalas diferentes */
 @media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  body, footer, .menu li, .home-texto p, .btn-whatsapp, .imagem-texto {
-    font-size: 1.8rem;
-  }
-  .menu li, .home-texto p, .btn-whatsapp, .imagem-texto {
-    padding: 1.5rem;
+  section .container .home-texto p {
+    font-size: 1.5rem;
   }
   .home {
-    height: auto;
+    height: 120vh;
   }
 
   .home-imagem img {
@@ -119,11 +116,8 @@
 }
 
 @media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  body, footer, .menu li, .home-texto p, .btn-whatsapp, .imagem-texto {
-    font-size: 1.4rem;
-  }
-  .menu li, .home-texto p, .btn-whatsapp, .imagem-texto {
-    padding: 1rem;
+  section .container .home-texto p {
+    font-size: 1.25rem;
   }
   .home-imagem img {
     height: auto;
@@ -166,6 +160,9 @@
   .container {
     margin-top: 3rem;
     padding: 0 5rem;
+  }
+  .home {
+    height: 120vh;
   }
 
 }
