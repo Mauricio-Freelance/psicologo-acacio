@@ -210,97 +210,62 @@ footer {
   color: #fff;
   text-align: center;
   padding: 0.2rem 0;
-  min-width: 25rem;
+  min-width: 10rem;
   font-size: 1.2rem;
 }
 
-/*CSS para Trabalho*/
+/*CSS para a Meu trabalho*/
 .trabalho {
   padding: 4rem 2rem;
   text-align: center;
 }
-
 .trabalho h2 {
   font-size: 2rem;
   color: white;
   margin-bottom: 3rem;
 }
-
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 15px;
+  margin-top: 7rem;
 }
-
 .card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: calc(50% - 15px); 
-  min-width: 320px;
-  height: 60vh;
+  width: 100%;
+  min-height: 400px;
   background-color: #f9f9f9;
   font-size: 2rem;
   font-weight: 600;
   color: #07A8B0;
-  padding: 2rem;
+  padding: 1.2rem;
   border: 1px solid #ddd;
   border-radius: 0.6rem;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
-
 .card p {
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   margin: 0;
   padding: 0.2rem;
 }
-
 #cardBlack {
   text-align: justify;
   color: black;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   padding: 1rem 1.4rem;
   font-weight: 500;
 }
-
 .carousel-btn {
   display: none;
-  visibility: hidden; 
-  opacity: 0; 
-  width: 0; 
-  height: 0; 
-  overflow: hidden;
-  border: none; 
-  margin: 0; 
-  padding: 0;
 }
-
 .carousel-btn i {
-  display: none; 
-  visibility: hidden; 
-  opacity: 0;
-  width: 0; 
-  height: 0; 
-  overflow: hidden; 
+  display: none;
 }
-
 .carousel-btn[disabled] {
-  display: none; 
-  visibility: hidden; 
-  opacity: 0; 
-  width: 0; 
-  height: 0; 
-  overflow: hidden; 
+  display: none;
 }
-
 /*CSS para a Sobre*/
 .sobre {
   padding: 2rem;
@@ -928,35 +893,29 @@ footer {
     position: relative;
     overflow: hidden;
   }
-
   .cards {
     display: flex;
     transition: transform 0.5s ease-in-out;
     margin-top: 5rem;
   }
-
   .card {
     height: 60vh;
     min-width: 100%;
     flex-shrink: 0;
   }
-
   .cardB {
     height: 60vh;
     min-width: 100%;
     flex-shrink: 0;
   }
-
   .card p {
     font-size: 2.5rem;
     font-weight: 700;
   }
-
   #cardBlack {
     font-size: 1.9rem;
     font-weight: 600;
   }
-
   .carousel-btn {
     color: #07A8B0;
     display: block;
@@ -969,19 +928,15 @@ footer {
     cursor: pointer;
     z-index: 1000;
   }
-
   .carousel-btn i {
     display: block;
   }
-
   .carousel-btn.prev {
     left: 0;
   }
-
   .carousel-btn.next {
     right: 0;
   }
-
   .carousel-btn i {
     padding-top: 8rem;
     font-size: 1.5rem;
@@ -1020,6 +975,7 @@ footer {
   }
 
   .beneficios {
+    height: 100vh;
     padding: 2rem;
   }
   
@@ -1038,7 +994,7 @@ footer {
   }
 
   .cards-beneficios h3 {
-    font-size: 1.6rem;
+    display: none;
   }
   
   .card-beneficio img {
@@ -1050,11 +1006,23 @@ footer {
     padding: 1rem 2.5rem; 
   }
   .cardB p {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .card p {
+    font-size: 2.2rem;
+  }
+  #cardBlack {
+    font-size: 1.9rem;
   }
 }
 
 @media (max-width: 550px) {
+  .home-texto {
+    padding: 2rem;
+  }
   .card p {
     font-size: 2.1rem;
   }
@@ -1069,9 +1037,50 @@ footer {
     font-size: 1.2rem;
   }
   .cardB p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 } 
+
+@media (max-width: 510px) {
+  .card p {
+    font-size: 1.7rem;
+  }
+  .caixa-texto p {
+    font-size: 1.1rem;
+  }
+  .caixa-texto li {
+    font-size: 1.1rem;
+  }
+
+  .caixa-texto h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .imagem-texto {
+    font-size: 1rem;
+  }
+  .cardB p {
+    font-size: 1.7rem;
+  }
+  .card p {
+    font-size: 1.6rem;
+  }
+  .caixa-texto p {
+    font-size: 1rem;
+  }
+  .caixa-texto li {
+    font-size: 1rem;
+  }
+
+  .caixa-texto h2 {
+    font-size: 1.7rem;
+  }
+}
 
 @media (max-width: 450px) {
   .card p {
@@ -1082,13 +1091,13 @@ footer {
     font-size: 1.5rem;
   }
   .cardB p {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
   }
   .caixa-texto p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .caixa-texto li {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
