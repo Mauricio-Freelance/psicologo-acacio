@@ -943,7 +943,7 @@ footer {
   }
   /*CSS para Sobre*/ 
   .caixa-texto {
-    min-width: 90vw;
+    min-width: auto;
     margin: 0;
     width: 100%;
     height: 80vh;
