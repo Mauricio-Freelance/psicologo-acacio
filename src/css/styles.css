@@ -226,9 +226,8 @@ footer {
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 45px;
-  margin: 0 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 25px;
   margin-top: 7rem;
 }
 .card {
@@ -623,12 +622,6 @@ footer {
     font-size: 1rem;
   }
   /*CSS para TRABALHO*/
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 25px;
-    margin: 0 2rem;
-  }
   .card p {
     font-size: 1.7rem;
   }
@@ -690,6 +683,12 @@ footer {
 
 /* Adiciona um layout de grade com três colunas */
 @media (min-width: 1930px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 45px;
+    margin: 0 2rem;
+  }
   .card p {
     font-size: 2.5rem;
   }
@@ -704,6 +703,15 @@ footer {
   }
   .cardB p {
     font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1930px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 45px;
+    margin: 0 2rem;
   }
 }
 
@@ -723,12 +731,12 @@ footer {
     height: 120vh;
   }
   /*CSS para TRABALHO*/
-  .cards {
+  /*.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 15px;
     margin: 0 1rem;
-  }
+  }*/
   .cards {
     padding: 2rem;
   }
