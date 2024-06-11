@@ -713,6 +713,11 @@ footer {
     gap: 45px;
     margin: 0 2rem;
   }
+
+  .cardB p {
+    font-size: 1.6rem;
+  }
+
 }
 
 @media (min-width: 1350px) and (max-width: 1399px) {
@@ -729,6 +734,12 @@ footer {
   }
   .home {
     height: 120vh;
+  }
+
+  .home-imagem img {
+    object-fit: cover;
+    height: 80vh;
+    width: 80%;
   }
   /*CSS para TRABALHO*/
   /*.cards {
@@ -764,7 +775,7 @@ footer {
   }
   
   .caixa-texto li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .caixa-texto p {
