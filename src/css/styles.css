@@ -989,7 +989,7 @@ footer {
   
   .header-container h3 {
     padding: 0.5rem 5rem; 
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .beneficios {
@@ -1034,6 +1034,9 @@ footer {
   }
   #cardBlack {
     font-size: 1.9rem;
+  }
+  .contato .home-texto.contato-texto p.telefone span {
+    display: block;
   }
 }
 
