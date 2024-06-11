@@ -1140,7 +1140,7 @@ footer {
   }
 
   .card p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .cardB {
@@ -1158,7 +1158,7 @@ footer {
 
   .header-container h3 {
     padding: 0.3rem 5rem; 
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .caixa-texto {
@@ -1180,14 +1180,14 @@ footer {
 
 @media (max-width: 360px) {
   .card p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #cardBlack {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .cardB p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
