@@ -1058,6 +1058,7 @@ footer {
 
   #cardBlack {
     font-size: 1.6rem;
+    font-weight: 400;
   }
   .caixa-texto p {
     font-size: 1.2rem;
@@ -1102,6 +1103,9 @@ footer {
   .card p {
     font-size: 1.6rem;
   }
+  #cardBlack {
+    font-size: 1.5rem;
+  }
   .caixa-texto p {
     font-size: 1rem;
   }
@@ -1116,11 +1120,11 @@ footer {
 
 @media (max-width: 450px) {
   .card p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   #cardBlack {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .cardB p {
     font-size: 1.65rem;
@@ -1140,7 +1144,7 @@ footer {
   }
 
   .card p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .cardB {
