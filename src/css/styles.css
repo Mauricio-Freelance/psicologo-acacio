@@ -226,8 +226,9 @@ footer {
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 45px;
+  margin: 0 6rem;
   margin-top: 7rem;
 }
 .card {
@@ -622,6 +623,12 @@ footer {
     font-size: 1rem;
   }
   /*CSS para TRABALHO*/
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
+    margin: 0 2rem;
+  }
   .card p {
     font-size: 1.7rem;
   }
@@ -633,6 +640,7 @@ footer {
   .sobre {
     height: 200vh;
   }
+
   .caixa-texto h2 {
     font-size: 1.5rem;
   }
@@ -715,6 +723,12 @@ footer {
     height: 120vh;
   }
   /*CSS para TRABALHO*/
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 15px;
+    margin: 0 1rem;
+  }
   .cards {
     padding: 2rem;
   }
