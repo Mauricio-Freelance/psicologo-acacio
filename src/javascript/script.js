@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const cards = document.querySelector('.cards');
   let currentIndex = 0;
   const cardWidth = cards.children[0].offsetWidth;
-  const offsetIncrement = 15; 
+  const offsetIncrement = 20; 
 
   prevBtn.addEventListener('click', function() {
     if (currentIndex > 0) {
