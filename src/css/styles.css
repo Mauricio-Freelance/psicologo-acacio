@@ -94,6 +94,25 @@ footer {
   color: #07A8B0; 
 }
 
+.logo {
+  position: absolute;
+  left: 0.8rem;
+  top: 1rem;
+  padding-left: 6rem;
+}
+
+.logo img {
+  max-height: 1.6rem; 
+  margin-right: 0.2rem;
+}
+
+.logo span {
+  top: 0.2rem;
+  font-size: 2rem; 
+  font-family: 'Allura', cursive;
+  color: #07A8B0; 
+}
+
 .icones-direita i {
   font-size: 1.8rem; 
   padding-right: 1.5rem;
@@ -861,6 +880,10 @@ footer {
   .menu ul li {
     text-align: center;
     padding: 1rem;
+  }
+
+  .logo {
+    display: none;
   }
 
   .icones-direita {
