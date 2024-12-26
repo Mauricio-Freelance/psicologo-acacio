@@ -84,14 +84,20 @@ footer {
   padding: 1rem;
 }
 
+.menu a.secao-ativa {
+  color: #07A8B0; 
+}
+
 .icones-direita {
   position: absolute;
   right: 0.8rem;
   top: 0.8rem;
 }
 
-.menu a.secao-ativa {
-  color: #07A8B0; 
+.icones-direita i {
+  font-size: 1.8rem; 
+  padding-right: 1.5rem;
+  color: #07A8B0;
 }
 
 .logo {
@@ -113,12 +119,6 @@ footer {
   color: #07A8B0; 
 }
 
-.icones-direita i {
-  font-size: 1.8rem; 
-  padding-right: 1.5rem;
-  color: #07A8B0;
-}
-
 .hamburger {
   color: black;
   display: none;
@@ -133,148 +133,12 @@ footer {
   content: "\f00d"; 
 }
 
-/*CSS para a home*/
-.home {
-  display: flex;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 4rem;
-}
-
-.home-texto {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home-texto p {
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.6;
-  color: #07A8B0;
-  text-align: justify;
-  padding: 2% 15%;
-}
-
-.aumentar-texto span {
-  font-size: 1.2rem;
-}
-
-#black {
-  color: black;
-}
-
-.home-imagem {
-  margin-top: 3rem;
-  width: 100%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.home-imagem img {
-  max-width: 50rem;
-  object-fit: cover;
-  height: 75vh;
-  width: 80%;
-}
-
-.btn-whatsapp {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  padding: 0.5rem 1.2rem;
-  margin-top: 1.2rem;
-  background-color: #07A8B0;
-  color: white;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.btn-whatsapp:hover {
-  background-color: #065f64;
-}
-
-.inversion {
-  width: 15%;
-  background-color: white;
-  color: #07A8B0;
-  padding: 0.5rem;
-}
-
-.inversion:hover {
-  background-color: white;
-}
-
-.home-texto i {
-  padding-left: 0.5rem;
-}
-
-.imagem-texto {
-  width: 80%;
-  background-color: #07A8B0;
-  color: #fff;
-  text-align: center;
-  padding: 0.2rem 0;
-  min-width: 10rem;
-  font-size: 1.2rem;
-}
-
 /*CSS para a Meu trabalho*/
-.trabalho {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-.trabalho h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 3rem;
-}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 25px;
   margin-top: 7rem;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  min-height: 400px;
-  background-color: #f9f9f9;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #07A8B0;
-  padding: 1.2rem;
-  border: 1px solid #ddd;
-  border-radius: 0.6rem;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-}
-.card p {
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0.2rem;
-}
-#cardBlack {
-  text-align: justify;
-  color: black;
-  font-size: 1.3rem;
-  padding: 1rem 1.4rem;
-  font-weight: 500;
 }
 .carousel-btn {
   display: none;
@@ -563,27 +427,6 @@ footer {
 
 /* Adicionando media queries para escalas diferentes */
 @media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  section .container .home-texto p {
-    font-size: 1.5rem;
-  }
-  .home {
-    height: 120vh;
-  }
-
-  .home-imagem img {
-    height: auto;
-  }
-  .container {
-    padding-bottom: 3rem;
-  }
-  /*CSS para Trabalho*/
-  .card p {
-    font-size: 2rem;
-  }
-  
-  #cardBlack {
-    font-size: 1.8rem;
-  }
   /*CSS para Sobre*/
   .caixa-texto h2 {
     font-size: 1.8rem;
@@ -628,25 +471,8 @@ footer {
 }
 
 @media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  section .container .home-texto p {
-    font-size: 1.25rem;
-  }
-  .home-imagem img {
-    height: auto;
-  }
-  .container {
-    padding-bottom: 3rem;
-  }
   .aumentar-texto {
     font-size: 1rem;
-  }
-  /*CSS para TRABALHO*/
-  .card p {
-    font-size: 1.7rem;
-  }
-  
-  #cardBlack {
-    font-size: 1.4rem;
   }
   /*CSS para Sobre*/
   .sobre {
@@ -740,48 +566,7 @@ footer {
 }
 
 @media (min-width: 1350px) and (max-width: 1399px) {
-  /*CSS para a HOME*/
-  .home-texto p {
-    font-size: 1.2rem;
-  }
-  .imagem-texto {
-    font-size: 1rem;
-  }
-  .container {
-    margin-top: 3rem;
-    padding: 0 5rem;
-  }
-  .home {
-    height: 120vh;
-  }
-
-  .home-imagem img {
-    object-fit: cover;
-    height: 80vh;
-    width: 80%;
-  }
-  /*CSS para TRABALHO*/
-  /*.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 15px;
-    margin: 0 1rem;
-  }*/
-  .cards {
-    padding: 2rem;
-  }
-  .card {
-    height: 60vh;
-  }
-
-  .card p {
-    font-size: 1.8rem;
-  }
-  
-  #cardBlack {
-    font-size: 1.5rem;
-  }
-  /*CSS para a SOBRE*/
+/* CSS para a SOBRE*/
   .caixa-texto {
     height: 90vh;
     margin-left: 7%;
@@ -838,13 +623,6 @@ footer {
 }
 
 @media (min-width: 1350px) and (max-width: 1399px) and (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  .card p {
-    font-size: 1rem;
-  }
-  
-  #cardBlack {
-    font-size: 1rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -900,78 +678,6 @@ footer {
   }
 
   /*CSS para Home*/
-  .home {
-    display: block;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column-reverse; 
-    padding: 0 2rem;
-    width: 100%;
-  }
-
-  .home-imagem {
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-
-  .home-imagem img {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-  }
-
-  .home-texto {
-    width: 100%;
-    padding: 5rem;
-    text-align: center;
-  }
-
-  .home-texto p {
-    font-size: 1.6rem;
-    padding: 1rem 0;
-  }
-
-  .btn-whatsapp {
-    width: 80%;
-    padding: 1rem 0;
-    font-size: 1.4rem;
-  }
-
-  .imagem-texto {
-    width: 100%;
-    font-size: 1.4rem;
-  }
-
-  /*CSS Meu trabalho*/ 
-  .carousel-container {
-    position: relative;
-    overflow: hidden;
-  }
-  .cards {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    margin-top: 5rem;
-  }
-  .card {
-    height: 60vh;
-    min-width: 100%;
-    flex-shrink: 0;
-  }
-  .cardB {
-    height: 60vh;
-    min-width: 100%;
-    flex-shrink: 0;
-  }
-  .card p {
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  #cardBlack {
-    font-size: 1.9rem;
-    font-weight: 600;
-  }
   .carousel-btn {
     color: #07A8B0;
     display: block;
@@ -1065,9 +771,6 @@ footer {
     font-size: 1.5rem;
     padding: 1rem 2.5rem; 
   }
-  .cardB p {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 620px) {
@@ -1083,25 +786,11 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .home-texto {
-    padding: 2rem;
-  }
-  .card p {
-    font-size: 2.1rem;
-  }
-
-  #cardBlack {
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
   .caixa-texto p {
     font-size: 1.2rem;
   }
   .caixa-texto li {
     font-size: 1.2rem;
-  }
-  .cardB p {
-    font-size: 1.8rem;
   }
 } 
 
@@ -1153,299 +842,21 @@ footer {
 }
 
 @media (max-width: 450px) {
-  .card p {
-    font-size: 1.6rem;
-  }
-
-  #cardBlack {
-    font-size: 1.4rem;
-  }
-  .cardB p {
-    font-size: 1.65rem;
-  }
   .caixa-texto p {
     font-size: 1rem;
   }
   .caixa-texto li {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .card {
-    font-size: 1.2rem;
-    max-height: 32rem;
-  }
-
-  .card p {
-    font-size: 1.4rem;
-  }
-
-  .cardB {
-    font-size: 1.2rem;
-    max-height: 32rem;
-  }
-
-  .cardB p {
-    font-size: 1.4rem;
-  }
-
-  #cardBlack {
-    font-size: 1.3rem;
-  }
-
-  .header-container h3 {
-    padding: 0.3rem 5rem; 
-    font-size: 1.5rem;
-  }
-
-  .caixa-texto {
-    height: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  
-  .caixa-texto p {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .btn-whatsapp {
-    width: 80%;
-  }
-  
-}
-
-@media (max-width: 360px) {
-  .card p {
-    font-size: 1.4rem;
-  }
-
-  #cardBlack {
-    font-size: 1rem;
-  }
-  .cardB p {
-    font-size: 1.2rem;
   }
 }
 
 /*
 @media (max-width: 1799px) {
-  .card p {
-    font-size: 1.8rem;
-  }
-
-  #cardBlack {
-    font-size: 1.4rem;
-  }
-
-  .cardB p {
-    font-size: 1.4rem;
-  }
- 
 }
 
-@media (max-width: 1460px) {
-  .trabalho {
-    height: 120vh;
-  }
-  .sobre-imagem {
-    display: none; 
-  }
-  .card p {
-    font-size: 1.5rem;
-  }
-
-  #cardBlack {
-    font-size: 1.2rem;
-  }
-  .caixa-texto p {
-    font-size: 1.7rem;
-  }
-  .caixa-texto li {
-    font-size: 1.7rem;
-  }
-
-  .cardB p {
-    font-size: 1.4rem;
-  }
-
-} 
-
 @media (max-width: 1250px) {
-  .trabalho {
-    height: 100vh;
-  }
-  #beneficios h3 {
-    display: none;
-  }
-  .beneficios {
-    height: 100vh; 
-    padding: 2rem 5rem;
-    text-align: center;
-  }
-  
-  .beneficios h2 {
-    color: white;
-    font-size: 1.8rem;
-    margin: 2rem 0;
-  }
-  
-  .carousel-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .cards {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    margin-top: 2rem; 
-  }
-  
-  .card {
-    max-height: 50vh;
-    min-width: 100%;
-    flex-shrink: 0;
-    text-align: center;
-  }
-
-  .cardB {
-    max-height: 60vh;
-    min-width: 100%;
-    flex-shrink: 0;
-    text-align: center;
-  }
-
-  .card p {
-    font-size: 2rem;
-  }
-
-  #cardBlack {
-    font-size: 1.6rem;
-  }
-  
-  .card-beneficio {
-    height: 60vh;
-    background-color: #ffffff;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .card-beneficio img {
-    padding: 2rem 0;
-    color: #07A8B0;
-    font-size: 4em;
-  }
-  
-  .card-beneficio p {
-    text-align: justify;
-    font-size: 2rem;
-    color: #07A8B0;
-    padding: 1rem 2.5rem; 
-  }
-  
-  .carousel-btn {
-    color: #07A8B0;
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  
-  .carousel-btn i {
-    display: block;
-  }
-  
-  .carousel-btn.prev {
-    left: 0;
-  }
-  
-  .carousel-btn.next {
-    right: 0;
-  }
-  
-  .carousel-btn i {
-    font-size: 1.5rem;
-  }
-  .caixa-texto p {
-    font-size: 1.6rem;
-  }
-  .caixa-texto li {
-    font-size: 1.6rem;
-  }
-
-  .cardB p {
-    font-size: 2.5rem;
-  }
-  
 } 
 
 @media (max-width: 1000px) {
-  .home {
-    height: auto;
-    padding-bottom: 2rem;
-  }
-  .container {
-    display: block;
-  }
-  .home-texto {
-    padding-top: 5rem;
-    display: block;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .home-texto p {
-    padding: 2%;
-  }
-  
-  .home-imagem {
-    padding: 0;
-    margin: 0;
-    margin-top: 3rem;
-    width: 100%;
-    height: auto;
-  }
-
-  .home-imagem img {
-    padding: 0;
-    margin: 0;
-    min-width: 25rem;
-  }
-
-  .card p {
-    font-size: 2rem;
-  }
-
-  .cardB p {
-    font-size: 2.4rem;
-  }
-
-  #cardBlack {
-    font-size: 1.6rem;
-  }
-
-  .caixa-texto {
-    min-width: 500px;
-    width: 100%;
-  }
-
-  .contato {
-    height: auto;
-    padding-bottom: 2rem;
-  }
-  .caixa-texto p {
-    font-size: 1.4rem;
-  }
-  .caixa-texto li {
-    font-size: 1.4rem;
-  }
 }
 */

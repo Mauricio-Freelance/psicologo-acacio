@@ -23,7 +23,6 @@
   font-weight: 700;
   line-height: 1.6;
   color: #07A8B0;
-  text-align: justify;
   padding: 2% 15%;
 }
 
@@ -167,13 +166,17 @@
 
 }
 
-
-
 @media (max-width: 768px) {
   /*CSS para a home*/ 
   .btn-whatsapp {
     width: 50%;
     padding: 0.5rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse; 
+    padding: 0 2rem;
+    width: 100%;
   }
 
   .home-imagem img {

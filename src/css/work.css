@@ -6,7 +6,7 @@
 .trabalho h2 {
   font-size: 2rem;
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .carousel-container {
@@ -47,11 +47,10 @@
 }
 
 #cardBlack {
-  text-align: justify;
   color: black;
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 1rem 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .carousel-btn {
