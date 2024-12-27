@@ -1,6 +1,6 @@
 /*CSS para as FAQS*/
 .faqs {
-
+  position: relative;
   height: auto;
   min-height: 100vh;
   padding: 2rem 5rem;
