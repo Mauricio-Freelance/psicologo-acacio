@@ -78,24 +78,6 @@
   color: #F4F0EC;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  .cards-beneficios {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
-  }
-}
-
-@media (max-width: 768px) {
-  .cards-beneficios {
-    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
-  }
-
-  .beneficios {
-    padding: 1rem 2rem;
-  }
-}
-
-
 @media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
   .card-beneficio img {
     font-size: 3em;
