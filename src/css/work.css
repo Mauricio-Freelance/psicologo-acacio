@@ -54,37 +54,6 @@
   font-weight: 600;
 }
 
-.carousel-btn {
-  display: none;
-  visibility: hidden; 
-  opacity: 0; 
-  width: 0; 
-  height: 0; 
-  overflow: hidden;
-  border: none; 
-  margin: 0; 
-  padding: 0;
-}
-
-.carousel-btn i {
-  display: none; 
-  visibility: hidden; 
-  opacity: 0;
-  width: 0; 
-  height: 0; 
-  overflow: hidden; 
-}
-
-.carousel-btn[disabled] {
-  display: none; 
-  visibility: hidden; 
-  opacity: 0; 
-  width: 0; 
-  height: 0; 
-  overflow: hidden; 
-}
-
-
 @media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
   .card-title {
     font-size: 2rem;
