@@ -229,9 +229,6 @@ footer {
 }
 
 @media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  .aumentar-texto {
-    font-size: 1rem;
-  }
   .sobre-container {
     width: 50%;
   }
@@ -318,16 +315,16 @@ footer {
   }
 }
 
-@media (min-width: 1350px) and (max-width: 1399px) and (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-}
+/* @media (min-width: 1350px) and (max-width: 1399px) and (min-resolution: 120dpi) and (max-resolution: 143dpi) {
+} */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1349px) {
   .cards-beneficios {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 621px) and (max-width: 768px) {
   /*CSS para o menu*/
   .menu {
     width: 100%;
@@ -469,7 +466,7 @@ footer {
   }
 }
 
-@media (max-width: 620px) {
+@media (min-width: 551px) and (max-width: 620px) {
   .card-title {
     font-size: 2.2rem;
   }
@@ -481,7 +478,7 @@ footer {
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 511px) and (max-width: 550px) {
   .caixa-texto p {
     font-size: 1.2rem;
   }
@@ -490,7 +487,7 @@ footer {
   }
 } 
 
-@media (max-width: 510px) {
+@media (min-width: 481px) and (max-width: 510px) {
   .caixa-texto {
     min-width: 80vw;
   }
@@ -509,7 +506,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 451px) and (max-width: 480px) {
   .container {
     width: 100vw;
   }
