@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: black;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.home, .sobre, .faqs {
+  background-color: white;
+}
+
+.trabalho, .beneficios, .contato {
+  background-color: #07A8B0;
+}  
+
+.container-main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/*CSS para o menu*/
+.menu {
+  max-width: 1800px;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 3px -1px gray;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.menu ul.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 5px 3px -1px gray;
+}
+
+.menu ul.active li {
+  text-align: center;
+  padding: 1rem;
+}
+
+.menu a.secao-ativa {
+  color: #07A8B0; 
+}
+
+.icones-direita {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+}
+
+.icones-direita i {
+  font-size: 1.8rem; 
+  padding-right: 1.5rem;
+  color: #07A8B0;
+}
+
+.logo {
+  position: absolute;
+  left: 0.8rem;
+  top: 1rem;
+  padding-left: 6rem;
+}
+
+.logo img {
+  max-height: 1.6rem; 
+  margin-right: 0.2rem;
+}
+
+.logo span {
+  top: 0.2rem;
+  font-size: 1.5rem; 
+  font-family: 'Allura', cursive;
+  color: #07A8B0; 
+}
+
+.hamburger {
+  color: black;
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.hamburger.active i::before {
+  content: "\f00d"; 
+}
+
+/*CSS para a Meu trabalho*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 25px;
+  margin-top: 7rem;
+}
+.carousel-btn {
+  display: none;
+}
+.carousel-btn i {
+  display: none;
+}
+.carousel-btn[disabled] {
+  display: none;
+}
+/*CSS para a Sobre*/
+.sobre {
+  padding: 2rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.header-container h3 {
+  margin: 0;
+  padding: 1rem 5rem; 
+  color: #07A8B0;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.header-container h3::before,
+.header-container h3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #07A8B0;
+  left: 0;
+}
+
+.header-container h3::before {
+  top: 0; 
+}
+
+.header-container h3::after {
+  bottom: 0; 
+}
+
+.sobre-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.posicionar {
+  top: 0px;
+  left: -120px;
+  position: relative;
+  top: 56vh; 
+  width: 31.3rem;
+  text-align: center;
+  z-index: 20; 
+}
+
+/*CSS para contato*/
+.contato-texto p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contato-imagem {
+  margin-top: 7rem;
+}
+
+.inversion-contato {
+  background-color: white;
+  color: #07A8B0;
+}
+
+@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
+  .sobre-container {
+    width: 50%;
+  }
+  .imagem-texto {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Adiciona um layout de grade com três colunas */
+@media (min-width: 1930px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 45px;
+    margin: 0 2rem;
+  }
+  .card-title {
+    font-size: 2.5rem;
+  }
+  #cardBlack {
+    font-size: 1.8rem;
+  }
+  .caixa-texto p {
+    font-size: 1.5rem;
+  }
+  .caixa-texto li {
+    font-size: 1.5rem;
+  }
+  .cardB p {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1930px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 45px;
+    margin: 0 2rem;
+  }
+
+  .cardB p {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media (min-width: 1350px) and (max-width: 1399px) {
+/* CSS para a SOBRE*/
+  .caixa-texto {
+    height: 90vh;
+    margin-left: 7%;
+    min-width: 400px;
+    width: 100%;
+    
+  }
+  .caixa-texto h2 {
+    font-size: 1.5rem;
+  }
+  
+  .caixa-texto li {
+    font-size: 1.2rem;
+  }
+  
+  .caixa-texto p {
+    font-size: 1.2rem;
+  }
+  .caixa-texto a {
+    font-size: 0.2rem;
+    padding: 0.5rem;
+  }
+  .caixa-texto i {
+    font-size: 1rem;
+  }
+  /*CSS para BENEFICIOS*/
+
+  .cardB {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #07A8B0;
+    padding: 1rem;
+  }
+}
+
+/* @media (min-width: 1350px) and (max-width: 1399px) and (min-resolution: 120dpi) and (max-resolution: 143dpi) {
+} */
+
+@media (min-width: 768px) and (max-width: 1349px) {
+  .cards-beneficios {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 621px) and (max-width: 768px) {
+  /*CSS para o menu*/
+  .menu {
+    width: 100%;
+  }
+  .menu ul {
+    display: none;
+    position: fixed;
+    top: 4.5rem; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 3px -1px gray;
+    flex-direction: column;
+    z-index: 800;
+  }
+
+  .menu ul.active {
+    display: flex;
+    width: 50%;
+    padding-top: 2rem;
+    background-color: white;
+  }
+
+  .menu ul li {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .icones-direita {
+    top: 1.2rem;
+  }
+
+  .icones-direita i {
+    color: black;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 900;
+  }
+
+  /*CSS para Home*/
+  .carousel-btn {
+    color: #07A8B0;
+    display: block;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .carousel-btn i {
+    display: block;
+  }
+  .carousel-btn.prev {
+    left: 0;
+  }
+  .carousel-btn.next {
+    right: 0;
+  }
+  .carousel-btn i {
+    padding-top: 8rem;
+    font-size: 1.5rem;
+  }
+  /*CSS para Sobre*/ 
+  .sobre {
+    max-height: 110vh;
+  }
+  .caixa-texto {
+    min-width: auto;
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .caixa-texto p {
+    font-size: 1.3rem;
+  }
+  .caixa-texto li {
+    font-size: 1.3rem;
+  }
+
+  .caixa-texto h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-imagem {
+    display: none;
+  }
+
+  .header-container {
+    margin-bottom: 1rem;
+  }
+  
+  .header-container h3 {
+    padding: 0.5rem 5rem; 
+    font-size: 1.8rem;
+  }
+
+  .beneficios {
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+  .beneficios h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+
+  .cards-beneficios {
+    gap: 4rem;
+  }
+
+  #contato {
+    height: auto;
+  }
+
+  .cards-beneficios h3 {
+    display: none;
+  }
+  
+  .card-beneficio img {
+    padding: 1rem 0;
+  }
+  
+  .card-beneficio p {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem; 
+  }
+}
+
+@media (min-width: 551px) and (max-width: 620px) {
+  .card-title {
+    font-size: 2.2rem;
+  }
+  #cardBlack {
+    font-size: 1.9rem;
+  }
+  .contato .home-texto.contato-texto p.telefone span {
+    display: block;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 550px) {
+  .caixa-texto p {
+    font-size: 1.2rem;
+  }
+  .caixa-texto li {
+    font-size: 1.2rem;
+  }
+} 
+
+@media (min-width: 481px) and (max-width: 510px) {
+  .caixa-texto {
+    min-width: 80vw;
+  }
+  .card-title {
+    font-size: 1.7rem;
+  }
+  .caixa-texto p {
+    font-size: 1.1rem;
+  }
+  .caixa-texto li {
+    font-size: 1.1rem;
+  }
+
+  .caixa-texto h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .imagem-texto {
+    font-size: 1rem;
+  }
+  .cardB p {
+    font-size: 1.7rem;
+  }
+  .card-title {
+    font-size: 1.6rem;
+  }
+  #cardBlack {
+    font-size: 1.5rem;
+  }
+  .caixa-texto p {
+    font-size: 1rem;
+  }
+  .caixa-texto li {
+    font-size: 1rem;
+  }
+
+  .caixa-texto h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .caixa-texto p {
+    font-size: 1rem;
+  }
+  .caixa-texto li {
+    font-size: 1rem;
+  }
+}
+
+/*
+@media (max-width: 1799px) {
+}
+
+@media (max-width: 1250px) {
+} 
+
+@media (max-width: 1000px) {
+}
+*/
