@@ -1,0 +1,703 @@
+@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
+    .card-title {
+        font-size: 1.7rem;
+    }
+      
+    #cardBlack {
+        font-size: 1.4rem;
+    }
+    .sobre {
+        height: 200vh;
+    }
+      .caixa-texto h2 {
+        font-size: 1.5rem;
+    }
+      
+    .caixa-texto li {
+        font-size: 1.2rem;
+    }
+      
+    .caixa-texto p {
+        font-size: 1.2rem;
+    }
+    .caixa-texto a {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+    .caixa-texto {
+        height: 92vh;
+        margin-left: 0;
+    }
+    .sobre-container {
+        width: 50%;
+    }
+    .imagem-texto {
+        padding: 0.2rem;
+        font-size: 1.2rem;
+    }
+    .sobre-imagem {
+        margin: 0 auto;
+        margin-left: 20vw;
+    }
+    .beneficios {
+      height: 210vh;
+      padding: 2rem;
+    }
+    .card-beneficio img {
+      font-size: 2em;
+    }
+    .card-beneficio p {
+      font-size: 1.25rem;
+      color: #07A8B0;
+      padding: 0rem 1rem; 
+    }
+    .sobre-container {
+        width: 50%;
+    }
+    .imagem-texto {
+        padding: 0.2rem;
+        font-size: 1.2rem;
+    }
+    section .container .home-texto p {
+        font-size: 1.25rem;
+    }
+    .home-imagem img {
+        height: auto;
+    }
+    .container {
+        padding-bottom: 3rem;
+    }
+    .aumentar-texto {
+        font-size: 1rem;
+    }
+}
+
+@media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
+    .caixa-texto h2 {
+        font-size: 1.8rem;
+      }
+      
+    .caixa-texto li {
+        font-size: 1.6rem;
+      }
+      
+    .caixa-texto p {
+        font-size: 1.6rem;
+      }
+    .caixa-texto a {
+        font-size: 1rem;
+        padding: 0.6rem;
+      }
+    .caixa-texto {
+        height: 92vh;
+      }
+    .imagem-texto {
+        padding: 0.2rem;
+        font-size: 1.2rem;
+      }
+    .sobre-imagem {
+        margin-top: 6rem;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+      
+    #cardBlack {
+        font-size: 1.8rem;
+    }
+
+    .faq-answer a {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    .card-beneficio img {
+        font-size: 3em;
+    }
+      
+    .card-beneficio p {
+        font-size: 1.5rem;
+        color: #07A8B0;
+        padding: 0rem 1.5rem; 
+    }
+
+    section .container .home-texto p {
+        font-size: 1.5rem;
+      }
+    .home {
+        height: 120vh;
+    }
+    
+    .home-imagem img {
+        height: auto;
+    }
+    .container {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1930px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+      gap: 45px;
+      margin: 0 2rem;
+    }
+    .card-title {
+      font-size: 2.5rem;
+    }
+    #cardBlack {
+      font-size: 1.8rem;
+    }
+    .caixa-texto p {
+      font-size: 1.5rem;
+    }
+    .caixa-texto li {
+      font-size: 1.5rem;
+    }
+    .cardB p {
+      font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1929px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+      gap: 45px;
+      margin: 0 2rem;
+    }
+    .imagem-texto {
+        font-size: 1.4rem;
+      }
+      .home-texto p {
+        font-size: 1.5rem;
+      }
+  
+    .cardB p {
+      font-size: 1.6rem;
+    }
+}
+  
+@media (min-width: 1400px) and (max-width: 1599px) {
+    .imagem-texto {
+      font-size: 1rem;
+    }
+    .home-texto p {
+      font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1399px) {
+    .home-texto p {
+        font-size: 1.2rem;
+    }
+    .imagem-texto {
+        font-size: 1rem;
+    }
+    .container {
+        margin-top: 3rem;
+        padding: 0 5rem;
+    }
+    .home {
+        height: 120vh;
+    }
+    .cards {
+        padding: 2rem;
+      }
+    .card {
+        height: 60vh;
+    }
+    
+    .card-title {
+        font-size: 1.8rem;
+    }
+      
+    #cardBlack {
+        font-size: 1.5rem;
+    }
+    
+  /* CSS para a SOBRE*/
+    .caixa-texto {
+      height: 90vh;
+      margin-left: 7%;
+      min-width: 400px;
+      width: 100%;
+    }
+
+    .caixa-texto h2 {
+      font-size: 1.5rem;
+    }
+    
+    .caixa-texto li {
+      font-size: 1.2rem;
+    }
+    
+    .caixa-texto p {
+      font-size: 1.2rem;
+    }
+    .caixa-texto a {
+      font-size: 0.2rem;
+      padding: 0.5rem;
+    }
+    .caixa-texto i {
+      font-size: 1rem;
+    }
+    /*CSS para BENEFICIOS*/
+  
+    .cardB {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #07A8B0;
+      padding: 1rem;
+    }
+    .cards-beneficios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .beneficios {
+        padding: 1rem 0;
+        height: 208vh;
+    }
+    .beneficios h2 {
+        margin: 1rem 0;
+    }
+    .card-beneficio {
+        height: 70vh;
+    }
+    .card-beneficio img {
+        font-size: 2em;
+    }
+    .card-beneficio p {
+        font-size: 1.5rem;
+        color: #07A8B0;
+        padding: 0rem 1rem; 
+    }
+      .sobre-imagem {
+        margin-top: 3rem;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+    /*CSS para a home*/ 
+    .btn-whatsapp {
+        width: 50%;
+        padding: 0.5rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse; 
+        padding: 0 2rem;
+        width: 100%;
+    }
+    
+    .home-imagem img {
+        height: 30rem;
+        padding: 0;
+        margin: 0;
+        min-width: 22rem;
+    }
+    
+    .imagem-texto {
+        min-width: 22rem;
+    }
+}
+  
+@media (min-width: 621px) and (max-width: 767px) {
+    /*CSS para o menu*/
+    .menu {
+      width: 100%;
+    }
+    .menu ul {
+      display: none;
+      position: fixed;
+      top: 4.5rem; 
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 5px 3px -1px gray;
+      flex-direction: column;
+      z-index: 800;
+    }
+  
+    .menu ul.active {
+      display: flex;
+      width: 50%;
+      padding-top: 2rem;
+      background-color: white;
+    }
+  
+    .menu ul li {
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .icones-direita {
+      top: 1.2rem;
+    }
+  
+    .icones-direita i {
+      color: black;
+    }
+  
+    .hamburger {
+      display: block;
+      z-index: 900;
+    }
+  
+    /*CSS para Home*/
+    .carousel-btn {
+      color: #07A8B0;
+      display: block;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .carousel-btn i {
+      display: block;
+    }
+    .carousel-btn.prev {
+      left: 0;
+    }
+    .carousel-btn.next {
+      right: 0;
+    }
+    .carousel-btn i {
+      padding-top: 8rem;
+      font-size: 1.5rem;
+    }
+    /*CSS para Sobre*/ 
+    .sobre {
+      max-height: 110vh;
+    }
+    .caixa-texto {
+      min-width: auto;
+      margin: 0;
+      width: 100%;
+      height: 80vh;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .caixa-texto p {
+      font-size: 1.3rem;
+    }
+    .caixa-texto li {
+      font-size: 1.3rem;
+    }
+  
+    .caixa-texto h2 {
+      font-size: 2rem;
+    }
+  
+    .sobre-imagem {
+      display: none;
+    }
+  
+    .header-container {
+      margin-bottom: 1rem;
+    }
+    
+    .header-container h3 {
+      padding: 0.5rem 5rem; 
+      font-size: 1.8rem;
+    }
+  
+    .beneficios {
+      height: 100vh;
+      padding: 2rem;
+    }
+    
+    .beneficios h2 {
+      color: white;
+      font-size: 1.8rem;
+      margin: 2rem 0;
+    }
+  
+    .cards-beneficios {
+      gap: 4rem;
+    }
+  
+    #contato {
+      height: auto;
+    }
+  
+    .cards-beneficios h3 {
+      display: none;
+    }
+    
+    .card-beneficio img {
+      padding: 1rem 0;
+    }
+    
+    .card-beneficio p {
+      font-size: 1.5rem;
+      padding: 1rem 2.5rem; 
+    }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+    .card-title {
+        font-size: 2.2rem;
+    }
+    #cardBlack {
+        font-size: 1.9rem;
+    }
+    .contato .home-texto.contato-texto p.telefone span {
+        display: block;
+    }
+    /*CSS Meu trabalho*/ 
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .cards {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      margin-top: 5rem;
+    }
+  
+    .card {
+      height: 60vh;
+      min-width: 100%;
+      flex-shrink: 0;
+    }
+  
+    .cardB {
+      height: 60vh;
+      min-width: 100%;
+      flex-shrink: 0;
+    }
+  
+    .card-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  
+    #cardBlack {
+      font-size: 1.9rem;
+      font-weight: 600;
+    }
+  
+    .carousel-btn {
+      color: #07A8B0;
+      display: block;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  
+    .carousel-btn i {
+      display: block;
+    }
+  
+    .carousel-btn.prev {
+      left: 0;
+    }
+  
+    .carousel-btn.next {
+      right: 0;
+    }
+  
+    .carousel-btn i {
+      padding-top: 8rem;
+      font-size: 1.5rem;
+    }
+} 
+  
+@media (min-width: 511px) and (max-width: 550px) {
+    .caixa-texto p {
+      font-size: 1.2rem;
+    }
+    .caixa-texto li {
+      font-size: 1.2rem;
+    }
+} 
+  
+@media (min-width: 481px) and (max-width: 510px) {
+    .caixa-texto {
+      min-width: 80vw;
+    }
+    .card-title {
+      font-size: 1.7rem;
+    }
+    .caixa-texto p {
+      font-size: 1.1rem;
+    }
+    .caixa-texto li {
+      font-size: 1.1rem;
+    }
+  
+    .caixa-texto h2 {
+      font-size: 1.8rem;
+    }
+}
+  
+@media (min-width: 451px) and (max-width: 480px) {
+    .container {
+      width: 100vw;
+    }
+    .imagem-texto {
+      font-size: 1rem;
+    }
+    .cardB p {
+      font-size: 1.7rem;
+    }
+    .card-title {
+      font-size: 1.6rem;
+    }
+    #cardBlack {
+      font-size: 1.5rem;
+    }
+    .caixa-texto p {
+      font-size: 1rem;
+    }
+    .caixa-texto li {
+      font-size: 1rem;
+    }
+  
+    .caixa-texto h2 {
+      font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+    .card-title {
+      font-size: 2.1rem;
+    }
+  
+    #cardBlack {
+      font-size: 1.6rem;
+    }
+    .caixa-texto p {
+      font-size: 1.2rem;
+    }
+    .caixa-texto li {
+      font-size: 1.2rem;
+    }
+    .cardB p {
+      font-size: 2rem;
+    }
+} 
+
+@media (min-width: 421px) and (max-width: 450px) {
+    body {
+      width: 110%;
+    }
+    .card-title {
+      font-size: 1.6rem;
+    }
+    .home-texto {
+      gap: 10px;
+      width: 100%;
+    }
+    .home-texto p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+  
+    #cardBlack {
+      font-size: 1.2rem;
+    }
+    .card {
+      margin-right: 20px;
+      height: 70%;
+    }
+    .sobre-container {
+      width: 100%;
+    }
+    .logo {
+      position: center;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 420px) {
+    .caixa-texto p {
+      font-size: 1rem;
+    }
+    .caixa-texto li {
+      font-size: 1rem;
+    }
+    .card {
+        font-size: 1.2rem;
+        max-height: 32rem;
+    }
+    .home-texto {
+        gap: 20px;
+        width: 100%;
+    }
+    .home-texto p {
+        font-size: 1.3rem;
+    }
+    
+    .card-title {
+        font-size: 1.8rem;
+    }
+    
+    .cardB {
+        font-size: 1.2rem;
+        max-height: 32rem;
+    }
+    
+    .cardB p {
+        font-size: 1.4rem;
+    }
+    
+    #cardBlack {
+        font-size: 1.3rem;
+    }
+    
+    .header-container h3 {
+        padding: 0.3rem 5rem; 
+        font-size: 1rem;
+    }
+    
+    .caixa-texto {
+        height: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+      
+    .caixa-texto p {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .btn-whatsapp {
+        width: 80%;
+    }
+}
+
+@media (max-width: 360px) {
+    .card-title {
+      font-size: 1.5rem;
+    }
+    .home-texto {
+      gap: 20px;
+      width: 100%;
+    }
+    .home-texto p {
+      font-size: 1rem;
+    }
+  
+    #cardBlack {
+      font-size: 1.1rem;
+    }
+    .cardB p {
+      font-size: 1.3rem;
+    }
+}  

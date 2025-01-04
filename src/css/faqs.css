@@ -74,19 +74,3 @@
 .faq-answer i {
   padding-left: 0.5rem;
 }
-
-
-@media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  .faq-answer a {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-}
-
-/*@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  
-}
-
-@media (min-width: 1350px) and (max-width: 1399px) {
-  
-}*/
