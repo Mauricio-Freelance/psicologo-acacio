@@ -451,9 +451,9 @@
     #cardBlack {
         font-size: 1.9rem;
     }
-    .contato .home-texto.contato-texto p.telefone span {
+    /* .contato .home-texto.contato-texto p.telefone span {
         display: block;
-    }
+    } */
     /*CSS Meu trabalho*/ 
     .carousel-container {
       position: relative;

@@ -1,4 +1,13 @@
 /*CSS para contato*/
+
+.contato-texto {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .contato-texto p {
   color: white;
   text-align: center;
@@ -10,6 +19,22 @@
 }
 
 .inversion-contato {
-  background-color: white;
-  color: #07A8B0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  padding: 0.5rem 1.2rem;
+  margin-top: 0.8rem;
+  background-color: #32CD32;
+  color: white;
+  text-decoration: none;
+  border-radius: 1.4rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.contato-btn-whatsapp i {
+  margin-left: 10px;
 }
