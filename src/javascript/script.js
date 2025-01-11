@@ -5,14 +5,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // função do hamburger no celular
   hamburger.addEventListener('click', function() {
+    document.innerHTML = '';
     menu.classList.toggle('active');
     hamburger.classList.toggle('active');
+    burger.classList.toggle('active');
   });
+
+  // ao apertar no hamburger o burger fica ativo mostrando assim
+  //  todas as categorias que inicialmente estavam ocultas
 
   // JavaScript para destacar a seção atual com a cor do link
   function mudarAtivo() {
     const secoes = document.querySelectorAll('section');
-    const menuLinks = document.querySelectorAll('.menu a');
+    const menuLinks = document.querySelectorAll('.burger');
 
     let index = secoes.length;
     // console.log("linha 15")

@@ -595,6 +595,30 @@
 } 
 
 @media (min-width: 421px) and (max-width: 450px) {
+  .hamburger {
+    display: block;
+    z-index: 900;
+  }
+
+  .menu ul {
+    display: none;
+    position: fixed;
+    top: 4.5rem; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 3px -1px gray;
+    flex-direction: column;
+    z-index: 800;
+  }
+
+  .menu ul.active {
+    display: flex;
+    width: 20%;
+    padding-top: 1rem;
+    background-color: white;
+  }
+  
   .home {
     display: flex;
     align-items: center;
