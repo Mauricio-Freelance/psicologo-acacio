@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // JavaScript para destacar a seção atual com a cor do link
   function mudarAtivo() {
     const secoes = document.querySelectorAll('section');
-    const menuLinks = document.querySelectorAll('.burger');
+    const menuLinks = document.querySelectorAll('.menu a');
 
     let index = secoes.length;
     // console.log("linha 15")
