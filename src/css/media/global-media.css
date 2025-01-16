@@ -393,7 +393,7 @@
   }
   
   .trabalho h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     margin-bottom: 1rem;
   }
@@ -408,7 +408,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 75px;
     margin: 5rem;
   }
   
@@ -416,9 +416,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(50% - 15px); 
+    width: calc(50% - 150px); 
     min-width: 320px;
-    height: 60vh;
+    height: 50vh;
     background-color: #f9f9f9;
     font-size: 2rem;
     font-weight: 600;
@@ -438,7 +438,7 @@
   #cardBlack {
     margin-top: 30px;
     color: black;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1rem 1.4rem;
     font-weight: 600;
   }
@@ -446,7 +446,7 @@
   #cardBlack-especial {
     margin-top: 10px;
     color: black;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     padding: 1rem 1.4rem;
   }
 
@@ -471,7 +471,7 @@
     margin: 0;
     padding: 1rem 5rem; 
     color: #07A8B0;
-    font-size: 2rem;
+    font-size: 2.8rem;
     position: relative;
     display: inline-block;
   }
@@ -504,7 +504,7 @@
   }
   
   .caixa-texto {
-    height: 80vh;
+    height: 65vh;
     margin-left: 7%;
     min-width: 800px;
     width: 100%;
@@ -522,7 +522,7 @@
     color: #07A8B0;
     text-align: center;
     padding-bottom: 1rem;
-    font-size: 1.9rem;
+    font-size: 2.6rem;
   }
   
   .caixa-texto ul {
@@ -530,12 +530,12 @@
   }
   
   .caixa-texto li {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin-bottom: 1rem;
   }
   
   .caixa-texto p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
     margin-bottom: 1.2rem;
   }
@@ -551,12 +551,12 @@
   }
   
   .sobre-imagem img {
-    height: 52vh;
+    height: 60vh;
     width: 80%;
-    max-width: 500px;
+    max-width: 600px;
     position: absolute;
     top: 38px;
-    left: -120px;
+    left: -80px;
     border-radius: 0.6rem;
     z-index: 10;
   }
@@ -566,7 +566,7 @@
     left: -120px;
     position: relative;
     top: 56vh; 
-    width: 31.3rem;
+    width: 34.3rem;
     text-align: center;
     z-index: 20; 
   }
@@ -574,10 +574,9 @@
   /* CSS para Beneficios */
 
   .beneficios {
-    height: 190vh;
+    height: 140vh;
     padding: 20px;
     text-align: center;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -585,22 +584,17 @@
   
   .beneficios h2 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.8rem;
     margin: 2rem 0;
   }
   
   .cards-beneficios {
-    gap: 20px;
-    width: 100%;
-  }
-  
-  .cards-beneficios h3 {
-    color: black;
-    font-size: 2rem;
-  }
+    gap: 40px;
+    width: 80%;
+  } 
   
   .card-beneficio {
-    height: 60vh;
+    height: 50vh;
     margin-top: -100px;
     background-color: #ffffff;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
@@ -612,11 +606,11 @@
     margin: 0 auto;
     padding: 2rem 0;
     color: #07A8B0;
-    font-size: 4em;
+    width: 120px;
   }
   
   .card-beneficio p {
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 1.8rem;
     color: #07A8B0;
     padding: 1rem 2.5rem; 
@@ -639,16 +633,14 @@
   }
   
   .conveniencia-acessibilidade {
-    font-size: 1.75rem;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    font-size: 2.05rem;
+    margin-bottom: 70px;
     color: #F4F0EC;
   }
   
   .conforto-privacidade {
-    font-size: 1.75rem;
-    margin-top: -30px;
-    margin-bottom: 35px;
+    font-size: 2.05rem;
+    margin-bottom: 80px;
     color: #F4F0EC;
   }
 
@@ -657,23 +649,20 @@
   .faqs {
     position: relative;
     height: auto;
-    min-height: 100vh;
+    min-height: 40vh;
     padding: 2rem 5rem;
     text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
   .faqs h2 {
     color: #07A8B0;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 2rem 0;
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  .faqs {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
   }
   
   .faq-card {
@@ -683,7 +672,7 @@
     margin-bottom: 10px;
     padding: 1px;
     box-shadow: 0 2px 4px #07a8b044;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 700;
   }
   
