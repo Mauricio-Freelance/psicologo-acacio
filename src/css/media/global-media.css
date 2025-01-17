@@ -722,6 +722,7 @@
   /* CSS para Contato */
 
   .contato-texto {
+    margin-top: 100px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -730,9 +731,11 @@
   }
 
   .contato-texto p {
+    margin-top: 30px;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.9rem;
+    width: 700px;
   }
 
   .contato-imagem {
@@ -744,61 +747,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 27%;
+    width: 47%;
     padding: 0.5rem 1.2rem;
     margin-top: 0.8rem;
     background-color: #32CD32;
     color: white;
-    text-decoration: none;
-    border-radius: 1.4rem;
+    border-radius: 2.4rem;
     text-align: center;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
 
   .contato-btn-whatsapp i {
     margin-left: 10px;
   }
-
-  .contato-texto {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contato-texto p {
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .contato-imagem {
-    margin-top: 7rem;
-  }
-
-  .inversion-contato {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 27%;
-    padding: 0.5rem 1.2rem;
-    margin-top: 0.8rem;
-    background-color: #32CD32;
-    color: white;
-    text-decoration: none;
-    border-radius: 1.4rem;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.2rem;
-  }
-
-  .contato-btn-whatsapp i {
-    margin-left: 10px;
-  }
-
 }
   
 @media (min-width: 1400px) and (max-width: 1599px) {
