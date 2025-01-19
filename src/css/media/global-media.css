@@ -181,6 +181,7 @@
   
   body {
     font-family: 'Playfair Display', serif;
+    margin-left: -125px;
   }
   
   section {
@@ -267,13 +268,12 @@
   
   .icones-direita {
     position: absolute;
-    right: 0.8rem;
-    top: 0.8rem;
+    right: 120px;
+    top: 15px;
   }
   
   .icones-direita i {
     font-size: 2.6rem; 
-    padding-right: 1.5rem;
     color: #07A8B0;
   }
   
@@ -310,13 +310,10 @@
     font-size: 1.9rem;
     font-weight: 700;
     line-height: 2;
+    margin-left: -100px;
     width: 680px;
     color: #07A8B0;
     padding: 2% 15%;
-  }
-
-  .aumentar-texto span {
-    font-size: 1.5rem;
   }
 
   #black {
@@ -324,7 +321,7 @@
   }
 
   .home-imagem {
-    margin-top: 2rem;
+    margin-top: -50px;
     width: 100%;
     flex: 1;
     display: flex;
@@ -338,6 +335,7 @@
     object-fit: cover;
     height: 75vh;
     width: 100%;
+    margin-right: 240px;
   }
 
   .btn-whatsapp {
@@ -348,7 +346,7 @@
     width: 30%;
     padding: 0.5rem 1.2rem;
     margin-top: 1.2rem;
-    margin-right: 400px;
+    margin-right: 500px;
     background-color: #07A8B0;
     color: white;
     text-decoration: none;
@@ -379,6 +377,7 @@
 
   .imagem-texto {
     width: 96%;
+    margin-right: 240px;
     background-color: #07A8B0;
     color: #fff;
     text-align: center;
@@ -439,7 +438,13 @@
     margin-top: 30px;
     color: black;
     font-size: 2.2rem;
-    padding: 1rem 1.4rem;
+    font-weight: 600;
+  }
+
+  #smallCardBlack {
+    margin-top: 70px;
+    color: black;
+    font-size: 2.5rem;
     font-weight: 600;
   }
   
@@ -504,7 +509,7 @@
   }
   
   .caixa-texto {
-    height: 65vh;
+    height: 70vh;
     margin-left: 7%;
     min-width: 800px;
     width: 100%;
