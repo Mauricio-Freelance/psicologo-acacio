@@ -1,8 +1,12 @@
 /*CSS para beneficios*/
 .beneficios {
   height: 190vh;
-  padding: 2rem 5rem;
+  padding: 20px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .beneficios h2 {
@@ -12,18 +16,18 @@
 }
 
 .cards-beneficios {
-  display: grid;
-  gap: 1.5rem;
+  gap: 20px;
+  width: 100%;
 }
 
 .cards-beneficios h3 {
-  color: white;
+  color: black;
   font-size: 2rem;
-  grid-column: span 3; 
 }
 
 .card-beneficio {
   height: 60vh;
+  margin-top: -100px;
   background-color: #ffffff;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -38,7 +42,7 @@
 }
 
 .card-beneficio p {
-  text-align: justify;
+  margin-top: 25px;
   font-size: 1.8rem;
   color: #07A8B0;
   padding: 1rem 2.5rem; 
@@ -48,7 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  width: calc((100% - 90px) / 3);
   min-height: 400px;
   background-color: #f9f9f9;
   font-size: 3rem;
@@ -60,60 +64,16 @@
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-
-
-@media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  .card-beneficio img {
-    font-size: 3em;
-  }
-  
-  .card-beneficio p {
-    font-size: 1.5rem;
-    color: #07A8B0;
-    padding: 0rem 1.5rem; 
-  }
+.conveniencia-acessibilidade {
+  font-size: 1.75rem;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  color: #F4F0EC;
 }
 
-@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  .beneficios {
-    height: 210vh;
-    padding: 2rem;
-  }
-  .card-beneficio img {
-    font-size: 2em;
-  }
-  
-  .card-beneficio p {
-    font-size: 1.25rem;
-    color: #07A8B0;
-    padding: 0rem 1rem; 
-  }
+.conforto-privacidade {
+  font-size: 1.75rem;
+  margin-top: -30px;
+  margin-bottom: 35px;
+  color: #F4F0EC;
 }
-
-@media (min-width: 1350px) and (max-width: 1399px) {
-  .beneficios {
-    padding: 1rem 0;
-    height: 208vh;
-  }
-  .beneficios h2 {
-    margin: 1rem 0;
-  }
-  .card-beneficio {
-    height: 70vh;
-  }
-  .card-beneficio img {
-    font-size: 2em;
-  }
-  .card-beneficio p {
-    font-size: 1.5rem;
-    color: #07A8B0;
-    padding: 0rem 1rem; 
-  }
-  .cardB {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #07A8B0;
-    padding: 1rem;
-  }
-}
-

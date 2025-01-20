@@ -63,7 +63,15 @@
   border: 3px solid #07A8B0;
   border-radius: 0.6rem;
   background-color: #fff;
-  text-align: justify;
+  font-weight: 600;
+}
+
+.caixa-texto .btn-whatsapp {
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  width: 35%;
+  font-weight: 400;
+  margin-right: 200px;
 }
 
 .caixa-texto h2 {
@@ -100,7 +108,7 @@
 
 .sobre-imagem img {
   height: 52vh;
-  width: 100%;
+  width: 80%;
   max-width: 500px;
   position: absolute;
   top: 38px;
@@ -114,122 +122,7 @@
   left: -120px;
   position: relative;
   top: 56vh; 
-  width: 31.3rem;
+  width: 0.3px;
   text-align: center;
   z-index: 20; 
-}
-
-
-@media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  .caixa-texto h2 {
-    font-size: 1.8rem;
-  }
-  
-  .caixa-texto li {
-    font-size: 1.6rem;
-  }
-  
-  .caixa-texto p {
-    font-size: 1.6rem;
-  }
-  .caixa-texto a {
-    font-size: 1rem;
-    padding: 0.6rem;
-  }
-  .caixa-texto {
-    height: 92vh;
-  }
-  .imagem-texto {
-    padding: 0.2rem;
-    font-size: 1.2rem;
-  }
-  .sobre-imagem {
-    margin-top: 6rem;
-  }
-}
-
-@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  .sobre {
-    height: 200vh;
-  }
-  .caixa-texto h2 {
-    font-size: 1.5rem;
-  }
-  
-  .caixa-texto li {
-    font-size: 1.2rem;
-  }
-  
-  .caixa-texto p {
-    font-size: 1.2rem;
-  }
-  .caixa-texto a {
-    font-size: 1rem;
-    padding: 0.6rem;
-  }
-  .caixa-texto {
-    height: 92vh;
-    margin-left: 0;
-  }
-  .sobre-container {
-    width: 50%;
-  }
-  .imagem-texto {
-    padding: 0.2rem;
-    font-size: 1.2rem;
-  }
-  .sobre-imagem {
-    margin: 0 auto;
-    margin-left: 20vw;
-  }
-}
-
-@media (min-width: 1350px) and (max-width: 1399px) {
-  .caixa-texto {
-    height: 90vh;
-    margin-left: 7%;
-    min-width: 400px;
-    width: 100%;
-    
-  }
-  .caixa-texto h2 {
-    font-size: 1.5rem;
-  }
-  
-  .caixa-texto li {
-    font-size: 1.3rem;
-  }
-  
-  .caixa-texto p {
-    font-size: 1.2rem;
-  }
-  .caixa-texto a {
-    font-size: 0.2rem;
-    padding: 0.5rem;
-  }
-  .caixa-texto i {
-    font-size: 1rem;
-  }
-  .sobre-imagem {
-    margin-top: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  /*CSS para a home*/ 
-  .btn-whatsapp {
-    width: 50%;
-    padding: 0.5rem;
-  }
-
-  .home-imagem img {
-    height: 30rem;
-    padding: 0;
-    margin: 0;
-    min-width: 22rem;
-  }
-
-  .imagem-texto {
-    min-width: 22rem;
-  }
 }

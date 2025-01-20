@@ -13,6 +13,7 @@
 
 .home-texto {
   flex: 1;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,12 +24,7 @@
   font-weight: 700;
   line-height: 1.6;
   color: #07A8B0;
-  text-align: justify;
   padding: 2% 15%;
-}
-
-.aumentar-texto span {
-  font-size: 1.2rem;
 }
 
 #black {
@@ -57,20 +53,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 25%;
   padding: 0.5rem 1.2rem;
   margin-top: 1.2rem;
-  background-color: #07A8B0;
+  background-color: #32CD32;
   color: white;
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .btn-whatsapp:hover {
-  background-color: #065f64;
+  background-color: #2AA12A;
 }
 
 .inversion {
@@ -96,94 +92,4 @@
   padding: 0.2rem 0;
   min-width: 25rem;
   font-size: 1.2rem;
-}
-
-/* Adicionando media queries para escalas diferentes */
-@media (min-resolution: 120dpi) and (max-resolution: 143dpi) {
-  section .container .home-texto p {
-    font-size: 1.5rem;
-  }
-  .home {
-    height: 120vh;
-  }
-
-  .home-imagem img {
-    height: auto;
-  }
-  .container {
-    padding-bottom: 3rem;
-  }
-}
-
-@media (min-resolution: 144dpi) and (max-resolution: 191dpi) {
-  section .container .home-texto p {
-    font-size: 1.25rem;
-  }
-  .home-imagem img {
-    height: auto;
-  }
-  .container {
-    padding-bottom: 3rem;
-  }
-  .aumentar-texto {
-    font-size: 1rem;
-  }
-}
-
-
-@media (min-width: 1650px) and (max-width: 1800px) {
-  .imagem-texto {
-    font-size: 1.4rem;
-  }
-  .home-texto p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1400px) and (max-width: 1600px) {
-  .imagem-texto {
-    font-size: 1rem;
-  }
-  .home-texto p {
-    font-size: 1.2rem;
-  }
-}
-
-
-@media (min-width: 1350px) and (max-width: 1399px) {
-  .home-texto p {
-    font-size: 1.2rem;
-  }
-  .imagem-texto {
-    font-size: 1rem;
-  }
-  .container {
-    margin-top: 3rem;
-    padding: 0 5rem;
-  }
-  .home {
-    height: 120vh;
-  }
-
-}
-
-
-
-@media (max-width: 768px) {
-  /*CSS para a home*/ 
-  .btn-whatsapp {
-    width: 50%;
-    padding: 0.5rem;
-  }
-
-  .home-imagem img {
-    height: 30rem;
-    padding: 0;
-    margin: 0;
-    min-width: 22rem;
-  }
-
-  .imagem-texto {
-    min-width: 22rem;
-  }
 }
