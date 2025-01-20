@@ -35,6 +35,10 @@
   font-size: 1.2rem;
 }
 
+.inversion-contato:hover {
+  background-color: #2AA12A;
+}
+
 .contato-btn-whatsapp i {
   margin-left: 10px;
 }

@@ -66,6 +66,14 @@
   font-weight: 600;
 }
 
+.caixa-texto .btn-whatsapp {
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  width: 35%;
+  font-weight: 400;
+  margin-right: 200px;
+}
+
 .caixa-texto h2 {
   color: #07A8B0;
   text-align: center;
@@ -114,7 +122,7 @@
   left: -120px;
   position: relative;
   top: 56vh; 
-  width: 31.3rem;
+  width: 0.3px;
   text-align: center;
   z-index: 20; 
 }
