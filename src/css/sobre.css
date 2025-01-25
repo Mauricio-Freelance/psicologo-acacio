@@ -107,12 +107,12 @@
 }
 
 .sobre-imagem img {
-  height: 52vh;
+  height: 72vh;
   width: 80%;
   max-width: 500px;
   position: absolute;
-  top: 38px;
-  left: -120px;
+  top: 0px;
+  left: -90px;
   border-radius: 0.6rem;
   z-index: 10;
 }
@@ -121,7 +121,7 @@
   top: 0px;
   left: -120px;
   position: relative;
-  top: 56vh; 
+  top: 72vh; 
   width: 0.3px;
   text-align: center;
   z-index: 20; 
