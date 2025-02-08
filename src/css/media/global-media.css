@@ -885,6 +885,632 @@
       }
 }
 
+@media (min-width: 1200px) and (max-width: 1349px) {
+    /*CSS para a home*/
+    .home {
+      display: flex;
+      align-items: center;
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Playfair Display', serif;
+      margin-left: 0px;
+    }
+    
+    section {
+      width: 100%;
+      min-height: 100vh;
+      max-height: auto;
+    }
+    
+    footer {
+      background-color: #f5f5f5;
+      color: black;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    
+    .home, .sobre, .faqs {
+      background-color: white;
+    }
+    
+    .trabalho, .beneficios, .contato {
+      background-color: #07A8B0;
+    }  
+    
+    .container-main {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    
+    /*CSS para o menu*/
+    .menu {
+      max-width: 1280px;
+      background-color: white;
+      color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 5px 3px -1px gray;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-right: 90px;
+      margin-top: 5px;
+    }
+    
+    .menu li {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    
+    .menu a {
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    
+    .menu ul.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 5px 3px -1px gray;
+    }
+    
+    .menu ul.active li {
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .menu a.secao-ativa {
+      color: #07A8B0; 
+    }
+    
+    .icones-direita {
+      position: absolute;
+      right: 150px;
+      top: 20px;
+      gap: 0px;
+    }
+    
+    .icones-direita i {
+      font-size: 1.7rem; 
+      color: #07A8B0;
+    }
+    
+    .logo {
+      position: absolute;
+      left: -1rem;
+      top: 0.5rem;
+      padding-left: 2rem;
+    }
+    
+    .logo img {
+      width: 75%;
+      min-height: 3.5rem;
+      margin-right: 0.2rem;
+      margin-top: -4px;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 4rem;
+    }
+  
+    .home-texto {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .home-texto p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2;
+      margin-left: -100px;
+      width: 580px;
+      color: #07A8B0;
+      padding: 2% 15%;
+    }
+  
+    #black {
+      color: black;
+    }
+  
+    .home-imagem {
+      margin-top: 0px;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 100px;
+    }
+
+    .imagem-texto {
+      background-color: #07A8B0;
+      color: #fff;
+      text-align: center;
+      padding: 0.2rem 0;
+      font-size: 1.7rem;
+      min-width: 32rem;
+    }
+  
+    .home-imagem img {
+      object-fit: cover;
+      height: 80vh;
+      width: 100%;
+      min-width: 30rem;
+    }
+  
+    .home .btn-whatsapp {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      margin-bottom: 1rem;
+      margin-right: 500px;
+      background-color: #32CD32;
+      color: white;
+      text-decoration: none;
+      border-radius: 1.5rem;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  
+    .btn-whatsapp:hover {
+      background-color: #2AA12A;
+    }
+  
+    .inversion {
+      width: 15%;
+      background-color: white;
+      color: #07A8B0;
+      padding: 0.5rem;
+      font-size: 1.4rem;
+    }
+  
+    .inversion span {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  
+    .inversion:hover {
+      background-color: white;
+    }
+  
+    .home-texto i {
+      padding-left: 0.5rem;
+    }
+
+    /* CSS para work */
+    .trabalho {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .trabalho h2 {
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    
+    .carousel-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-left: -0.4rem;
+    }
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: calc(50% - 150px); 
+      min-width: 500px;
+      height: 60vh;
+      background-color: #f9f9f9;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #07A8B0;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 0.6rem;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .card-title {
+      font-size: 2rem;
+      margin-top: 10px;
+      padding: 0.2rem;
+    }
+    
+    #cardBlack {
+      margin-top: 30px;
+      color: black;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  
+    #smallCardBlack {
+      margin-top: 80px;
+      color: black;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    
+    #cardBlack-especial {
+      margin-top: 10px;
+      color: black;
+      font-size: 1.6rem;
+      padding: 1rem 1.4rem;
+    }
+  
+    /* CSS para Sobre */
+    .sobre {
+      padding: 2rem;
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    
+    .header-container h3 {
+      margin: 0;
+      padding: 1rem 5rem; 
+      color: #07A8B0;
+      font-size: 2.8rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .header-container h3::before,
+    .header-container h3::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #07A8B0;
+      left: 0;
+    }
+    
+    .header-container h3::before {
+      top: 0; 
+    }
+    
+    .header-container h3::after {
+      bottom: 0; 
+    }
+    
+    .sobre-container {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    
+    .caixa-texto {
+      height: 73vh;
+      margin-left: 7%;
+      min-width: 800px;
+      width: 100%;
+      flex: 1;
+      padding: 1.5rem 0;
+      padding-left: 5rem;
+      padding-right: 10rem;
+      border: 3px solid #07A8B0;
+      border-radius: 0.6rem;
+      background-color: #fff;
+      font-weight: 600;
+    }
+  
+    .caixa-texto .btn-whatsapp {
+      border-radius: 1.5rem;
+      font-size: 1.5rem;
+      width: 35%;
+      font-weight: 400;
+      margin-right: 200px;
+      margin-top: 30px;
+    }
+    
+    .caixa-texto h2 {
+      color: #07A8B0;
+      text-align: center;
+      padding-bottom: 1rem;
+      font-size: 2.6rem;
+    }
+    
+    .caixa-texto ul {
+      padding-left: 1.5rem;
+    }
+    
+    .caixa-texto li {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .caixa-texto p {
+      font-size: 1.8rem;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    
+    .caixa-texto i {
+      padding-left: 0.5rem;
+    }
+    
+    .sobre-imagem {
+      flex: 1;
+      position: relative;
+      z-index: 0;
+    }
+    
+    .sobre-imagem img {
+      height: 60vh;
+      width: 80%;
+      max-width: 600px;
+      position: absolute;
+      top: 38px;
+      left: -80px;
+      border-radius: 0.6rem;
+      z-index: 10;
+    }
+    
+    .posicionar {
+      top: 0px;
+      left: -120px;
+      position: relative;
+      top: 60vh; 
+      width: 34.3rem;
+      text-align: center;
+      z-index: 20; 
+    }
+  
+    /* CSS para Beneficios */
+  
+    .beneficios {
+      height: 140vh;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .beneficios h2 {
+      color: white;
+      font-size: 2.8rem;
+      margin: 2rem 0;
+    }
+    
+    .cards-beneficios {
+      gap: 40px;
+      width: 80%;
+    } 
+    
+    .card-beneficio {
+      height: 50vh;
+      margin-top: -100px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .card-beneficio img {
+      margin: 0 auto;
+      padding: 2rem 0;
+      color: #07A8B0;
+      width: 120px;
+    }
+    
+    .card-beneficio p {
+      margin-top: 15px;
+      font-size: 1.8rem;
+      color: #07A8B0;
+      padding: 1rem 2.5rem; 
+    }
+    
+    .cardB {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: calc((100% - 90px) / 3);
+      min-height: 400px;
+      background-color: #f9f9f9;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #07A8B0;
+      padding: 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 0.6rem;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .conveniencia-acessibilidade {
+      font-size: 2.05rem;
+      margin-bottom: 70px;
+      color: #F4F0EC;
+    }
+    
+    .conforto-privacidade {
+      font-size: 2.05rem;
+      margin-bottom: 80px;
+      color: #F4F0EC;
+    }
+  
+    /* CSS para Faqs */
+  
+    .faqs {
+      position: relative;
+      height: auto;
+      min-height: 40vh;
+      padding: 2rem 5rem;
+      text-align: center;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .faqs h2 {
+      color: #07A8B0;
+      font-size: 2.4rem;
+      margin: 2rem 0;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .faq-card {
+      background-color: #f5f5f5;
+      color: #07A8B0;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 1px;
+      box-shadow: 0 2px 4px #07a8b044;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    .faq-question {
+      display: flex;
+      justify-content: left;
+      cursor: pointer;
+      padding: 0.8rem;
+    }
+    
+    .faq-question h3 {
+      padding-top: 0.2rem;
+    }
+    
+    .faq-question i {
+      margin-top: 4px;
+      margin-right: 10px;
+      padding: 0.4rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .faq-answer {
+      display: none;
+      background-color: #07A8B0;
+      color: white;
+      padding: 1rem;
+      text-align: left;
+      border-top: 1px solid #ccc;
+    }
+    
+    .faq-answer a {
+      margin-left: 0;
+    }
+    
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+    
+    .rotate {
+      transform: rotate(90deg);
+    }
+    
+    .faq-answer i {
+      padding-left: 0.5rem;
+    }
+  
+    /* CSS para Contato */
+  
+    .contato {
+      clip-path: inset(100px 0 100px 0); /* Recorta os primeiros 50px da parte superior */
+    }
+  
+  
+    .contato-texto {
+      margin-top: 100px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .contato-texto p {
+      margin-top: 30px;
+      color: white;
+      text-align: center;
+      font-size: 2.9rem;
+      width: 700px;
+    }
+  
+    .contato-imagem {
+      margin-top: 4rem;
+    }
+  
+    .inversion-contato {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      padding: 0.5rem 1.2rem;
+      margin-top: 0.8rem;
+      background-color: #32CD32;
+      color: white;
+      border-radius: 2.4rem;
+      text-align: center;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  
+    .contato-btn-whatsapp i {
+      margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {}
+
 @media (min-width: 768px) and (max-width: 769px) {
     /*CSS para a home*/ 
     .btn-whatsapp {
