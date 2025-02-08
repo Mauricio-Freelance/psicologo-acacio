@@ -1074,7 +1074,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 40%;
+      width: 45%;
       margin-bottom: 1rem;
       margin-right: 500px;
       background-color: #32CD32;
@@ -1118,7 +1118,7 @@
     }
     
     .trabalho h2 {
-      font-size: 4rem;
+      font-size: 3rem;
       color: white;
       margin-bottom: 1rem;
     }
@@ -1176,9 +1176,9 @@
     }
     
     #cardBlack-especial {
-      margin-top: 10px;
+      margin-top: 20px;
       color: black;
-      font-size: 1.6rem;
+      font-size: 1.50rem;
       padding: 1rem 1.4rem;
     }
   
@@ -1203,7 +1203,7 @@
       margin: 0;
       padding: 1rem 5rem; 
       color: #07A8B0;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       position: relative;
       display: inline-block;
     }
@@ -1236,8 +1236,8 @@
     }
     
     .caixa-texto {
-      height: 73vh;
-      margin-left: 7%;
+      height: 95vh;
+      margin-left: 3%;
       min-width: 800px;
       width: 100%;
       flex: 1;
@@ -1263,7 +1263,7 @@
       color: #07A8B0;
       text-align: center;
       padding-bottom: 1rem;
-      font-size: 2.6rem;
+      font-size: 2rem;
     }
     
     .caixa-texto ul {
@@ -1271,14 +1271,16 @@
     }
     
     .caixa-texto li {
-      font-size: 1.9rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
+      width: 500px;
     }
     
     .caixa-texto p {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       margin-top: 1rem;
       margin-bottom: 1.2rem;
+      width: 500px;
     }
     
     .caixa-texto i {
@@ -1289,25 +1291,24 @@
       flex: 1;
       position: relative;
       z-index: 0;
+      margin-top: -700px;
+      left: 800px;
     }
     
     .sobre-imagem img {
       height: 60vh;
-      width: 80%;
+      width: 70%;
       max-width: 600px;
       position: absolute;
-      top: 38px;
-      left: -80px;
       border-radius: 0.6rem;
       z-index: 10;
     }
     
     .posicionar {
-      top: 0px;
-      left: -120px;
       position: relative;
-      top: 60vh; 
-      width: 34.3rem;
+      top: 60vh;
+      font-size: 1rem;
+      min-width: 40vh;
       text-align: center;
       z-index: 20; 
     }

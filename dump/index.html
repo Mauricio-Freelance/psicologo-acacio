@@ -7,22 +7,29 @@
     <meta name="keywords" content="psicólogo, terapia,terapia cognitivo-comportamental, saúde mental, psicologia clínica">
     <meta name="author" content="Acácio Tôrres">
 
+
+    <link rel="stylesheet" href="./src/css/beneficios.css">
+    <link rel="stylesheet" href="./src/css/contato.css">
+    <link rel="stylesheet" href="./src/css/faqs.css">
+    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./src/css/sobre.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/work.css">
+
+    <link rel="stylesheet" href="./src/css/media/global-media.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
-
-    <link rel="stylesheet" href="./src/styles/pages/home.css">
-
-    <link rel="stylesheet" href="./src/styles/components/header.css">
-
+    <link rel="icon" href="images/icons8-psychology-96.svg" type="image/png">
     <title>Acácio Tôrres</title>
   </head>
   <body>
-    <div class="main-container">
+    <div class="container-main">
 
-      <nav id="header" class="header">
+      <nav id="menu" class="menu">
         <div class="logo">
-          <img src="./assets/images/Logo_clinica_odontológica_azul.png" alt="website logo">
+          <img src="images/Logo_clinica_odontológica_azul.png" alt="Logo do site">
         </div>
 
         <div class="hamburger">
@@ -38,7 +45,7 @@
           <li class="burger"><a href="#contato">Contato</a></li>
         </ul>
 
-        <div class="right-icons">
+        <div class="icones-direita">
 
           <a href="https://wa.me/558899580857?text=" target="_blank">
             <i class="fab fa-whatsapp"></i>
@@ -55,20 +62,18 @@
       </nav>
 
       <section id="home" class="home">
-        <div class="home-container">
-          <div class="home-text">
+        <div class="container">
+          <div class="home-texto inversion">
             <p class="introduction">Olá, sou Acácio Tôrres, psicólogo com especialização em terapia cognitivo-comportamental, atuo há mais de 15 anos nas áreas de saúde mental e psicologia clínica.</p>
-            <p class="black">Meu objetivo é ajudar pessoas a alcançarem seu bem-estar emocional e construir uma vida mais plena e significativa.</p>
+            <p id="black">Meu objetivo é ajudar pessoas a alcançarem seu bem-estar emocional e construir uma vida mais plena e significativa.</p>
             <p>Venha comigo dar o primeiro passo para uma nova jornada.</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="home-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp"><span>Saber mais</span><i class="fab fa-whatsapp"></i></a>
           </div>
 
-          <div class="home-image">
-            <img src="./assets/images/psicologo-home.png" alt="Descrição da imagem">
+          <div class="home-imagem">
+            <img src="./images/psicologo-home.png" alt="Descrição da imagem">
 
-            <div class="home-text-image">
+            <div class="imagem-texto">
               <p>Raimundo Acácio Costa Tôrres Filho</p>
               <p>CRP 11ª - 04373</p>
             </div>
@@ -76,39 +81,39 @@
         </div>
       </section> 
 
-      <section id="work" class="work">
+      <section id="trabalho" class="trabalho">
         <h2>Meu Trabalho Baseia-se Em: </h2>
-          <div class="work-cards">
-            <div class="work-card">
+          <div class="cards">
+            <div class="card">
               <p class="card-title">Criar um espaço seguro e acolhedor</p>
-              <p id="smallCard">Onde você se sinta à vontade para explorar seus pensamentos, sentimentos e comportamentos sem julgamentos.</p>
+              <p id="smallCardBlack">Onde você se sinta à vontade para explorar seus pensamentos, sentimentos e comportamentos sem julgamentos.</p>
             </div>
 
-            <div class="work-card">
+            <div class="card">
               <p class="card-title">Ouvir com atenção e empatia o paciente</p>
-              <p class="smallCard">Busco compreender a sua história, suas dificuldades e seus objetivos de forma individualizada.</p>
+              <p id="smallCardBlack">Busco compreender a sua história, suas dificuldades e seus objetivos de forma individualizada.</p>
             </div>
 
-            <div class="work-card">
+            <div class="card">
               <p class="card-title">Utilizar técnicas e abordagens terapêuticas eficazes</p>
-              <p class="biggestCard">Como especialista em terapia cognitivo-comportamental, utilizo ferramentas e estratégias personalizadas para ajudar a lidar com ansiedade, depressão, traumas, problemas de relacionamento e outros desafios.
+              <p id="cardBlack-especial">Como especialista em terapia cognitivo-comportamental, utilizo ferramentas e estratégias personalizadas para ajudar a lidar com ansiedade, depressão, traumas, problemas de relacionamento e outros desafios.
               </p>
             </div>
 
-            <div class="work-card">
+            <div class="card">
               <p class="card-title">Empoderar você a desenvolver suas próprias ferramentas</p>
-              <p class="bigCard">Meu objetivo é te ajudar a se tornar protagonista da sua saúde mental, te guiando no desenvolvimento de recursos internos para lidar com os desafios da vida.</p>
+              <p id="cardBlack">Meu objetivo é te ajudar a se tornar protagonista da sua saúde mental, te guiando no desenvolvimento de recursos internos para lidar com os desafios da vida.</p>
             </div>
           </div>
       </section>
 
-      <section id="about" class="about">
+      <section id="sobre" class="sobre">
         <div class="header-container">
           <h3>A terapia é um processo colaborativo e transformador.</h3>
         </div>
 
-        <div class="about-container">
-          <div class="about-text-box">
+        <div class="sobre-container">
+          <div class="caixa-texto">
             <h2>Se você busca:</h2>
             <ul>
               <li>Superar desafios emocionais: ansiedade, depressão, estresse, traumas, etc.</li>
@@ -120,14 +125,12 @@
               <li>Alcançar seus objetivos de vida com mais clareza, propósito e bem-estar.</li>
             </ul>
             <p>Entre em contato para uma consulta inicial. Será um prazer te conhecer e juntos trilharmos um caminho de crescimento e desenvolvimento pessoal.</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="about-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp"><span>Saber mais</span> <i class="fab fa-whatsapp"></i></a>
           </div>
 
-          <div class="about-image">
-            <img src="./assets/images/psicologo-sobre.png" alt="representative image">
-            <div class="about-text-image">
+          <div class="sobre-imagem">
+            <img src="images/psicologo-sobre.png" alt="Imagem representativa">
+            <div class="imagem-texto posicionar">
               <p>Raimundo Acácio Costa Tôrres Filho</p>
               <p>CRP 11ª - 04373</p>
             </div>
@@ -135,41 +138,41 @@
         </div>
       </section>
 
-      <section id="benefits" class="benefits">
+      <section id="beneficios" class="beneficios">
         <h2>Benefícios da terapia online</h2>
-        <div class="benefits-container">
-          <h3 class="subBenefits-title">Conveniência e Acessibilidade</h3>
+        <div class="carousel-container">
+          <h3 class="conveniencia-acessibilidade">Conveniência e Acessibilidade</h3>
           
-          <div class="benefits-cards">
-            <div class="benefits-card">
+          <div class="cards-beneficios cards">
+            <div class="card-beneficio cardB">
               <img src="images/clock.svg" alt="Descrição do ícone">
               <p>Flexibilidade de horários: agende sessões em horários que se encaixam na sua rotina, sem se preocupar com deslocamentos.</p>
             </div>
 
-            <div class="benefits-card">
+            <div class="card-beneficio cardB">
               <img src="images/barreira.svg" alt="Descrição do ícone">
               <p>Elimine barreiras geográficas: acesse terapia de qualquer lugar com conexão à internet, ideal para quem viaja muito, mora em áreas remotas ou possui mobilidade reduzida.</p>
             </div>
 
-            <div class="benefits-card">
+            <div class="card-beneficio cardB">
               <img src="images/disponibilade.svg" alt="Descrição do ícone">
               <p>Maior disponibilidade de profissionais: encontre o terapeuta ideal para você, sem se limitar à sua região.</p>
             </div>
           </div>
 
-          <h3 class="subBenefits-title">Conforto e Privacidade</h3>
-          <div class="benefits-cards">
-            <div class="benefits-card">
+          <h3 class="conforto-privacidade">Conforto e Privacidade</h3>
+          <div class="cards-beneficios cards">
+            <div class="card-beneficio cardB">
               <img src="images/seguro.svg" alt="Descrição do ícone">
               <p>Ambiente seguro: realize as sessões no conforto da sua casa, o que pode facilitar a abertura emocional.</p>
             </div>
 
-            <div class="benefits-card">
+            <div class="card-beneficio cardB">
               <img src="images/cadeado.svg" alt="Descrição do ícone">
               <p>Maior privacidade: ideal para quem se sente constrangido em frequentar consultórios tradicionais.</p>
             </div>
 
-            <div class="benefits-card">
+            <div class="card-beneficio cardB">
               <img src="images/telefone.svg" alt="Descrição do ícone">
               <p>Comunicação facilitada para alguns: A comunicação, utilizada em tipos de terapia online, pode ser mais fácil para pessoas com dificuldades de expressão.</p>
             </div>
@@ -179,95 +182,81 @@
 
       <section id="faqs" class="faqs">
         <h2>FAQ</h2>
-        <div class="faqs-card">
-          <div class="faqs-question">
+        <div class="faq-card">
+          <div class="faq-question">
             <i class="fas fa-chevron-right"></i>
             <h3>Qual a diferença entre a terapia presencial e a online?</h3>
           </div>
 
-          <div class="faqs-answer">
+          <div class="faq-answer">
             <p>A diferença entre as duas modalidades é a localização. Enquanto no presencial é necessário se deslocar até o local de atendimento do psicólogo, na modalidade online não é necessário ter esse deslocamento, já que a consulta é feita pela internet, através de recursos eletrônicos (computador, tablet ou celular).</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="faqs-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp inversion aumentar-texto"><span>Saber mais</span> <i class="fab fa-whatsapp"></i></a>
           </div>
 
         </div>
-        <div class="faqs-card">
-          <div class="faqs-question">
+        <div class="faq-card">
+          <div class="faq-question">
             <i class="fas fa-chevron-right"></i>
             <h3>Para quem é indicado o processo terapêutico?</h3>
           </div>
 
-          <div class="faqs-answer">
+          <div class="faq-answer">
             <p>Para todas as pessoas, porém sempre é necessário a compreensão das necessidades individuais.</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="faqs-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp inversion aumentar-texto"><span>Saber mais</span> <i class="fab fa-whatsapp"></i></a>
           </div>
 
         </div>
-        <div class="faqs-card">
-          <div class="faqs-question">
+        <div class="faq-card">
+          <div class="faq-question">
             <i class="fas fa-chevron-right"></i>
             <h3>Qual a duração e a frequência das sessões?</h3>
           </div>
 
-          <div class="faqs-answer">
-            <p>As sessões duram em torno de 50 a 60 minutos. Quanto a frequência, será variável pois dependerá das necessidades de cada caso (em todos os casos serão acordados dias e horários entre o profissional e os pacientes). </p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="faqs-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
+          <div class="faq-answer">
+            <p>As sessões duram em torno de 50 a 60 minutos . Quanto a frequência, será variável pois dependerá das necessidades de cada caso (em todos os casos serão acordados dias e horários entre o profissional e os pacientes). </p>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp inversion aumentar-texto"><span>Saber mais</span> <i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
 
-        <div class="faqs-card">
-          <div class="faqs-question">
+        <div class="faq-card">
+          <div class="faq-question">
             <i class="fas fa-chevron-right"></i>
-            <h3>Qual o custo das terapias?</h3>
+            <h3>Qual o custo das terapias?</h3>  
           </div>
 
-          <div class="faqs-answer">
+          <div class="faq-answer">
             <p>Devido orientações do código de ética do Psicólogo  é vedada a divulgação de valores (entre em contato através de nossos canais para essa informação), entretanto podemos afirmar que não existe melhor investimento do que o realizado em prol de si mesmo.</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="faqs-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp inversion aumentar-texto"><span>Saber mais</span> <i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="faqs-question">
+        <div class="faq-card">
+          <div class="faq-question">
             <i class="fas fa-chevron-right"></i>
-            <h3>Como ocorre o atendimento remoto(online)?</h3>  
+            <h3>Como ocorre o atendimento remoto (online)?</h3>  
           </div>
 
-          <div class="faqs-answer">
+          <div class="faq-answer">
             <p>O profissional e o paciente acordarão dias e horários previamente. Os encontros serão realizados através de sala virtual no Google Meet (link será enviado pelo profissional).</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="faqs-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
-            </a>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp inversion"><span>Saber mais</span> <i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <div class="contact-container">
-          <div class="text">
+      <section id="contato" class="contato">
+        <div class="container">
+          <div class="contato-texto">
             <p>Entre em contato e agende já sua consulta.</p>
             <p>Telefone: +55 88 9958-0857</p>
             <p>WhatsApp: +55 88 9958-0857</p>
             <p>Email: acaciofh@gmail.com</p>
             <p>Ou</p>
-            <a href="https://wa.me/558899580857?text=" target="_blank" class="btn-whatsapp">
-                <span>Saber mais</span>
-                <div class="contact-btn-whatsapp"><i class="fab fa-whatsapp"></i></div>
-            </a>
+            <a href="https://wa.me/558899580857?text=" target="_blank" class="inversion-contato"><span>Saber mais</span> <div class="contato-btn-whatsapp"><i class="fab fa-whatsapp"></i></div> </a>
           </div>
 
-          <div class="contact-image">
-            <img src="./assets/images/psicologo-contato.png" alt="Descrição da imagem">
-            <div class="contact-text-image">
+          <div class="home-imagem contato-imagem">
+            <img src="./images/psicologo-contato.png" alt="Descrição da imagem">
+            <div class="imagem-texto">
               <p>Raimundo Acácio Costa Tôrres Filho</p>
               <p>CRP 11ª - 04373</p>
             </div>
@@ -279,6 +268,6 @@
         &copy; Todos os direitos reservados a Acácio Tôrres
       </footer>    
     </div>
-    <script src="./src/js/script.js"></script>
+    <script src="./src/javascript/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    height: 8vh;
+    gap: 20px;
+    justify-content: center;
+}
+.logo img {
+    width: 100%;
+    height: 40px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    top: 0;
+}
+
+.right-icons i {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+}
