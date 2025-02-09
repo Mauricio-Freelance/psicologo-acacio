@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as S from "./styles";
-import COLORS from "../../../styles/colors";
+import COLORS from "@/styles/colors";
 
 const NavBar = () => {
     const [route, setRoute] = useState("/");
