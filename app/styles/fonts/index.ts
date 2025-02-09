@@ -11,7 +11,7 @@ export const WEIGHTS = {
 }
 
 export const FONTS = {
-    primary: "'Roboto', sans-serif",
-    secondary: "Allura",
+    primary: "'Playfair Display', serif",
+    secondary: "'Allura', cursive",
 }
 
