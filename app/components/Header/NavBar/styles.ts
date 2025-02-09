@@ -11,7 +11,7 @@ export const Container = styled.nav`
 export const List = styled.ul`
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
     list-style: none;
     align-items: center;
     justify-content: space-around;
