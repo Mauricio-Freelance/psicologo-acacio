@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', serif;
+  }
+  
+  section {
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+  }
+  
+  footer {
+    background-color: #f5f5f5;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
