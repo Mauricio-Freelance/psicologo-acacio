@@ -1,10 +1,15 @@
-import Logo from "../Logo";
+import Logo from "./Logo";
+import NavBar from "./NavBar";
+import * as S from "./styles";
 
 const Header = () => {
     return (
-        <header>
-        <Logo />
-        </header>
+        <S.Container>
+            <S.Content>
+                <Logo />
+                <NavBar />
+            </S.Content>
+        </S.Container>
     );
 }
 

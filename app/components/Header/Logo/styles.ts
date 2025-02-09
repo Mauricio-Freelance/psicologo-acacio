@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import COLORS from "../../styles/colors";
-import IconSIZES from "../../constants/iconSizes";
-import {FONTS, SIZES} from "../../styles/fonts";
+import COLORS from "../../../styles/colors";
+import IconSIZES from "../../../constants/iconSizes";
+import {FONTS, SIZES} from "../../../styles/fonts";
 
 export const Container = styled.div`
     position: relative;

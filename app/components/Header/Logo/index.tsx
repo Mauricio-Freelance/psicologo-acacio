@@ -1,5 +1,5 @@
 import * as S from "./styles"
-import ICONS from "../../assets/icons"
+import ICONS from "../../../assets/icons"
 
 const Logo = () => {
     return (
