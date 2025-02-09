@@ -26,7 +26,7 @@ const HomePage = () => {
                         <ImageWithLegend 
                             imagePath={IMAGES.home}
                             alt="Psicólogo Acácio Tórres"
-                            legend="Raimundo Acácio Costa Tôrres Filho \n CRP 11ª - 04373"
+                            legend="Raimundo Acácio Costa Tôrres Filho CRP 11ª - 04373"
                         />
                     </S.ImageContainer>
             </S.Container>

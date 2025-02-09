@@ -1,5 +1,7 @@
 export const SIZES = { // 1 rem -> 16px
+    char: "1.2rem",
     label: "1.4rem",
+    subTitle: "1.6rem",
     title: "1.8rem",
     section: "3.0rem"
 }

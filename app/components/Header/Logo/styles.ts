@@ -10,20 +10,20 @@ export const Container = styled.div`
     gap: 10px;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
 `
 export const Image = styled.img`
     margin-right: 150px;
     width: ${IconSIZES.iconWidth};
     height: ${IconSIZES.iconHeight};
-
 `
 
 export const Text = styled.p`
     position: absolute;
     color: ${COLORS.primary};
-    font-size: ${SIZES.label};
+    font-size: ${SIZES.title};
     font-family: ${FONTS.secondary};
     font-style: italic;
-    bottom: 0;
+    bottom: 40;
+    margin-left: 30px;
 `

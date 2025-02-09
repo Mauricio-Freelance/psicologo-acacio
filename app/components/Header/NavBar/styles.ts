@@ -20,7 +20,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
     position: relative;
     cursor: pointer;
-    font-size: ${SIZES.label};
+    font-size: ${SIZES.char};
     font-weight: ${WEIGHTS.bold};
     font-family: ${FONTS.primary};
     color: ${COLORS.black};

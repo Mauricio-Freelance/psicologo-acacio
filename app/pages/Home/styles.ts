@@ -5,28 +5,28 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    background-color: red;
-
 `;
 
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: green;
+    margin-top: 4%;
 `;
 
 export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: yellow;
     gap: 30px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 15%;
+
 `;
 
 export const Text = styled.p`
-    font-size: ${SIZES.title};
+    font-size: ${SIZES.subTitle};
     background-color: purple;
+    width: 70%;
     color: ${COLORS.primary};
 `;
 
