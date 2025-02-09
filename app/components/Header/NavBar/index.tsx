@@ -19,7 +19,7 @@ const NavBar = () => {
                     <S.Link style={{ color: route === "/work" ? COLORS.primary : "inherit" }}>Meu Trabalho</S.Link>
                 </S.ListItem>
                 <S.ListItem onClick={() => handleClick("/about")}>
-                    <S.Link style={{ color: route === "/about" ? COLORS.primary : "inherit" }}>About</S.Link>
+                    <S.Link style={{ color: route === "/about" ? COLORS.primary : "inherit" }}>Sobre</S.Link>
                 </S.ListItem>
                 <S.ListItem onClick={() => handleClick("/benefits")}>
                     <S.Link style={{ color: route === "/benefits" ? COLORS.primary : "inherit" }}>Benefícios</S.Link>
