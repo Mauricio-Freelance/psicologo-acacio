@@ -5,32 +5,30 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
+    background-color: red;
+    height: 120vh;
 `;
 
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 4%;
+    margin-top: 14%;
 `;
 
 export const TextContainer = styled.div`
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 15%;
-
+    margin-left: 14%;
 `;
 
 export const Text = styled.p`
-    font-size: ${SIZES.subTitle};
-    background-color: purple;
-    width: 70%;
+    font-size: ${SIZES.label};
+    width: 30%;
     color: ${COLORS.primary};
 `;
 
 export const ImageContainer = styled.div`
-
+    display: flex;
+    margin-top: 3%;
 `;
 
