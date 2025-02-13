@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
+import COLORS from "@/styles/colors";
 
 export const Container = styled.div`
     position: inline-block;
@@ -22,7 +23,7 @@ export const Legend = styled.div`
     position: absolute;
     margin-left: -44.5%;
     margin-top: 42.8%;
-    background-color: #07a8b0;
+    background-color:${COLORS.primary};;
     width: 33%;
     height: 50px;
     overflow: hidden;
