@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     background-color: red;
-    height: 120vh;
+    height: 120vh;  
 `;
 
 export const InfoContainer = styled.div`
@@ -29,6 +29,6 @@ export const Text = styled.p`
 
 export const ImageContainer = styled.div`
     display: flex;
-    margin-top: 3%;
+    margin-top: 2%;
 `;
 
