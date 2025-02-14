@@ -39,14 +39,20 @@ export const Card = styled.div`
     background-color: #f9f9f9;
     margin: 30px;
     width: 42.5vw;
-    height: 60vh;
+    height: 55vh;
     border-radius: 20px;
 `
 
 export const CardTitle = styled.h2`
     color: ${COLORS.primary};
     font-size: ${SIZES.subTitle};
-    margin-top: 4%;
+    margin-top: 5%;
     text-align: center;
-    width: 70%;
+    width: 60%;
+`
+
+export const CardContent = styled.h2`
+   text-align: center;
+   width: 40%;
+   margin-top: 7%;
 `
