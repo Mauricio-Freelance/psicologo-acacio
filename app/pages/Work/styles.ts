@@ -8,7 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color:${COLORS.primary};
-    height: 175vh;
+    min-height: 100vh;
     width: 100vw;
     top: 0;
 `
@@ -25,7 +25,7 @@ export const CardsContainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 140vh;
+    min-height: 100vh;
     width: 100vw;
     margin-top: 3%;
     background-color: black;
