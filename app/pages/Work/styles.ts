@@ -8,8 +8,9 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color:${COLORS.primary};
-    height: 120vh;
+    height: 175vh;
     width: 100vw;
+    top: 0;
 `
 
 export const Title = styled.h1`
@@ -20,12 +21,15 @@ export const Title = styled.h1`
 `
 
 export const CardsContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 140vh;
     width: 100vw;
-    margin-top: 4%;
+    margin-top: 3%;
     background-color: black;
+    overflow: hidden;
 `
 
 export const Card = styled.div`
@@ -34,8 +38,8 @@ export const Card = styled.div`
     align-items: center;
     background-color: #f9f9f9;
     margin: 30px;
-    width: 45vw;
-    height: 75vh;
+    width: 42.5vw;
+    height: 60vh;
     border-radius: 20px;
 `
 

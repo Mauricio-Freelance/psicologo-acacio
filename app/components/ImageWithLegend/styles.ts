@@ -22,9 +22,9 @@ export const Legend = styled.div`
     justify-content: center;
     position: absolute;
     margin-left: -44.5%;
-    margin-top: 42.8%;
+    margin-top: 43.2%;
     background-color:${COLORS.primary};;
-    width: 33%;
+    width: 33.3%;
     height: 50px;
     overflow: hidden;
 `;
