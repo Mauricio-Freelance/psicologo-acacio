@@ -21,10 +21,11 @@ export const Legend = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
     background-color:${COLORS.primary};
     width: 100%;
     height: 50px;
+    bottom: 20px;
 `;
 
 export const LegendText = styled.p`

@@ -36,5 +36,6 @@ export const ImageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 3%;
 `;
 
