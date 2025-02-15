@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import Section from "@/components/Section";
 
+
 const WorkPage = () => {
     return (
         <Section id="work">
@@ -36,5 +37,6 @@ const WorkPage = () => {
         </Section>
     )
 }
+
 
 export default WorkPage;

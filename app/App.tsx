@@ -1,6 +1,7 @@
 import Header from "@/components/Header"
 import HomePage from "@/pages/Home"
 import WorkPage from "@/pages/Work"
+import AboutPage from "@/pages/About"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <HomePage />
       <WorkPage />
+      <AboutPage />
     </div>
   )
 }

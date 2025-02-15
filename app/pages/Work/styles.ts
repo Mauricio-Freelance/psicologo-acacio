@@ -9,7 +9,7 @@ export const Container = styled.div`
     align-items: center;
     background-color:${COLORS.primary};
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     top: 0;
 `
 
