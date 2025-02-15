@@ -21,9 +21,9 @@ export const Image = styled.img`
 export const Text = styled.p`
     position: absolute;
     color: ${COLORS.primary};
-    font-size: ${SIZES.title};
+    font-size: ${SIZES.subTitle};
     font-family: ${FONTS.secondary};
     font-style: italic;
-    bottom: 40;
-    margin-left: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
 `

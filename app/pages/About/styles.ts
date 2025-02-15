@@ -15,7 +15,7 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     position: relative;
     min-height: 6vh;
-    min-width: 55vw;
+    min-width: 70vw;
     align-items: center;
     justify-content: center;
     margin-top: 4%;
@@ -31,4 +31,46 @@ export const Line = styled.div`
 export const Title = styled.h1`
     color: ${COLORS.primary};
     font-size: ${SIZES.title};
+`
+
+export const InfoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    min-width: 50vw;
+    margin-top: 5%;
+    margin-right: 30%;
+    border: 4px solid ${COLORS.primary};
+    border-radius: 20px;
+    gap: 20px;
+`
+
+export const SubTitle = styled.h2`
+    display: flex;
+    color: ${COLORS.primary};
+    font-size: ${SIZES.subTitle};
+    align-self: center;
+    margin-top: 4%;
+`
+
+export const ListContainer = styled.ul`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 33vw;
+    margin-left: 12%;
+`
+
+export const ListText = styled.li`
+    font-size: ${SIZES.label};
+    &::before {
+    content: "•"; /* Adiciona o ponto */
+    font-size: ${SIZES.subTitle}; /* Ajusta o tamanho do ponto */
+  }
+`
+
+export const Text = styled.h2`
+    font-size: ${SIZES.label};
+    width: 60%;
+    margin-left: 8%;
 `
