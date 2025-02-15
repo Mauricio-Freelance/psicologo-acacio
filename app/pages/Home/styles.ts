@@ -5,31 +5,34 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: red;
-    min-height: 100vh;
-    height: 120vh;  
+    min-height: 110vh;
+    min-width: 100vw;
 `;
 
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 14%;
+    margin-right: 15%;
+    margin-top: 10%;
 `;
 
 export const TextContainer = styled.div`
     display: grid;
     gap: 30px;
-    margin-left: 14%;
+    max-width: 60vh;
 `;
 
 export const Text = styled.p`
     font-size: ${SIZES.label};
-    width: 30%;
+    width: 100%;
     color: ${COLORS.primary};
 `;
 
 export const ImageContainer = styled.div`
-    display: flex;
-    margin-top: 2%;
+    position: inline-block;
+    margin-bottom: 45%;
 `;
 

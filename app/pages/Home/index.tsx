@@ -22,7 +22,7 @@ const HomePage = () => {
                     </S.TextContainer>
                     <ContactButton />
                 </S.InfoContainer>
-                <S.ImageContainer>
+                    <S.ImageContainer>
                         <ImageWithLegend 
                             imagePath={IMAGES.home}
                             alt="Psicólogo Acácio Tórres"
