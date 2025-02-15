@@ -6,12 +6,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75vh;
+    position: relative;
 `;
 
 export const Image = styled.img`
     display: flex;
-    position: absolute;
+    position: relative;
     width: 75vh;
     height: 100%;
     clip-path: inset(0 0 24px 0);
@@ -21,10 +21,9 @@ export const Legend = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     background-color:${COLORS.primary};
-    bottom: 0%;
-    width: 33.3%;
+    width: 100%;
     height: 50px;
 `;
 

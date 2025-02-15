@@ -32,7 +32,9 @@ export const Text = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-    position: inline-block;
-    margin-bottom: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 `;
 
