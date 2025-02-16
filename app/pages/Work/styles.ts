@@ -35,7 +35,7 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: ${COLORS.secundary};
     margin: 30px;
     width: 42.5vw;
     height: 55vh;

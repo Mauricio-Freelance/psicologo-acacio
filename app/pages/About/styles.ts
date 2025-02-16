@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import COLORS from "@/styles/colors";
+import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
 
 export const Container = styled.div`
@@ -36,13 +36,12 @@ export const Title = styled.h1`
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
-    min-width: 50vw;
+    min-height: 95vh;
+    width: 55vw;
     margin-top: 5%;
-    margin-right: 30%;
+    margin-right: 25%;
     border: 4px solid ${COLORS.primary};
     border-radius: 20px;
-    gap: 20px;
 `
 
 export const SubTitle = styled.h2`
@@ -70,7 +69,17 @@ export const ListText = styled.li`
 `
 
 export const Text = styled.h2`
-    font-size: ${SIZES.label};
+    font-size: ${SIZES.char};
+    margin-top: 20px;
     width: 60%;
     margin-left: 8%;
+`
+
+export const ImageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 45%;   
 `

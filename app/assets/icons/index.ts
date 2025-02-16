@@ -1,3 +1,11 @@
+import availability from "./availability.svg";
+import barrier from "./barrier.svg";
+import clock from "./clock.svg";
+import insurance from "./insurance.svg";
+import padlock from "./padlock.svg";
+import telephone from "./telephone.svg";
+
+
 import email from "./email_07a8b4.svg";
 import instagram from "./instagram_07a8b4.svg";
 import logo from "./logo.svg";
@@ -5,12 +13,20 @@ import whatsApp from "./whatsapp_07a8b4.svg";
 import whatsAppWhite from "./whatsapp_white.svg";
 
 
+
 const ICONS = {
     email,
     instagram,
     logo,
     whatsApp,
-    whatsAppWhite
+    whatsAppWhite,
+    
+    availability,
+    barrier,
+    clock,
+    insurance,
+    padlock,
+    telephone
 }
 
 export default ICONS

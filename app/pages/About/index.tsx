@@ -1,3 +1,6 @@
+import ContactButton from "@/components/ContactButton";
+import ImageWithLegend from "@/components/ImageWithLegend";
+import IMAGES from "@/assets/images";
 import * as S from "./styles";
 import Section from "@/components/Section";
 
@@ -20,7 +23,15 @@ const AboutPage = () => {
                         <S.ListText> Alcançar seus objetivos de vida com mais clareza, propósito e bem-estar. </S.ListText>
                     </S.ListContainer>
                     <S.Text> Entre em contato para uma consulta inicial. Será um prazer te conhecer e juntos trilharmos um caminho de crescimento e desenvolvimento pessoal. </S.Text>
+                    <ContactButton />
                 </S.InfoContainer>
+                <S.ImageContainer>
+                        <ImageWithLegend 
+                            imagePath={IMAGES.about}
+                            alt="Psicólogo Acácio Tórres"
+                            legend="Raimundo Acácio Costa Tôrres Filho CRP 11ª - 04373"
+                        />
+                </S.ImageContainer>
             </S.Container>
         </Section>
     )

@@ -9,6 +9,7 @@ export const Container = styled.header`
     width: 100%;
     height: 60px;
     overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7)
 `;
 
 export const Content = styled.div`
@@ -21,5 +22,4 @@ export const Content = styled.div`
     padding: 20px;
     margin-left: 5%;
     margin-right: 5%;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
 `;
