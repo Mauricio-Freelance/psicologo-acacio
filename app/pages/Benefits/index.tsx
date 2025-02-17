@@ -16,7 +16,7 @@ const BenefitsPage = () => {
                     </S.Card>
                     <S.Card>
                         <S.CardIcon src={ICONS.barrier} alt="Ícone de Barreira" />
-                        <S.CardText style={{width: "80%", marginTop: "6%"}}> Elimine barreiras geográficas: acesse terapia de qualquer lugar com conexão à internet, ideal para quem viaja muito, mora em áreas remotas ou possui mobilidade reduzida. </S.CardText>
+                        <S.CardText style={{width: "80%"}}> Elimine barreiras geográficas: acesse terapia de qualquer lugar com conexão à internet, ideal para quem viaja muito, mora em áreas remotas ou possui mobilidade reduzida. </S.CardText>
                     </S.Card>
                     <S.Card>
                         <S.CardIcon src={ICONS.availability} alt="Ícone de Disponibilidade" />
@@ -35,7 +35,7 @@ const BenefitsPage = () => {
                     </S.Card>
                     <S.Card>
                         <S.CardIcon src={ICONS.telephone} alt="Ícone de Telefone" />
-                        <S.CardText style={{width: "80%", marginTop: "6%"}}> Comunicação facilitada para alguns: A comunicação, utilizada em tipos de terapia online, pode ser mais fácil para pessoas com dificuldades de expressão. </S.CardText>
+                        <S.CardText style={{width: "80%"}}> Comunicação facilitada para alguns: A comunicação, utilizada em tipos de terapia online, pode ser mais fácil para pessoas com dificuldades de expressão. </S.CardText>
                     </S.Card>
                 </S.CardsContainer>
             </S.Container>

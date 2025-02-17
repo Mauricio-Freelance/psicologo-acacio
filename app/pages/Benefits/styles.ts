@@ -57,8 +57,8 @@ export const CardIcon = styled.img`
 
 export const CardText = styled.h2`
     color: ${COLORS.primary};
-    font-size: ${SIZES.subTitle};
-    margin-top: 8%;
-    width: 65%;
+    font-size: ${SIZES.label};
+    margin-top: 12%;
+    width: 50%;
     text-align: center;
 `

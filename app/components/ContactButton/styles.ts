@@ -1,3 +1,4 @@
+import COLORS from "@/styles/colors";
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts"
 
@@ -11,7 +12,7 @@ export const Container = styled.div`
     background-color: #07a8b0;
     width: 130px;
     height: 40px;
-    color: white;
+    color: ${COLORS.white};
     border-radius: 20px;
     align-items: center;
     justify-content: center;

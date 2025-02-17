@@ -1,3 +1,4 @@
+import COLORS from "@/styles/colors";
 import styled from "styled-components";
 
 
@@ -14,7 +15,7 @@ export const Container = styled.header`
 
 export const Content = styled.div`
     display: flex;
-    background-color: white;
+    background-color: ${COLORS.white};
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
