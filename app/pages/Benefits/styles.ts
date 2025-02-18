@@ -47,6 +47,7 @@ export const Card = styled.div`
     width: 30vw;
     height: 65vh;
     border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 `
 
 export const CardIcon = styled.img`
