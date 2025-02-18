@@ -20,7 +20,7 @@ export const Title = styled.h1`
 export const ListContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     margin-top: 3%;
 `
 
@@ -28,11 +28,12 @@ export const Question = styled.div`
     display: flex;
     flex-direction: column;
     width: 80vw;
-    height: 13vh;
-    background-color: #EEEEEE;
+    height: 12vh;
+    background-color: ${COLORS.softWhite};
     justify-content: center;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 2px 4px #07a8b044;
 `
 
 export const QuestionText = styled.h2`
