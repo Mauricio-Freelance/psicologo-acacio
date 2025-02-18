@@ -57,7 +57,7 @@ export const QuestionText = styled.h2`
 export const Answer = styled.div`
     display: flex;
     width: 80vw;
-    height: 24vh;
+    min-height: 10vh;
     justify-content: center;
     background-color: ${COLORS.primary};
 `
