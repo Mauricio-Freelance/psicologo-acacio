@@ -1,4 +1,5 @@
 import ContactButton from "@/components/ContactButton";
+import ICONS from "@/assets/icons";
 import * as S from "./styles";
 import Section from "@/components/Section";
 
@@ -10,6 +11,7 @@ const FaqPage = () => {
                 <S.Title>FAQ</S.Title>
                 <S.ListContainer>
                     <S.Question>
+                        <S.RightArrow src={ICONS.rightArrow} alt="Flecha apontada para a direita" />
                         <S.QuestionText> Qual a diferença entre a terapia presencial e a online? </S.QuestionText>
                     </S.Question>
 

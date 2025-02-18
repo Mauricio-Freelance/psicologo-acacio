@@ -1,6 +1,7 @@
 import COLORS from "@/styles/colors";
 import { SIZES } from "@/styles/fonts";
 import styled from "styled-components";
+import { WEIGHTS } from "@/styles/fonts";
 
 export const Container = styled.div`
     display: flex;
@@ -21,13 +22,14 @@ export const InfoContainer = styled.div`
 export const TextContainer = styled.div`
     display: grid;
     gap: 30px;
-    max-width: 60vh;
+    max-width: 65vh;
 `;
 
 export const Text = styled.p`
     font-size: ${SIZES.label};
     width: 100%;
     color: ${COLORS.primary};
+    font-weight: ${WEIGHTS.bold};
 `;
 
 export const ImageContainer = styled.div`

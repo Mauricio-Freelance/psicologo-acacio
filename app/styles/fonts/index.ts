@@ -7,7 +7,7 @@ export const SIZES = { // 1 rem -> 16px
 }
 
 export const WEIGHTS = {
-    bold: "800",
+    bold: "600",
     regular: "400",
     light: "300"
 }

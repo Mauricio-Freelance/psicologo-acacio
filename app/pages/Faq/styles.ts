@@ -36,6 +36,12 @@ export const Question = styled.div`
     box-shadow: 0 2px 4px #07a8b044;
 `
 
+export const RightArrow = styled.img`
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+`
+
 export const QuestionText = styled.h2`
     font-size: ${SIZES.subTitle};
     color: ${COLORS.primary};

@@ -5,6 +5,9 @@ import insurance from "./insurance.svg";
 import padlock from "./padlock.svg";
 import telephone from "./telephone.svg";
 
+import rightArrow from "./rightArrow.svg";
+import leftArrow from "./leftArrow.svg";
+
 
 import email from "./email_07a8b4.svg";
 import instagram from "./instagram_07a8b4.svg";
@@ -26,7 +29,10 @@ const ICONS = {
     clock,
     insurance,
     padlock,
-    telephone
+    telephone,
+
+    rightArrow,
+    leftArrow,
 }
 
 export default ICONS

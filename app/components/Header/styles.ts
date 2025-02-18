@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
     display: flex;
+    z-index: 9999;
     position: fixed;
     justify-content: center;
     align-items: center;
