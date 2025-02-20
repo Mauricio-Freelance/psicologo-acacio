@@ -11,7 +11,7 @@ export const Container = styled.header`
     width: 100%;
     height: 60px;
     overflow: hidden;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7)
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
 `;
 
 export const Content = styled.div`

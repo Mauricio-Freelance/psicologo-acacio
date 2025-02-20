@@ -7,7 +7,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 105vh;
     min-width: 100vw;
 `
 
@@ -20,13 +20,14 @@ export const Title = styled.h1`
 export const ListContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin-top: 3%;
 `
 
 export const QAContainer = styled.div`
     display: flex;
     flex-direction: column;
+    box-shadow: 0 2px 5px #07a8b044;
 `
 
 export const Question = styled.div`
@@ -35,10 +36,8 @@ export const Question = styled.div`
     width: 80vw;
     height: 12vh;
     background-color: ${COLORS.softWhite};
-    border-radius: 10px;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 2px 4px #07a8b044;
 `
 
 export const RightArrow = styled.img`
@@ -56,6 +55,7 @@ export const QuestionText = styled.h2`
 
 export const Answer = styled.div`
     display: flex;
+    flex-direction: column;
     width: 80vw;
     min-height: 10vh;
     justify-content: center;
