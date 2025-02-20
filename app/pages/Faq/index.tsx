@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactButton from "@/components/ContactButton";
 import ICONS from "@/assets/icons";
+import Icon from "@/components/Icon";
 import * as S from "./styles";
 import Section from "@/components/Section";
 
@@ -35,7 +36,7 @@ const FaqPage = () => {
 
                         <S.Answer style={{ display: options.first ? "flex" : "none" }}>
                                 <S.AnswerText> A diferença entre as duas modalidades é a localização. Enquanto no presencial é necessário se deslocar até o local de atendimento do psicólogo, na modalidade online não é necessário ter esse deslocamento, já que a consulta é feita pela internet, através de recursos eletrônicos (computador, tablet ou celular). </S.AnswerText>
-                                <ContactButton backgroundColor="blue" color="black" />
+                                <ContactButton backgroundColor="white" color="#07A8b0" marginTop={0} iconSrc={ICONS.whatsApp}/>
                         </S.Answer>
                     </S.QAContainer>
 

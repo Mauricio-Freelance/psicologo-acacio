@@ -8,6 +8,7 @@ interface ContactButtonProps {
     color?: string;
     marginLeft?: number;
     marginTop?: number;
+    iconSrc?: string;
 }
 
 const ContactButton: React.FC<ContactButtonProps> = ({
@@ -15,6 +16,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({
     color = "#FFF",
     marginLeft = 20,
     marginTop = 4,
+    iconSrc = ICONS.whatsAppWhite,
 }) => {
     return (
         <S.Container 
@@ -22,11 +24,11 @@ const ContactButton: React.FC<ContactButtonProps> = ({
         color={color} 
         marginLeft={marginLeft} 
         marginTop={marginTop}
-    >
+        >
             <S.Text>Saber mais</S.Text>
-            <S.Icon src={ICONS.whatsAppWhite} alt="Ícone do WhatsApp"/>
+            <S.Icon src={iconSrc} alt="Ícone do WhatsApp"/>
         </S.Container>
     )
 }
 
-export default ContactButton
+export default ContactButton;

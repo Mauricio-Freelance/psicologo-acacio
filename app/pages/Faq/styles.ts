@@ -38,6 +38,8 @@ export const Question = styled.div`
     background-color: ${COLORS.softWhite};
     align-items: center;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #07a8b044;
 `
 
 export const RightArrow = styled.img`
