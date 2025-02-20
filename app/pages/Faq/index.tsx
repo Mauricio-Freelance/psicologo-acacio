@@ -89,7 +89,6 @@ const FaqPage = () => {
                                 <S.AnswerText> O profissional e o paciente acordarão dias e horários previamente. Os encontros serão realizados através de sala virtual no Google Meet (link será enviado pelo profissional). </S.AnswerText>
                         </S.Answer>
                     </S.QAContainer>
-
                 </S.ListContainer>
             </S.Container>
         </Section>
