@@ -2,24 +2,18 @@ import COLORS from "@/styles/colors";
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts"
 
-interface ContactButtonProps {
-    backgroundColor?: string;
-    color?: string;
-    marginLeft?: number;
-    marginTop?: number;
-}
 
-export const Container = styled.div<ContactButtonProps>`
+export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    margin-left: ${({ marginLeft }) => marginLeft || 20}%;
-    margin-top: ${({ marginTop }) => marginTop || 4}%;
+    margin-left: 20%;
+    margin-top: 4%;
     gap: 5px;
     cursor: pointer;
-    background-color: ${({ backgroundColor }) => backgroundColor || COLORS.primary};
+    background-color: ${COLORS.primary};
     width: 130px;
     height: 40px;
-    color: ${({ color }) => color || COLORS.white};
+    color: ${COLORS.white};
     border-radius: 20px;
     align-items: center;
     justify-content: center;

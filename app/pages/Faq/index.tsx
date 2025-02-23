@@ -36,7 +36,14 @@ const FaqPage = () => {
 
                         <S.Answer style={{ display: options.first ? "flex" : "none" }}>
                                 <S.AnswerText> A diferença entre as duas modalidades é a localização. Enquanto no presencial é necessário se deslocar até o local de atendimento do psicólogo, na modalidade online não é necessário ter esse deslocamento, já que a consulta é feita pela internet, através de recursos eletrônicos (computador, tablet ou celular). </S.AnswerText>
-                                <ContactButton backgroundColor="white" color="#07A8b0" marginTop={0} iconSrc={ICONS.whatsApp}/>
+                                <S.ButtonContainer>
+                                    <ContactButton 
+                                    backgroundColor="white" 
+                                    color="#07A8b0" 
+                                    marginTop="0px" 
+                                    marginLeft="0px" 
+                                    iconSrc={ICONS.whatsApp}/>
+                                </S.ButtonContainer>
                         </S.Answer>
                     </S.QAContainer>
 
@@ -50,6 +57,14 @@ const FaqPage = () => {
 
                         <S.Answer style={{ display: options.second ? "flex" : "none" }}>
                                 <S.AnswerText> Para todas as pessoas, porém sempre é necessário a compreensão das necessidades individuais. </S.AnswerText>
+                                <S.ButtonContainer>
+                                    <ContactButton 
+                                    backgroundColor="white" 
+                                    color="#07A8b0" 
+                                    marginTop="0px" 
+                                    marginLeft="0px" 
+                                    iconSrc={ICONS.whatsApp}/>
+                                </S.ButtonContainer>
                         </S.Answer>
                     </S.QAContainer>
 
@@ -63,6 +78,14 @@ const FaqPage = () => {
 
                         <S.Answer style={{ display: options.third ? "flex" : "none" }}>
                                 <S.AnswerText> As sessões duram em torno de 50 a 60 minutos. Quanto a frequência, será variável pois dependerá das necessidades de cada caso (em todos os casos serão acordados dias e horários entre o profissional e os pacientes). </S.AnswerText>
+                                <S.ButtonContainer>
+                                    <ContactButton 
+                                    backgroundColor="white" 
+                                    color="#07A8b0" 
+                                    marginTop="0px" 
+                                    marginLeft="0px" 
+                                    iconSrc={ICONS.whatsApp}/>
+                                </S.ButtonContainer>
                         </S.Answer>
                     </S.QAContainer>
 
@@ -76,6 +99,14 @@ const FaqPage = () => {
 
                         <S.Answer style={{ display: options.fourth ? "flex" : "none" }}>
                                 <S.AnswerText> Devido orientações do código de ética do Psicólogo é vedada a divulgação de valores (entre em contato através de nossos canais para essa informação), entretanto podemos afirmar que não existe melhor investimento do que o realizado em prol de si mesmo. </S.AnswerText>
+                                <S.ButtonContainer>
+                                    <ContactButton 
+                                    backgroundColor="white" 
+                                    color="#07A8b0" 
+                                    marginTop="0px" 
+                                    marginLeft="0px" 
+                                    iconSrc={ICONS.whatsApp}/>
+                                </S.ButtonContainer>
                         </S.Answer>
                     </S.QAContainer>
 
@@ -89,6 +120,15 @@ const FaqPage = () => {
 
                         <S.Answer style={{ display: options.fifth ? "flex" : "none" }}>
                                 <S.AnswerText> O profissional e o paciente acordarão dias e horários previamente. Os encontros serão realizados através de sala virtual no Google Meet (link será enviado pelo profissional). </S.AnswerText>
+                                <S.ButtonContainer>
+                                    <ContactButton 
+                                    backgroundColor="white" 
+                                    color="#07A8b0" 
+                                    marginTop="0px" 
+                                    marginLeft="0px" 
+                                    iconSrc={ICONS.whatsApp}/>
+                                </S.ButtonContainer>
+
                         </S.Answer>
                     </S.QAContainer>
                 </S.ListContainer>

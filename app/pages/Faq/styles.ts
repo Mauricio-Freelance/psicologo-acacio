@@ -62,6 +62,7 @@ export const Answer = styled.div`
     min-height: 10vh;
     justify-content: center;
     background-color: ${COLORS.primary};
+    padding-left: 30px;
 `
 
 export const AnswerText = styled.h2`
@@ -69,4 +70,8 @@ export const AnswerText = styled.h2`
     color: ${COLORS.white};
     width: 95%;
     margin-top: 1%;
+`
+
+export const ButtonContainer = styled.div`
+    margin: 15px;
 `
