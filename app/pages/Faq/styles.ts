@@ -73,5 +73,8 @@ export const AnswerText = styled.h2`
 `
 
 export const ButtonContainer = styled.div`
-    margin: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: -10px;
+    width: 16%;
 `

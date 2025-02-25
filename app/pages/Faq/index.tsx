@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ContactButton from "@/components/ContactButton";
 import ICONS from "@/assets/icons";
-import Icon from "@/components/Icon";
 import * as S from "./styles";
 import Section from "@/components/Section";
 
@@ -40,8 +39,6 @@ const FaqPage = () => {
                                     <ContactButton 
                                     backgroundColor="white" 
                                     color="#07A8b0" 
-                                    marginTop="0px" 
-                                    marginLeft="0px" 
                                     iconSrc={ICONS.whatsApp}/>
                                 </S.ButtonContainer>
                         </S.Answer>
@@ -60,9 +57,7 @@ const FaqPage = () => {
                                 <S.ButtonContainer>
                                     <ContactButton 
                                     backgroundColor="white" 
-                                    color="#07A8b0" 
-                                    marginTop="0px" 
-                                    marginLeft="0px" 
+                                    color="#07A8b0"
                                     iconSrc={ICONS.whatsApp}/>
                                 </S.ButtonContainer>
                         </S.Answer>
@@ -82,8 +77,7 @@ const FaqPage = () => {
                                     <ContactButton 
                                     backgroundColor="white" 
                                     color="#07A8b0" 
-                                    marginTop="0px" 
-                                    marginLeft="0px" 
+
                                     iconSrc={ICONS.whatsApp}/>
                                 </S.ButtonContainer>
                         </S.Answer>
@@ -103,8 +97,7 @@ const FaqPage = () => {
                                     <ContactButton 
                                     backgroundColor="white" 
                                     color="#07A8b0" 
-                                    marginTop="0px" 
-                                    marginLeft="0px" 
+
                                     iconSrc={ICONS.whatsApp}/>
                                 </S.ButtonContainer>
                         </S.Answer>
@@ -124,8 +117,7 @@ const FaqPage = () => {
                                     <ContactButton 
                                     backgroundColor="white" 
                                     color="#07A8b0" 
-                                    marginTop="0px" 
-                                    marginLeft="0px" 
+
                                     iconSrc={ICONS.whatsApp}/>
                                 </S.ButtonContainer>
 
