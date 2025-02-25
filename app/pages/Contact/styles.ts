@@ -5,7 +5,7 @@ import { SIZES } from "@/styles/fonts";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-top: 4%;
     min-height: 100vh;
@@ -16,13 +16,12 @@ export const Container = styled.div`
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-right: 35%;
+    margin-right: 15%;
     margin-top: 10%;
     gap: 30px;
 `
 
 export const Title = styled.h1`
-    margin-top: 4%;
     font-size: ${SIZES.title};
     text-align: center;
     color: ${COLORS.white};
@@ -37,4 +36,12 @@ export const Text = styled.h2`
 export const ButtonContainer = styled.div`
     margin-left: 13%;
     margin-top: -20px;
+`
+
+export const ImageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 3%;
 `

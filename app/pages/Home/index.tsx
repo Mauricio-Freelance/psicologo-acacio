@@ -1,8 +1,9 @@
 import * as S from "./styles";
 import ContactButton from "@/components/ContactButton";
 import ImageWithLegend from "@/components/ImageWithLegend";
-import Section from "@/components/Section"
 import IMAGES from "@/assets/images";
+import Section from "@/components/Section"
+
 
 const HomePage = () => {
     return (

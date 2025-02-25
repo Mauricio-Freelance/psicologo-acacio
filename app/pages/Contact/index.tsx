@@ -1,5 +1,7 @@
 import * as S from "./styles";
 import ICONS from "@/assets/icons";
+import ImageWithLegend from "@/components/ImageWithLegend";
+import IMAGES from "@/assets/images";
 import ContactButton from "@/components/ContactButton";
 import Section from "@/components/Section";
 
@@ -21,6 +23,13 @@ const ContactPage = () => {
                         iconSrc={ICONS.whatsApp}/>
                     </S.ButtonContainer>
                 </S.InfoContainer>
+                <S.ImageContainer>
+                    <ImageWithLegend 
+                                imagePath={IMAGES.contact}
+                                alt="Psicólogo Acácio Tórres"
+                                legend="Raimundo Acácio Costa Tôrres Filho CRP 11ª - 04373" 
+                    />
+                </S.ImageContainer>
             </S.Container>
         </Section>
     )

@@ -42,11 +42,13 @@ export const Question = styled.div`
     box-shadow: 0 2px 5px #07a8b044;
 `
 
-export const RightArrow = styled.img`
+export const RightArrow = styled.img<{ isOpen: boolean }>`
     display: flex;
     width: 20px;
     height: 20px;
     margin-left: 15px;
+    transform: rotate(${(props) => (props.isOpen ? "90deg" : "0deg")});
+    transition: transform 0.3s ease-in-out;
 `
 
 export const QuestionText = styled.h2`

@@ -29,7 +29,10 @@ const FaqPage = () => {
                         <S.Question
                             onClick={() => toggleOption("first")}
                         >
-                            <S.RightArrow src={ICONS.rightArrow} alt="Flecha apontada para a direita" />
+                            <S.RightArrow
+                            src={ICONS.rightArrow}
+                            alt="Flecha apontada para a direita"
+                            isOpen={options.first} />
                             <S.QuestionText> Qual a diferença entre a terapia presencial e a online? </S.QuestionText>
                         </S.Question>
 
@@ -48,7 +51,10 @@ const FaqPage = () => {
                         <S.Question
                             onClick={() => toggleOption("second")}
                         >
-                            <S.RightArrow src={ICONS.rightArrow} alt="Flecha apontada para a direita" />
+                            <S.RightArrow
+                            src={ICONS.rightArrow}
+                            alt="Flecha apontada para a direita"
+                            isOpen={options.second} />
                             <S.QuestionText> Para quem é indicado o processo terapêutico? </S.QuestionText>
                         </S.Question>
 
@@ -67,7 +73,10 @@ const FaqPage = () => {
                         <S.Question
                             onClick={() => toggleOption("third")}
                         >
-                            <S.RightArrow src={ICONS.rightArrow} alt="Flecha apontada para a direita" />
+                            <S.RightArrow
+                            src={ICONS.rightArrow}
+                            alt="Flecha apontada para a direita"
+                            isOpen={options.third} />
                             <S.QuestionText> Qual a duração e a frequência das sessões? </S.QuestionText>
                         </S.Question>
 
@@ -87,7 +96,10 @@ const FaqPage = () => {
                         <S.Question
                             onClick={() => toggleOption("fourth")}
                         >
-                            <S.RightArrow src={ICONS.rightArrow} alt="Flecha apontada para a direita" />
+                            <S.RightArrow
+                            src={ICONS.rightArrow}
+                            alt="Flecha apontada para a direita"
+                            isOpen={options.fourth} />
                             <S.QuestionText> Qual o custo das terapias? </S.QuestionText>
                         </S.Question>
 
@@ -107,7 +119,10 @@ const FaqPage = () => {
                         <S.Question
                             onClick={() => toggleOption("fifth")}
                         >
-                            <S.RightArrow src={ICONS.rightArrow} alt="Flecha apontada para a direita" />
+                            <S.RightArrow
+                            src={ICONS.rightArrow}
+                            alt="Flecha apontada para a direita"
+                            isOpen={options.fifth} />
                             <S.QuestionText> Como ocorre o atendimento remoto (online)? </S.QuestionText>
                         </S.Question>
 
