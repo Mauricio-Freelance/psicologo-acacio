@@ -109,7 +109,6 @@ const FaqPage = () => {
                                     <ContactButton 
                                     backgroundColor="white" 
                                     color="#07A8b0" 
-
                                     iconSrc={ICONS.whatsApp}/>
                                 </S.ButtonContainer>
                         </S.Answer>

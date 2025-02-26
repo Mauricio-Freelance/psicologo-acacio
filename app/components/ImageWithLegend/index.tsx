@@ -5,17 +5,25 @@ interface Props{
     imagePath: string;
     alt: string;
     legend: string;
+    backgroundColor?: string;
+    color?: string;
 }
 
 const ImageWithLegend = ({
     imagePath,
     alt,
-    legend
+    legend,
+    backgroundColor = "#07A8b0",
+    color = "#FFF",
 } : Props ) => {
     return (
         <S.Container>
             <S.Image src={imagePath} alt={alt} />
-            <S.Legend>
+            <S.Legend
+                    style={{
+                        backgroundColor: backgroundColor,
+                        color: color,
+                    }}>
                 <S.LegendText>{legend}</S.LegendText>
             </S.Legend>
         </S.Container>

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
-import COLORS from "@/styles/colors";
 
 export const Container = styled.div`
     display: flex;
@@ -22,7 +21,6 @@ export const Legend = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color:${COLORS.primary};
     width: 100%;
     height: 50px;
     bottom: 20px;
@@ -30,7 +28,6 @@ export const Legend = styled.div`
 
 export const LegendText = styled.p`
     font-size: ${SIZES.char};
-    color: white;
     word-wrap: break-word;
     width: 70%;
     text-align: center;
