@@ -8,7 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 4%;
-    min-height: 100vh;
+    min-height: 110vh;
     min-width: 100vw;
     background-color: ${COLORS.primary};
 `
@@ -31,7 +31,7 @@ export const Content = styled.div`
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-right: 12%;
     gap: 30px;
 `
@@ -52,5 +52,5 @@ export const ImageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 3%;
+    margin-top: 4%;
 `

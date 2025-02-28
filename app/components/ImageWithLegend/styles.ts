@@ -11,9 +11,8 @@ export const Container = styled.div`
 export const Image = styled.img`
     display: flex;
     position: relative;
-    width: 75vh;
+    width: 100%;
     height: 100%;
-    clip-path: inset(0 0 24px 0);
 `;
 
 export const Legend = styled.div`
@@ -23,7 +22,7 @@ export const Legend = styled.div`
     position: absolute;
     width: 100%;
     height: 50px;
-    bottom: 20px;
+    bottom: 0px;
 `;
 
 export const LegendText = styled.p`
