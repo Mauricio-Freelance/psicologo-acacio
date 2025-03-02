@@ -80,6 +80,6 @@ export const ImageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: absolute;
-    margin-top: 10%;
+    margin-top: 17%;
     margin-left: 45%;   
 `
