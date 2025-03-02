@@ -7,10 +7,13 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 203vh;
     min-width: 100vw;
-    margin-top: 3%;
+    top: 0;
     background-color: ${COLORS.primary};
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        min-height: 145vh;
+    }
 `
 
 export const Title = styled.h1`
@@ -23,6 +26,9 @@ export const Subtitle = styled.h2`
     margin-top: 5%;
     color: ${COLORS.white};
     font-size: ${SIZES.subTitle};
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (max-height: 800px) and (max-height: 850px){
+        margin-top: 3%;
+    }
 `
 
 export const CardsContainer = styled.div`
@@ -35,7 +41,9 @@ export const CardsContainer = styled.div`
     margin-top: 1%;
     background-color: ${COLORS.primary};
     overflow: hidden;
-
+    @media screen and (min-width: 1200px) and (max-width: 1280px)and (max-height: 800px) and (max-height: 850px){
+        min-height: 50vh;
+    }
 `
 
 export const Card = styled.div`
@@ -48,6 +56,10 @@ export const Card = styled.div`
     height: 65vh;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    @media screen and
+    (min-width: 1200px)and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        height: 50vh;
+    }
 `
 
 export const CardIcon = styled.img`

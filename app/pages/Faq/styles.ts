@@ -9,6 +9,9 @@ export const Container = styled.div`
     align-items: center;
     min-height: 103vh;
     min-width: 100vw;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        min-height: 80vh;
+    }
 `
 
 export const Title = styled.h1`

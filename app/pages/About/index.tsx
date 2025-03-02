@@ -23,9 +23,9 @@ const AboutPage = () => {
                         <S.ListText> Alcançar seus objetivos de vida com mais clareza, propósito e bem-estar. </S.ListText>
                     </S.ListContainer>
                     <S.Text> Entre em contato para uma consulta inicial. Será um prazer te conhecer e juntos trilharmos um caminho de crescimento e desenvolvimento pessoal. </S.Text>
-                    <ContactButton
-                        marginTop="4%" 
-                        marginLeft="25%"  />
+                    <S.ButtonContainer>
+                    <ContactButton/>
+                    </S.ButtonContainer>
                 </S.InfoContainer>
                 <S.ImageContainer>
                         <ImageWithLegend 

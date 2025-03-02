@@ -6,8 +6,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 140vh;
     min-width: 100vw;
+    top: 0;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        min-height: 95vh;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -42,6 +46,10 @@ export const InfoContainer = styled.div`
     margin-right: 25%;
     border: 4px solid ${COLORS.primary};
     border-radius: 20px;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        min-height: 68vh;
+        width: 50vw;
+    }
 `
 
 export const SubTitle = styled.h2`
@@ -58,6 +66,10 @@ export const ListContainer = styled.ul`
     gap: 20px;
     width: 33vw;
     margin-left: 12%;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        gap: 12.5px;
+        margin-top: 4%;
+    }
 `
 
 export const ListText = styled.li`
@@ -73,6 +85,19 @@ export const Text = styled.h2`
     margin-top: 20px;
     width: 60%;
     margin-left: 8%;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        width: 70%;
+    }
+`
+
+export const ButtonContainer = styled.div`
+    width: 23%;
+    margin-top: 4%;
+    margin-left: 25%;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        margin-top: 1%;
+        width: 26%;
+    }
 `
 
 export const ImageContainer = styled.div`
@@ -81,5 +106,10 @@ export const ImageContainer = styled.div`
     align-items: center;
     position: absolute;
     margin-top: 17%;
-    margin-left: 45%;   
+    margin-left: 45%;
+    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+        height: 55vh;
+        margin-top: 20%;
+        margin-left: 40%;
+    }
 `

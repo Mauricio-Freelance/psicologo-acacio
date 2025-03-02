@@ -1,11 +1,12 @@
 import * as S from "./styles";
+import { benefits } from "@/constants/routes";
 import ICONS from "@/assets/icons";
 import Section from "@/components/Section";
 
 
 const BenefitsPage = () => {
     return (
-        <Section id="benefits">
+        <Section id={benefits}>
             <S.Container>
                 <S.Title> Benefícios da terapia online </S.Title>
                 <S.Subtitle> Conveniência e Acessibilidade </S.Subtitle>
