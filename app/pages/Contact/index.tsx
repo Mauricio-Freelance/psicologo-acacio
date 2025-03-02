@@ -1,14 +1,15 @@
 import * as S from "./styles";
+import { contact } from "@/constants/routes";
+import ContactButton from "@/components/ContactButton";
 import ICONS from "@/assets/icons";
 import ImageWithLegend from "@/components/ImageWithLegend";
 import IMAGES from "@/assets/images";
-import ContactButton from "@/components/ContactButton";
 import Section from "@/components/Section";
 
 
 const ContactPage = () => {
     return (
-        <Section id="contact">
+        <Section id={contact}>
             <S.Container>
                 <S.Title>Entre em contato e agende já sua consulta.</S.Title>
                 <S.Content>

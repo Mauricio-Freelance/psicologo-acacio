@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import ContactButton from "@/components/ContactButton";
+import { home } from "@/constants/routes";
 import ImageWithLegend from "@/components/ImageWithLegend";
 import IMAGES from "@/assets/images";
 import Section from "@/components/Section"
@@ -7,7 +8,7 @@ import Section from "@/components/Section"
 
 const HomePage = () => {
     return (
-        <Section id="home">
+        <Section id={home}>
             <S.Container>
                 <S.InfoContainer>
                     <S.TextContainer>

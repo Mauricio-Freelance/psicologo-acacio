@@ -1,0 +1,6 @@
+export const home = 'home'
+export const about = 'about'
+export const contact = 'contact'
+export const benefits = 'benefits'
+export const faq = 'faq'
+export const work = 'work'

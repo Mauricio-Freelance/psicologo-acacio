@@ -18,6 +18,13 @@ const ContactButton: React.FC<ContactButtonProps> = ({
     marginTop = "4%",
     iconSrc = ICONS.whatsAppWhite,
 }) => {
+
+    const handleContact = () => {
+        // Adicione a função para abrir o WhatsApp
+        // Utilize o link do WhatsApp para abrir o contato
+        window.open("https://api.whatsapp.com/send/?phone=558899580857&text&type=phone_number&app_absent=0")
+    }
+
     return (
         <S.Container
         style={{
@@ -26,6 +33,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({
             marginLeft: marginLeft,
             marginTop: marginTop,
         }}
+        onClick={handleContact}
         >
             <S.Text>Saber mais</S.Text>
             <S.Icon src={iconSrc} alt="Ícone do WhatsApp"/>

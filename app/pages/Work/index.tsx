@@ -1,10 +1,11 @@
 import * as S from "./styles";
+import { work } from "@/constants/routes";
 import Section from "@/components/Section";
 
 
 const WorkPage = () => {
     return (
-        <Section id="work">
+        <Section id={work}>
             <S.Container>
                 <S.Title> Meu Trabalho Baseia-se Em: </S.Title>
                 <S.CardsContainer>

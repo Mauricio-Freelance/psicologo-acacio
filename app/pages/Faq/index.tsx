@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ContactButton from "@/components/ContactButton";
+import { faq } from "@/constants/routes";
 import ICONS from "@/assets/icons";
 import * as S from "./styles";
 import Section from "@/components/Section";
@@ -21,7 +22,7 @@ const FaqPage = () => {
     };
 
     return (
-        <Section id="faq">
+        <Section id={faq}>
             <S.Container>
                 <S.Title>FAQ</S.Title>
                 <S.ListContainer>
