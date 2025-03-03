@@ -6,12 +6,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 140vh;
     min-width: 100vw;
+    min-height: 140vh;
     top: 0;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
-        min-height: 95vh;
-    }
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+        min-height: 80vh;
+    } 
 `
 
 export const TitleContainer = styled.div`
@@ -46,7 +46,7 @@ export const InfoContainer = styled.div`
     margin-right: 25%;
     border: 4px solid ${COLORS.primary};
     border-radius: 20px;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         min-height: 68vh;
         width: 50vw;
     }
@@ -66,7 +66,7 @@ export const ListContainer = styled.ul`
     gap: 20px;
     width: 33vw;
     margin-left: 12%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         gap: 12.5px;
         margin-top: 4%;
     }
@@ -85,7 +85,7 @@ export const Text = styled.h2`
     margin-top: 20px;
     width: 60%;
     margin-left: 8%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         width: 70%;
     }
 `
@@ -94,7 +94,7 @@ export const ButtonContainer = styled.div`
     width: 23%;
     margin-top: 4%;
     margin-left: 25%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         margin-top: 1%;
         width: 26%;
     }
@@ -107,7 +107,7 @@ export const ImageContainer = styled.div`
     position: absolute;
     margin-top: 17%;
     margin-left: 45%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         height: 55vh;
         margin-top: 20%;
         margin-left: 40%;

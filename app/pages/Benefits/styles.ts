@@ -11,7 +11,7 @@ export const Container = styled.div`
     min-width: 100vw;
     top: 0;
     background-color: ${COLORS.primary};
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         min-height: 145vh;
     }
 `
@@ -57,7 +57,7 @@ export const Card = styled.div`
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
     @media screen and
-    (min-width: 1200px)and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    (min-width: 1200px)and (max-width: 1280px) {
         height: 50vh;
     }
 `

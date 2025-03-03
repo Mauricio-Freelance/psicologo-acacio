@@ -10,7 +10,11 @@ export const Container = styled.div`
     align-items: center;
     min-height: 110vh;
     min-width: 100vw;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 400px) and (max-width: 450px) {
+        min-height: 60vh;
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         min-height: 80vh;
     }
 `;
@@ -20,15 +24,16 @@ export const InfoContainer = styled.div`
     flex-direction: column;
     margin-right: 15%;
     margin-top: 10%;
+    @media screen and (min-width: 400px) and (max-width: 450px) {
+        margin: 10%;
+        margin-top: 25%;
+    }
 `;
 
 export const TextContainer = styled.div`
     display: grid;
     gap: 30px;
     max-width: 65vh;
-    @media screen and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
-        max-width: 30vw;
-    }
 `;
 
 export const Text = styled.p`
@@ -36,7 +41,17 @@ export const Text = styled.p`
     width: 100%;
     color: ${COLORS.primary};
     font-weight: ${WEIGHTS.bold};
+    @media screen and (min-width: 400px) and (max-width: 450px) {
+        text-align: center;
+    }
 `;
+
+export const ButtonContainer = styled.div`
+    @media screen and (min-width: 400px) and (max-width: 450px) {
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+`
 
 export const ImageContainer = styled.div`
     display: flex;
@@ -44,5 +59,8 @@ export const ImageContainer = styled.div`
     align-items: center;
     position: relative;
     margin-top: 3%;
+    @media screen and (min-width: 400px) and (max-width: 450px) {
+        display: none;
+    }
 `;
 

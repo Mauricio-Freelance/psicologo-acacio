@@ -22,7 +22,9 @@ const HomePage = () => {
                             Venha comigo dar o primeiro passo para uma nova jornada.
                         </S.Text>
                     </S.TextContainer>
-                    <ContactButton />
+                    <S.ButtonContainer>
+                        <ContactButton />
+                    </S.ButtonContainer>
                 </S.InfoContainer>
                     <S.ImageContainer>
                         <ImageWithLegend 

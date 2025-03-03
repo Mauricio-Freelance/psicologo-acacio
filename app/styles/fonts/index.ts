@@ -3,7 +3,13 @@ export const SIZES = { // 1 rem -> 16px
     label: "1.4rem",
     subTitle: "1.7rem",
     title: "2.2rem",
-    section: "3.0rem"
+    section: "3.0rem",
+
+    charMobile: "0.8rem",
+    labelMobile: "1.1rem",
+    subTitleMobile: "1.3rem",
+    titleMobile: "1.5rem",
+    sectionMobile: "2rem",
 }
 
 export const WEIGHTS = {

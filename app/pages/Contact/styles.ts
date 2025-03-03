@@ -11,7 +11,7 @@ export const Container = styled.div`
     min-height: 110vh;
     min-width: 100vw;
     background-color: ${COLORS.primary};
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         min-height: 82vh;
     }
 `
@@ -56,7 +56,7 @@ export const ImageContainer = styled.div`
     align-items: center;
     position: relative;
     margin-top: 4%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 850px){
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         height: 55vh;
     }
 `
