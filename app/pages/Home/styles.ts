@@ -1,4 +1,5 @@
 import COLORS from "@/styles/colors";
+import { device } from "@/styles/mediaSizes/index";
 import { SIZES } from "@/styles/fonts";
 import styled from "styled-components";
 import { WEIGHTS } from "@/styles/fonts";
@@ -8,9 +9,10 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
     min-width: 100vw;
-    @media screen and (min-width: 400px) and (max-width: 450px) {
+    padding-bottom: 4%;
+    padding-top: 4%;
+    @media ${device.mobile} {
         min-height: 60vh;
     }
 
@@ -24,7 +26,7 @@ export const InfoContainer = styled.div`
     flex-direction: column;
     margin-right: 15%;
     margin-top: 10%;
-    @media screen and (min-width: 400px) and (max-width: 450px) {
+    @media ${device.mobile} {
         margin: 10%;
         margin-top: 25%;
     }
@@ -41,13 +43,13 @@ export const Text = styled.p`
     width: 100%;
     color: ${COLORS.primary};
     font-weight: ${WEIGHTS.bold};
-    @media screen and (min-width: 400px) and (max-width: 450px) {
+    @media ${device.mobile} {
         text-align: center;
     }
 `;
 
 export const ButtonContainer = styled.div`
-    @media screen and (min-width: 400px) and (max-width: 450px) {
+        @media ${device.mobile} {
         margin-left: 10%;
         margin-top: 4%;
     }
@@ -59,7 +61,7 @@ export const ImageContainer = styled.div`
     align-items: center;
     position: relative;
     margin-top: 3%;
-    @media screen and (min-width: 400px) and (max-width: 450px) {
+    @media ${device.mobile} {
         display: none;
     }
 `;
