@@ -7,10 +7,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     min-width: 100vw;
-    min-height: 140vh;
+    /* min-height: 140vh; */
     top: 0;
     @media screen and (min-width: 1200px) and (max-width: 1280px) {
-        min-height: 80vh;
+        /* min-height: 95vh; */
     } 
 `
 
@@ -44,6 +44,7 @@ export const InfoContainer = styled.div`
     width: 55vw;
     margin-top: 5%;
     margin-right: 25%;
+    margin-bottom: 3%;
     border: 4px solid ${COLORS.primary};
     border-radius: 20px;
     @media screen and (min-width: 1200px) and (max-width: 1280px) {

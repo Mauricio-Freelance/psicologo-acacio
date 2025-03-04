@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { SIZES } from "@/styles/fonts";
+import { device } from "@/styles/mediaSizes/index";
 import COLORS from "@/styles/colors";
+import { SIZES } from "@/styles/fonts";
 
 
 export const Container = styled.div`
@@ -21,6 +22,10 @@ export const Title = styled.h1`
     margin-top: 4%;
     font-size: ${SIZES.title};
     overflow: hidden;
+    @media ${device.mobile} {
+        font-size: ${SIZES.sectionMobile};
+        text-align: center;
+    }
 `
 
 export const CardsContainer = styled.div`
@@ -42,9 +47,12 @@ export const Card = styled.div`
     width: 42.5vw;
     height: 55vh;
     border-radius: 20px;
-    @media screen and (min-width: 1200px) and (max-width: 1280px){
+    @media ${device.mobile} {
         height: auto;
-        padding-bottom: 4%;
+        width: 80vw;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1280px){
+        height: 44vh;
     }
 `
 
@@ -54,12 +62,20 @@ export const CardTitle = styled.h2`
     margin-top: 5%;
     text-align: center;
     width: 70%;
+    @media ${device.mobile} {
+        font-size: ${SIZES.subTitleMobile};
+    }
 `
 
 export const CardContent = styled.h2`
    text-align: center;
    width: 40%;
    margin-top: 7%;
+   @media ${device.mobile} {
+        font-size: ${SIZES.labelMobile};
+        width: 60%;
+        padding-bottom: 8%;
+    }
    @media screen and (min-width: 1200px) and (max-width: 1280px) {
         width: 45%;
         margin-top: 10%;
