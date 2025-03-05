@@ -16,7 +16,7 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     position: relative;
     min-height: 6vh;
-    min-width: 70vw;
+    width: 70vw;
     align-items: center;
     justify-content: center;
     margin-top: 4%;
@@ -32,18 +32,31 @@ export const Line = styled.div`
 export const Title = styled.h1`
     color: ${COLORS.primary};
     font-size: ${SIZES.title};
+
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.titleMobile};
+        text-align: center;
+    }
 `
 
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    min-height: 95vh;
+    min-height: auto;
     width: 55vw;
     margin-top: 5%;
     margin-right: 25%;
     margin-bottom: 3%;
     border: 4px solid ${COLORS.primary};
     border-radius: 20px;
+
+
+    @media ${device.mobile} {
+        width: 90vw;
+        margin: 2%;
+        min-height: 0vh;
+    }
 
 
     @media ${device.desktop} {
@@ -68,6 +81,13 @@ export const ListContainer = styled.ul`
     margin-left: 12%;
 
 
+    @media ${device.mobile} {
+        width: 80vw;
+        margin-left: 7%;
+        gap: 12px;
+    }
+
+
     @media ${device.desktop} {
         gap: 12.5px;
         margin-top: 4%;
@@ -76,9 +96,21 @@ export const ListContainer = styled.ul`
 
 export const ListText = styled.li`
     font-size: ${SIZES.label};
+
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.labelMobile};
+    }
+
+
     &::before {
     content: "•"; /* Adiciona o ponto */
     font-size: ${SIZES.subTitle}; /* Ajusta o tamanho do ponto */
+
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.subTitleMobile};
+    }
   }
 `
 
@@ -89,6 +121,12 @@ export const Text = styled.h2`
     margin-left: 8%;
 
 
+    @media ${device.mobile} {
+        width: 80%;
+        font-size: ${SIZES.labelMobile};
+        text-align: center;
+    }
+
     @media ${device.desktop} {
         width: 70%;
     }
@@ -96,9 +134,15 @@ export const Text = styled.h2`
 
 export const ButtonContainer = styled.div`
     width: 23%;
-    margin-top: 4%;
-    margin-left: 25%;
 
+    margin-left: 20%;
+    padding-bottom: 3%;
+
+
+    @media ${device.mobile} {
+        width: 42%;
+        margin-left: 25%;
+    }
 
     @media ${device.desktop} {
         margin-top: 1%;
@@ -113,6 +157,11 @@ export const ImageContainer = styled.div`
     position: absolute;
     margin-top: 17%;
     margin-left: 45%;
+
+
+    @media ${device.mobile} {
+        display: none;
+    }
 
 
     @media ${device.desktop} {
