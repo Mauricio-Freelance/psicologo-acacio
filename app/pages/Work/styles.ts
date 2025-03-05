@@ -12,7 +12,9 @@ export const Container = styled.div`
     min-height: 100vh;
     min-width: 100vw;
     top: 0;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         min-height: 123vh;
     }
 `
@@ -47,11 +49,15 @@ export const Card = styled.div`
     width: 42.5vw;
     height: 55vh;
     border-radius: 20px;
+
+
     @media ${device.mobile} {
         height: auto;
         width: 80vw;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1280px){
+
+    
+    @media ${device.desktop}{
         height: 44vh;
     }
 `
@@ -76,7 +82,7 @@ export const CardContent = styled.h2`
         width: 60%;
         padding-bottom: 8%;
     }
-   @media screen and (min-width: 1200px) and (max-width: 1280px) {
+    @media ${device.desktop}{
         width: 45%;
         margin-top: 10%;
     }

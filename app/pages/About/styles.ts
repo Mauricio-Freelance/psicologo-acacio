@@ -1,4 +1,5 @@
 import COLORS from "@/styles/colors";
+import { device } from "@/styles/mediaSizes/index";
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
 
@@ -7,11 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     min-width: 100vw;
-    /* min-height: 140vh; */
     top: 0;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
-        /* min-height: 95vh; */
-    } 
 `
 
 export const TitleContainer = styled.div`
@@ -47,7 +44,9 @@ export const InfoContainer = styled.div`
     margin-bottom: 3%;
     border: 4px solid ${COLORS.primary};
     border-radius: 20px;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         min-height: 68vh;
         width: 50vw;
     }
@@ -67,7 +66,9 @@ export const ListContainer = styled.ul`
     gap: 20px;
     width: 33vw;
     margin-left: 12%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         gap: 12.5px;
         margin-top: 4%;
     }
@@ -86,7 +87,9 @@ export const Text = styled.h2`
     margin-top: 20px;
     width: 60%;
     margin-left: 8%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         width: 70%;
     }
 `
@@ -95,7 +98,9 @@ export const ButtonContainer = styled.div`
     width: 23%;
     margin-top: 4%;
     margin-left: 25%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         margin-top: 1%;
         width: 26%;
     }
@@ -108,7 +113,9 @@ export const ImageContainer = styled.div`
     position: absolute;
     margin-top: 17%;
     margin-left: 45%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         height: 55vh;
         margin-top: 20%;
         margin-left: 40%;

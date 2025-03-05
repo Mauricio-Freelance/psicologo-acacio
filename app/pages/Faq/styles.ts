@@ -1,4 +1,5 @@
 import COLORS from "@/styles/colors";
+import { device } from "@/styles/mediaSizes/index";
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
 
@@ -9,7 +10,9 @@ export const Container = styled.div`
     align-items: center;
     min-height: 103vh;
     min-width: 100vw;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+    
+    @media ${device.desktop} {
         min-height: 80vh;
     }
 `

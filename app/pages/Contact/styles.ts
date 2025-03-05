@@ -1,4 +1,5 @@
 import COLORS from "@/styles/colors";
+import { device } from "@/styles/mediaSizes/index";
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
 
@@ -7,11 +8,13 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4%;
+    margin-top: 1%;
     min-height: 110vh;
     min-width: 100vw;
     background-color: ${COLORS.primary};
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+
+    @media ${device.desktop} {
         min-height: 82vh;
     }
 `
@@ -56,7 +59,9 @@ export const ImageContainer = styled.div`
     align-items: center;
     position: relative;
     margin-top: 4%;
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+    
+    @media ${device.desktop} {
         height: 55vh;
     }
 `
