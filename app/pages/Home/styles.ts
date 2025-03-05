@@ -12,16 +12,6 @@ export const Container = styled.div`
     min-width: 100vw;
     padding-bottom: 4%;
     padding-top: 4%;
-
-    
-    @media ${device.mobile} {
-        min-height: 60vh;
-    }
-
-
-    @media ${device.desktop} {
-        min-height: 80vh;
-    }
 `;
 
 export const InfoContainer = styled.div`
@@ -41,6 +31,11 @@ export const TextContainer = styled.div`
     display: grid;
     gap: 30px;
     max-width: 65vh;
+
+
+    @media ${device.desktop} {
+        max-width: 48vh;
+    }
 `;
 
 export const Text = styled.p`
@@ -56,8 +51,11 @@ export const Text = styled.p`
 `;
 
 export const ButtonContainer = styled.div`
+    margin-top: 4%;
+    margin-left: 20%;
+
+
         @media ${device.mobile} {
-        margin-left: 10%;
         margin-top: 4%;
     }
 `

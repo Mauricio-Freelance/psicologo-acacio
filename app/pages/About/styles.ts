@@ -79,6 +79,7 @@ export const ListContainer = styled.ul`
     gap: 20px;
     width: 33vw;
     margin-left: 12%;
+    padding-top: 3%;
 
 
     @media ${device.mobile} {
@@ -91,6 +92,7 @@ export const ListContainer = styled.ul`
     @media ${device.desktop} {
         gap: 12.5px;
         margin-top: 4%;
+        padding-top: 0%;
     }
 `
 
@@ -134,7 +136,6 @@ export const Text = styled.h2`
 
 export const ButtonContainer = styled.div`
     width: 23%;
-
     margin-left: 20%;
     padding-bottom: 3%;
 
@@ -144,8 +145,10 @@ export const ButtonContainer = styled.div`
         margin-left: 25%;
     }
 
+
     @media ${device.desktop} {
         margin-top: 1%;
+        margin-left: 27.5%;
         width: 26%;
     }
 `
