@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import cardsData from "../../constants/cardsData.json"
+import { CardsData, /* WorkCard */ } from "../../constants/types"; // Importe as interfaces
 import { work } from "@/constants/routes";
-import { CardsData, /* Card */ } from "../../constants/types"; // Importe as interfaces
 import Section from "@/components/Section";
 import React from "react";
 

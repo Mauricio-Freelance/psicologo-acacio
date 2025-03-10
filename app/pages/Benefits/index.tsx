@@ -1,28 +1,31 @@
 import * as S from "./styles";
 import { benefits } from "@/constants/routes";
+import cardsData from "../../constants/cardsData.json"
+import { CardsData, BenefitsCard } from "../../constants/types";
 import ICONS from "@/assets/icons";
 import Section from "@/components/Section";
 
 
-const BenefitsPage = () => {
+const typedCardsData: CardsData = cardsData;
+
+
+const BenefitsPage: React.FC = () => {
+    const benefitsCards = typedCardsData.Benefits;
+
     return (
         <Section id={benefits}>
             <S.Container>
                 <S.Title> Benefícios da terapia online </S.Title>
                 <S.Subtitle> Conveniência e Acessibilidade </S.Subtitle>
                 <S.CardsContainer>
-                    <S.Card>
-                        <S.CardIcon src={ICONS.clock} alt="Ícone de Relógio" />
-                        <S.CardText> Flexibilidade de horários: agende sessões em horários que se encaixam na sua rotina, sem se preocupar com deslocamentos. </S.CardText>
-                    </S.Card>
-                    <S.Card>
-                        <S.CardIcon src={ICONS.barrier} alt="Ícone de Barreira" />
-                        <S.CardText style={{width: "80%"}}> Elimine barreiras geográficas: acesse terapia de qualquer lugar com conexão à internet, ideal para quem viaja muito, mora em áreas remotas ou possui mobilidade reduzida. </S.CardText>
-                    </S.Card>
-                    <S.Card>
-                        <S.CardIcon src={ICONS.availability} alt="Ícone de Disponibilidade" />
-                        <S.CardText> Maior disponibilidade de profissionais: encontre o terapeuta ideal para você, sem se limitar à sua região. </S.CardText>
-                    </S.Card>
+                    {benefitsCards.map((card: BenefitsCard, index) => (
+                        <S.Card key={index}>
+                            <S.CardIcon src={ICONS[card.icon]} alt={card.alt} />
+                            <S.CardText style={card.style || {}}>
+                                {card.text}
+                            </S.CardText>
+                        </S.Card>
+                    ))}
                 </S.CardsContainer>
                 <S.Subtitle> Conforto e Privacidade </S.Subtitle>
                 <S.CardsContainer>
