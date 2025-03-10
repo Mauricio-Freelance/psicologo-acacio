@@ -1,9 +1,10 @@
 import * as S from "./styles";
+import cardsData from "../../constants/cardsData.json"
+import { CardProps } from "../../constants/types"; // Importe o tipo
 import { work } from "@/constants/routes";
 import Section from "@/components/Section";
 import React from "react";
-import cardsData from "../../constants/cardsData.json"
-import { CardProps } from "../../constants/types"; // Importe o tipo
+
 
 const WorkPage: React.FC = () => {
     // Use o tipo CardProps para garantir a tipagem correta
@@ -27,5 +28,6 @@ const WorkPage: React.FC = () => {
         </Section>
     );
 };
+
 
 export default WorkPage;
