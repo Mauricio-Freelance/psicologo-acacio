@@ -8,15 +8,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 203vh;
+    min-height: auto;
     min-width: 100vw;
     top: 0;
     background-color: ${COLORS.primary};
-
-    
-    @media ${device.desktop} {
-        min-height: 145vh;
-    }
 `
 
 export const Title = styled.h1`
@@ -27,7 +22,6 @@ export const Title = styled.h1`
     @media ${device.mobile} {
         font-size: ${SIZES.sectionMobile};
     }
-
 `
 
 export const Subtitle = styled.h2`
@@ -57,14 +51,8 @@ export const CardsContainer = styled.div`
     padding-bottom: 1%;
 
     @media ${device.mobile} {
-        height: auto;
-        width: 100vw;
         align-items: center;
         justify-content: center;
-    }
-
-    @media ${device.desktop} {
-        min-height: 50vh;
     }
 `
 
@@ -75,7 +63,7 @@ export const Card = styled.div`
     background-color: ${COLORS.secundary};
     margin: 20px;
     width: 30vw;
-    height: 65vh;
+    height: 62vh;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 
@@ -93,6 +81,7 @@ export const CardIcon = styled.img`
     margin-top: 10%;
     width: 80px;
     height: auto;
+    
     @media ${device.mobile} {
         width: 70px;
     }
