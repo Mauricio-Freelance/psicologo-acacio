@@ -1,21 +1,19 @@
 import * as S from "./styles";
 import cardsData from "../../constants/cardsData.json"
-import { CardProps } from "../../constants/types"; // Importe o tipo
 import { work } from "@/constants/routes";
 import Section from "@/components/Section";
 import React from "react";
 
 
 const WorkPage: React.FC = () => {
-    // Use o tipo CardProps para garantir a tipagem correta
-    const typedCardsData: CardProps[] = cardsData;
+    const workCards = cardsData.Work;
 
     return (
         <Section id={work}>
             <S.Container>
                 <S.Title> Meu Trabalho Baseia-se Em: </S.Title>
                 <S.CardsContainer>
-                    {typedCardsData.map((card, index) => (
+                    {workCards.map((card, index) => (
                         <S.Card key={index}>
                             <S.CardTitle>{card.title}</S.CardTitle>
                             <S.CardContent style={card.style || {}}>

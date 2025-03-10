@@ -1,20 +1,22 @@
-[
-    {
-        "title": "Criar um espaço seguro e acolhedor",
-        "content": "Onde você se sinta à vontade para explorar seus pensamentos, sentimentos e comportamentos sem julgamentos."
-    },
-    {
-        "title": "Ouvir com atenção e empatia o paciente",
-        "content": "Busco compreender a sua história, suas dificuldades e seus objetivos de forma individualizada."
-    },
-    {
-        "title": "Utilizar técnicas e abordagens terapêuticas eficazes",
-        "content": "Como especialista em terapia cognitivo-comportamental, utilizo ferramentas e estratégias personalizadas para ajudar a lidar com ansiedade, depressão, traumas, problemas de relacionamento e outros desafios.",
-        "style": { "marginTop": "5%", "width": "60%" }
-    },
-    {
-        "title": "Empoderar você a desenvolver suas próprias ferramentas",
-        "content": "Meu objetivo é te ajudar a se tornar protagonista da sua saúde mental, te guiando no desenvolvimento de recursos internos para lidar com os desafios da vida.",
-        "style": { "width": "60%" }
-    }
-]
+{
+    "Work": [
+        {
+            "title": "Criar um espaço seguro e acolhedor",
+            "content": "Onde você se sinta à vontade para explorar seus pensamentos, sentimentos e comportamentos sem julgamentos."
+        },
+        {
+            "title": "Ouvir com atenção e empatia o paciente",
+            "content": "Busco compreender a sua história, suas dificuldades e seus objetivos de forma individualizada."
+        },
+        {
+            "title": "Utilizar técnicas e abordagens terapêuticas eficazes",
+            "content": "Como especialista em terapia cognitivo-comportamental, utilizo ferramentas e estratégias personalizadas para ajudar a lidar com ansiedade, depressão, traumas, problemas de relacionamento e outros desafios.",
+            "style": { "marginTop": "5%", "width": "60%" }
+        },
+        {
+            "title": "Empoderar você a desenvolver suas próprias ferramentas",
+            "content": "Meu objetivo é te ajudar a se tornar protagonista da sua saúde mental, te guiando no desenvolvimento de recursos internos para lidar com os desafios da vida.",
+            "style": { "width": "60%" }
+        }
+    ]
+}

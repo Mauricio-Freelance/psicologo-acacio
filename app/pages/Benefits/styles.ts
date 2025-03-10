@@ -23,6 +23,11 @@ export const Title = styled.h1`
     margin-top: 4%;
     color: ${COLORS.white};
     font-size: ${SIZES.title};
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.sectionMobile};
+    }
+
 `
 
 export const Subtitle = styled.h2`
@@ -30,6 +35,9 @@ export const Subtitle = styled.h2`
     color: ${COLORS.white};
     font-size: ${SIZES.subTitle};
 
+    @media ${device.mobile} {
+        font-size: ${SIZES.titleMobile};
+    }
 
     @media ${device.desktop} {
         margin-top: 3%;
@@ -41,13 +49,19 @@ export const CardsContainer = styled.div`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    min-height: 70vh;
+    height: auto;
     width: 100vw;
     margin-top: 1%;
     background-color: ${COLORS.primary};
     overflow: hidden;
     padding-bottom: 1%;
 
+    @media ${device.mobile} {
+        height: auto;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
 
     @media ${device.desktop} {
         min-height: 50vh;
@@ -65,6 +79,10 @@ export const Card = styled.div`
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 
+    @media ${device.mobile} {
+        height: auto;
+        width: 70vw;
+    }
 
     @media ${device.desktop} {
         height: 50vh;
@@ -75,6 +93,9 @@ export const CardIcon = styled.img`
     margin-top: 10%;
     width: 80px;
     height: auto;
+    @media ${device.mobile} {
+        width: 70px;
+    }
 `
 
 export const CardText = styled.h2`
@@ -83,4 +104,11 @@ export const CardText = styled.h2`
     margin-top: 12%;
     width: 50%;
     text-align: center;
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.labelMobile};
+        width: 60%;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
 `
