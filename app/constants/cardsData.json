@@ -18,5 +18,23 @@
             "content": "Meu objetivo é te ajudar a se tornar protagonista da sua saúde mental, te guiando no desenvolvimento de recursos internos para lidar com os desafios da vida.",
             "style": { "width": "60%" }
         }
+    ],
+    "Benefits": [
+        {
+            "icon": "clock",
+            "alt": "Ícone de Relógio",
+            "text": "Flexibilidade de horários: agende sessões em horários que se encaixam na sua rotina, sem se preocupar com deslocamentos."
+        },
+        {
+            "icon": "barrier",
+            "alt": "Ícone de Barreira",
+            "text": "Elimine barreiras geográficas: acesse terapia de qualquer lugar com conexão à internet, ideal para quem viaja muito, mora em áreas remotas ou possui mobilidade reduzida",
+            "style": { "width": "80%" }
+        },
+        {
+            "icon": "availability",
+            "alt": "Ícone de Disponibilidade",
+            "text": "Maior disponibilidade de profissionais: encontre o terapeuta ideal para você, sem se limitar à sua região."
+        }
     ]
 }
