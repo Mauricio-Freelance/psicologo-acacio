@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FONTS, SIZES, WEIGHTS } from "../../../styles/fonts";
 import COLORS from "../../../styles/colors";
+import { device } from "@/styles/mediaSizes";
 
 export const Container = styled.nav`
     display: flex;
@@ -15,6 +16,11 @@ export const List = styled.ul`
     list-style: none;
     align-items: center;
     justify-content: space-around;
+
+
+    @media ${device.mobile} {
+        gap: 10px;
+    }
 `;
 
 export const ListItem = styled.li`
@@ -27,6 +33,11 @@ export const ListItem = styled.li`
     transition: color 0.3s;
     &:hover {
         color: ${COLORS.gray};
+    }
+
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.charMobile};
     }
 `;
 

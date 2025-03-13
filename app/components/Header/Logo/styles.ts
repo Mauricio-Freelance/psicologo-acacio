@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import COLORS from "@/styles/colors";
+import { device } from "@/styles/mediaSizes";
 import IconSIZES from "@/constants/iconSizes";
 import {FONTS, SIZES} from "@/styles/fonts";
 
@@ -14,8 +15,8 @@ export const Container = styled.div`
 `
 export const Image = styled.img`
     margin-right: 150px;
-    width: ${IconSIZES.iconWidth};
-    height: ${IconSIZES.iconHeight};
+        width: ${IconSIZES.iconWidth};
+        height: ${IconSIZES.iconHeight};
 `
 
 export const Text = styled.p`
@@ -26,4 +27,9 @@ export const Text = styled.p`
     font-style: italic;
     margin-top: 10px;
     margin-left: 20px;
+
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.subTitleMobile};
+    }
 `
