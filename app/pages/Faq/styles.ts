@@ -40,6 +40,11 @@ export const Question = styled.div`
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 2px 5px #07a8b044;
+
+
+    @media ${device.mobile} {
+        width: 95vw;
+    }
 `
 
 export const RightArrow = styled.img<{ isOpen: boolean }>`
@@ -55,6 +60,10 @@ export const QuestionText = styled.h2`
     font-size: ${SIZES.subTitle};
     color: ${COLORS.primary};
     margin-left: 10px;
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.titleMobile};
+    }
 `
 
 export const Answer = styled.div`
@@ -65,6 +74,11 @@ export const Answer = styled.div`
     justify-content: center;
     background-color: ${COLORS.primary};
     padding-left: 30px;
+
+
+    @media ${device.mobile} {
+        width: 95vw;
+    }
 `
 
 export const AnswerText = styled.h2`
@@ -72,6 +86,11 @@ export const AnswerText = styled.h2`
     color: ${COLORS.white};
     width: 95%;
     margin-top: 1%;
+
+
+    @media ${device.mobile} {
+        font-size: ${SIZES.labelMobile};
+    }
 `
 
 export const ButtonContainer = styled.div`
@@ -79,4 +98,9 @@ export const ButtonContainer = styled.div`
     margin-top: 5px;
     margin-left: -10px;
     width: 16%;
+
+
+    @media ${device.mobile} {
+        width: 35%;
+    }
 `
