@@ -7,4 +7,5 @@ export const Container = styled.section`
     align-items: center;
     min-width: 100vw;
     min-height: 0vh;
+    top: 0;
 `;

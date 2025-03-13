@@ -7,8 +7,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 100vw;
-    top: 0;
+    min-width: 100vw; /* obrigatório haver esse min-width */
 `
 
 export const TitleContainer = styled.div`
@@ -55,12 +54,10 @@ export const InfoContainer = styled.div`
     @media ${device.mobile} {
         width: 90vw;
         margin: 2%;
-        min-height: 0vh;
     }
 
 
     @media ${device.desktop} {
-        min-height: 68vh;
         width: 50vw;
     }
 `

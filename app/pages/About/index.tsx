@@ -1,3 +1,4 @@
+import { about } from "@/constants/routes";
 import ContactButton from "@/components/ContactButton";
 import ImageWithLegend from "@/components/ImageWithLegend";
 import IMAGES from "@/assets/images";
@@ -7,7 +8,7 @@ import Section from "@/components/Section";
 
 const AboutPage = () => {
     return (
-        <Section id="about">
+        <Section id={about}>
             <S.Container>
                 <S.TitleContainer>
                     <S.Line />
