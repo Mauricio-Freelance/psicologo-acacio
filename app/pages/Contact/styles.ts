@@ -38,6 +38,13 @@ export const InfoContainer = styled.div`
     margin-top: 7%;
     margin-right: 12%;
     gap: 30px;
+
+
+    @media ${device.mobile} {
+        margin-right: 0%;
+        margin-top: 20%;
+        gap: 40px;
+    }
 `
 
 export const Text = styled.h2`
@@ -49,6 +56,11 @@ export const Text = styled.h2`
 export const ButtonContainer = styled.div`
     margin-left: 13%;
     margin-top: -20px;
+
+
+    @media ${device.mobile} {
+        margin-left: 20%;
+    }
 `
 
 export const ImageContainer = styled.div`
