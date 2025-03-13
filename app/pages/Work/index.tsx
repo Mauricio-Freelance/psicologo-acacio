@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 import React from "react";
 
 // Forçar a tipagem do JSON
-const typedCardsData: CardsData = cardsData;
+const typedCardsData = cardsData as CardsData;
 
 const WorkPage: React.FC = () => {
     const workCards = typedCardsData.Work;

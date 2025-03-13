@@ -48,3 +48,4 @@ const ICONS: Record<IconKey, string> = {
 };
 
 export default ICONS;
+export type {IconKey};

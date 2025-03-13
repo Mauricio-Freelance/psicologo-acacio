@@ -35,6 +35,22 @@
             "icon": "availability",
             "alt": "Ícone de Disponibilidade",
             "text": "Maior disponibilidade de profissionais: encontre o terapeuta ideal para você, sem se limitar à sua região."
+        },
+        {
+            "icon": "insurance",
+            "alt": "Ícone de Seguro",
+            "text": "Ambiente seguro: realize as sessões no conforto da sua casa, o que pode facilitar a abertura emocional."
+        },
+        {
+            "icon": "padlock",
+            "alt": "Ícone de Cadeado",
+            "text": "Maior privacidade: ideal para quem se sente constrangido em frequentar consultórios tradicionais."
+        },
+        {
+            "icon": "telephone",
+            "alt": "Ícone de Telefone",
+            "text": "Comunicação facilitada para alguns: A comunicação, utilizada em tipos de terapia online, pode ser mais fácil para pessoas com dificuldades de expressão.",
+            "style": { "width": "80%" }
         }
     ]
 }
