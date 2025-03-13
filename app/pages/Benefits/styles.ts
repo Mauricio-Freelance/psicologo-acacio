@@ -8,8 +8,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: auto;
-    min-width: 100vw;
     top: 0;
     background-color: ${COLORS.primary};
 `

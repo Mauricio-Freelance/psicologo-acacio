@@ -9,13 +9,11 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 1%;
-    min-height: 110vh;
-    min-width: 100vw;
     background-color: ${COLORS.primary};
-
+    padding-bottom: 3%;
 
     @media ${device.desktop} {
-        min-height: 82vh;
+        min-height: 86vh;
     }
 `
 
@@ -62,6 +60,6 @@ export const ImageContainer = styled.div`
 
     
     @media ${device.desktop} {
-        height: 55vh;
+        height: 65vh;
     }
 `

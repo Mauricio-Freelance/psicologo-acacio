@@ -9,14 +9,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color:${COLORS.primary};
-    min-height: 100vh;
-    min-width: 100vw;
-    top: 0;
-
-
-    @media ${device.desktop} {
-        min-height: 123vh;
-    }
 `
 
 export const Title = styled.h1`

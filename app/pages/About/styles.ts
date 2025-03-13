@@ -162,11 +162,6 @@ export const ImageContainer = styled.div`
     margin-left: 45%;
 
 
-    @media ${device.mobile} {
-        display: none;
-    }
-
-
     @media ${device.desktop} {
         height: 55vh;
         margin-top: 20%;

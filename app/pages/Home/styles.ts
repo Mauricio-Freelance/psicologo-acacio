@@ -9,7 +9,6 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
     padding-bottom: 4%;
     padding-top: 4%;
 `;
@@ -30,11 +29,14 @@ export const InfoContainer = styled.div`
 export const TextContainer = styled.div`
     display: grid;
     gap: 30px;
-    max-width: 65vh;
-
+    max-width: 39vw;
 
     @media ${device.desktop} {
-        max-width: 48vh;
+        max-width: 42vw;
+    }
+
+    @media ${device.mobile} {
+        max-width: 80vw;
     }
 `;
 
@@ -52,11 +54,10 @@ export const Text = styled.p`
 
 export const ButtonContainer = styled.div`
     margin-top: 4%;
-    margin-left: 20%;
-
 
         @media ${device.mobile} {
         margin-top: 4%;
+        margin-left: 15%;
     }
 `
 
@@ -66,10 +67,4 @@ export const ImageContainer = styled.div`
     align-items: center;
     position: relative;
     margin-top: 3%;
-
-
-    @media ${device.mobile} {
-        display: none;
-    }
 `;
-

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "@/styles/mediaSizes";
 import { SIZES } from "@/styles/fonts";
 
 export const Container = styled.div`
@@ -6,6 +7,11 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+
+
+    @media ${device.mobile} {
+        display: none;
+    }
 `;
 
 export const Image = styled.img`

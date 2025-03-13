@@ -8,13 +8,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 103vh;
-    min-width: 100vw;
-
-    
-    @media ${device.desktop} {
-        min-height: 80vh;
-    }
+    min-height: auto;
+    padding-bottom: 5%;
 `
 
 export const Title = styled.h1`
