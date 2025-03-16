@@ -41,6 +41,30 @@ export const Slide = styled.div`
     }
 `;
 
+export const AutoNavButton = styled.div<{ active: boolean }>`
+
+
+    @media ${device.mobile} {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: ${({ active }) => (active ? "#000" : "#ccc")};
+        margin: 0 5px;
+        cursor: pointer;
+    }
+`;
+
+export const NavigationAuto = styled.div`
+
+
+    @media ${device.mobile} {
+        display: flex;
+        justify-content: center;
+        margin-top: -1%;
+        margin-bottom: 4%;
+    }
+`;
+
 export const ManualNavigation = styled.div`
 
 

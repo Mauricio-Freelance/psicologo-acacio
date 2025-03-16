@@ -7,7 +7,7 @@ interface SliderProps {
     cards: React.ReactNode[];
 }
 
-const Slider = ({ page, cards }: SliderProps) => {
+const Slider = ({ cards }: SliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     // Navegação automática
@@ -38,6 +38,15 @@ const Slider = ({ page, cards }: SliderProps) => {
                         </S.Slide>
                     ))}
                 </S.Slides>
+
+                <S.NavigationAuto>
+                    {cards.map((_, index) => (
+                        <S.AutoNavButton
+                            key={index}
+                            active={index === currentSlide}
+                        />
+                    ))}
+                </S.NavigationAuto>
 
                 <S.ManualNavigation>
                     <S.NavButton onClick={prevSlide}>
