@@ -9,6 +9,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color:${COLORS.primary};
+
+    @media ${device.mobile} {
+        width: 100vw;
+    }
 `
 
 export const Title = styled.h1`
@@ -30,6 +34,11 @@ export const CardsContainer = styled.div`
     width: 100vw;
     margin-top: 3%;
     overflow: hidden;
+
+
+    @media ${device.mobile} {
+        display: none;
+    }
 `
 
 export const Card = styled.div`

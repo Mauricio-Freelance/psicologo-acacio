@@ -3,6 +3,7 @@ import cardsData from "../../constants/cardsData.json"
 import { CardsData, /* WorkCard */ } from "../../constants/types"; // Importe as interfaces
 import { work } from "@/constants/routes";
 import Section from "@/components/Section";
+import Slider from "@/components/Slider"; // Importe o Slider
 import React from "react";
 
 // Forçar a tipagem do JSON
@@ -27,6 +28,8 @@ const WorkPage: React.FC = () => {
                 <S.CardsContainer>
                     {cardsArray}
                 </S.CardsContainer>
+
+                <Slider page="work" cards={cardsArray} />
             </S.Container>
         </Section>
     );

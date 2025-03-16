@@ -1,51 +1,66 @@
 import styled from "styled-components";
+import { device } from "@/styles/mediaSizes";
 
 export const Container = styled.div`
-    width: 100%;
-    overflow: hidden;
+    display: none;
+
+
+    @media ${device.mobile} {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+    }
 `;
 
 export const Slider = styled.div`
-    position: relative;
+
+
+    @media ${device.mobile} {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const Slides = styled.div`
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+
+
+    @media ${device.mobile} {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        padding-left: 3%;
+    }
 `;
 
 export const Slide = styled.div`
-    min-width: 100%;
-    box-sizing: border-box;
-`;
 
-export const NavigationAuto = styled.div`
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-`;
 
-export const AutoNavButton = styled.div<{ active: boolean }>`
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: ${({ active }) => (active ? "#000" : "#ccc")};
-    margin: 0 5px;
-    cursor: pointer;
+    @media ${device.mobile} {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
 `;
 
 export const ManualNavigation = styled.div`
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
+
+
+    @media ${device.mobile} {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
 `;
 
 export const NavButton = styled.button`
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+
+
+    @media ${device.mobile} {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
 `;

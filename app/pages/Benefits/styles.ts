@@ -9,6 +9,11 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: ${COLORS.primary};
+
+
+    @media ${device.mobile} {
+        min-width: 100vw;
+    }
 `
 
 export const Title = styled.h1`
@@ -48,8 +53,7 @@ export const CardsContainer = styled.div`
     padding-bottom: 1%;
 
     @media ${device.mobile} {
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
 `
 
