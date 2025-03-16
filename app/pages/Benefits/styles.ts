@@ -9,11 +9,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: ${COLORS.primary};
-
-
-    @media ${device.mobile} {
-        min-width: 100vw;
-    }
 `
 
 export const Title = styled.h1`

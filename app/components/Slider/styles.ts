@@ -28,7 +28,6 @@ export const Slides = styled.div`
     @media ${device.mobile} {
         display: flex;
         transition: transform 0.5s ease-in-out;
-        padding-left: 3%;
     }
 `;
 
@@ -36,8 +35,9 @@ export const Slide = styled.div`
 
 
     @media ${device.mobile} {
-        min-width: 100%;
+        min-width: 100vw;
         box-sizing: border-box;
+        margin-left: 10%;
     }
 `;
 
@@ -49,7 +49,8 @@ export const ManualNavigation = styled.div`
         justify-content: space-between;
         position: absolute;
         top: 50%;
-        width: 100%;
+        width: 99%;
+        margin-left: 2px;
         transform: translateY(-50%);
     }
 `;
@@ -58,9 +59,13 @@ export const NavButton = styled.button`
 
 
     @media ${device.mobile} {
-        background: none;
-        border: none;
-        font-size: 24px;
         cursor: pointer;
+        border: none;
+        margin: 10px;
+
+        img {
+        width: 24px; // Ajuste o tamanho da seta
+        height: 35px; // Ajuste o tamanho da seta
+        }
     }
 `;

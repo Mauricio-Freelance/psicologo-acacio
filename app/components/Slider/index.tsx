@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import React, { useState, useEffect } from "react";
+import ICONS from "@/assets/icons";
 
 interface SliderProps {
     page: "work" | "benefits";
@@ -38,11 +39,14 @@ const Slider = ({ page, cards }: SliderProps) => {
                     ))}
                 </S.Slides>
 
-
-                {/* Navegação manual */}
                 <S.ManualNavigation>
-                    <S.NavButton onClick={prevSlide}>{"<"}</S.NavButton>
-                    <S.NavButton onClick={nextSlide}>{">"}</S.NavButton>
+                    <S.NavButton onClick={prevSlide}>
+                        <img src={ICONS.leftArrow} alt="Anterior" />
+                    </S.NavButton>
+
+                    <S.NavButton onClick={nextSlide}>
+                        <img src={ICONS.rightArrow} alt="Próximo" />
+                    </S.NavButton>
                 </S.ManualNavigation>
             </S.Slider>
         </S.Container>

@@ -54,7 +54,8 @@ export const Card = styled.div`
 
     @media ${device.mobile} {
         height: auto;
-        width: 80vw;
+        width: 70vw;
+        margin: 20px;
     }
 
     

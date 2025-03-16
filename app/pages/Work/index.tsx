@@ -29,7 +29,7 @@ const WorkPage: React.FC = () => {
                     {cardsArray}
                 </S.CardsContainer>
 
-                <Slider page="work" cards={cardsArray} />
+                <Slider page="work" cards={cardsArray}/>
             </S.Container>
         </Section>
     );

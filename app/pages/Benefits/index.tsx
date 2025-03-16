@@ -45,7 +45,9 @@ const BenefitsPage: React.FC = () => {
                         </S.Card>
                     ))}
                 </S.CardsContainer>
-                <Slider page="benefits" cards={firstThreeSlides} />
+
+                <Slider page="benefits" cards={firstThreeSlides}/>
+
                 <S.Subtitle> Conforto e Privacidade </S.Subtitle>
                 <S.CardsContainer>
                     {lastThreeCards.map((card: BenefitsCard, index) => (
@@ -57,7 +59,9 @@ const BenefitsPage: React.FC = () => {
                         </S.Card>
                     ))}
                 </S.CardsContainer>
-                <Slider page="benefits" cards={lastThreeSlides} />
+
+            <Slider page="benefits" cards={lastThreeSlides}/>
+               
             </S.Container>
         </Section>
     );
