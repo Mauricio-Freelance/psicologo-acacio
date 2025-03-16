@@ -10,6 +10,7 @@ const HomePage = () => {
     return (
         <Section id={home}>
             <S.Container>
+                {/* <Slider data={slidesData}/> */}
                 <S.InfoContainer>
                     <S.TextContainer>
                         <S.Text>
@@ -26,13 +27,13 @@ const HomePage = () => {
                         <ContactButton />
                     </S.ButtonContainer>
                 </S.InfoContainer>
-                    <S.ImageContainer>
-                        <ImageWithLegend 
-                            imagePath={IMAGES.home}
-                            alt="Psicólogo Acácio Tórres"
-                            legend="Raimundo Acácio Costa Tôrres Filho CRP 11ª - 04373"
-                        />
-                    </S.ImageContainer>
+                <S.ImageContainer>
+                    <ImageWithLegend 
+                        imagePath={IMAGES.home}
+                        alt="Psicólogo Acácio Tórres"
+                        legend="Raimundo Acácio Costa Tôrres Filho CRP 11ª - 04373"
+                    />
+                </S.ImageContainer>
             </S.Container>
         </Section>
     )
