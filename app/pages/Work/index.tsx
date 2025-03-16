@@ -11,19 +11,21 @@ const typedCardsData = cardsData as CardsData;
 const WorkPage: React.FC = () => {
     const workCards = typedCardsData.Work;
 
+    const cardsArray = workCards.map((card, index) => (
+        <S.Card key={index}>
+            <S.CardTitle>{card.title}</S.CardTitle>
+            <S.CardContent style={card.style || {}}>
+                {card.content}
+            </S.CardContent>
+        </S.Card>
+    ))
+
     return (
         <Section id={work}>
             <S.Container>
                 <S.Title> Meu Trabalho Baseia-se Em: </S.Title>
                 <S.CardsContainer>
-                    {workCards.map((card, index) => (
-                        <S.Card key={index}>
-                            <S.CardTitle>{card.title}</S.CardTitle>
-                            <S.CardContent style={card.style || {}}>
-                                {card.content}
-                            </S.CardContent>
-                        </S.Card>
-                    ))}
+                    {cardsArray}
                 </S.CardsContainer>
             </S.Container>
         </Section>

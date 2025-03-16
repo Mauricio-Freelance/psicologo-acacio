@@ -1,42 +1,33 @@
 import * as S from "./styles";
-import cardsData from "../../constants/cardsData.json";
-import { CardsData } from "../../constants/types";
-import { useState } from "react";
 
 
-const typedCardsData = cardsData as CardsData;
+interface SliderProps {
+    page: "work" | "benefits",
+    cards: React.ReactNode[],
+}
 
 
-const Slider = () => {
-
-    const [options, setOptions] = useState({
-        isWork: false,
-        isBenefits: false,
-
-    });
+const Slider = ({page, cards}: SliderProps) => {
 
     return (
         <S.Container>
             <S.Slider>
                 <S.Slides>
-                    <S.Radio type="radio" name="radio-btn" id="radio" /> 
-                    {/* correspondente a quantidade de cards da Page */}
+                    {/* { cards.map((c, i) => { */}
+                        <S.Slide>
+                            {/* card */}
+                        </S.Slide> 
+                        {/* correspondente a quantidade de cards da Page */}
 
-                    <S.Slide>
-                        {/* 1 card para cada slide, nesse caso o primeiro deve vir ativo para ser mostrado na tela */}
-                    </S.Slide> 
-                    {/* correspondente a quantidade de cards da Page */}
+                        {/* <S.NavigationAuto>
+                            /* function que troque para o proximo card a cada 8 segundos *
+                        </S.NavigationAuto> */}
 
-                    <S.NavigationAuto>
-                        <S.AutoBtn></S.AutoBtn>
-                        {/* sera correspondente a quantidade de cards da Page */}
-                    </S.NavigationAuto>
-
-                    <S.ManualNavigation>
-                        <S.ManualBtn htmlFor="radio"></S.ManualBtn>
-                        {/* sera correspondente a quantidade de cards da Page */}
-                    </S.ManualNavigation>
-
+                        {/* <ManualNavigation>
+                             setinha clicavel para trocar para o card da esquerda ou direita, caso esteja no ultimo e for para a direita, voltara ao primeiro, o mesmo se aplica ao contrario 
+                        <ManualNavigation> */}
+                    {/* })
+                } */}
                 </S.Slides>
             </S.Slider>
         </S.Container>
