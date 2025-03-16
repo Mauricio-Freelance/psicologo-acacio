@@ -6,12 +6,14 @@ import padlock from "./padlock.svg";
 import telephone from "./telephone.svg";
 
 import rightArrow from "./rightArrow.svg";
+import rightArrowWhite from "./rightArrow_white.svg";
 import leftArrow from "./leftArrow.svg";
+import leftArrowWhite from "./leftArrow_white.svg";
 
-import email from "./email_07a8b4.svg";
-import instagram from "./instagram_07a8b4.svg";
+import email from "./email.svg";
+import instagram from "./instagram.svg";
 import logo from "./logo.svg";
-import whatsApp from "./whatsapp_07a8b4.svg";
+import whatsApp from "./whatsapp.svg";
 import whatsAppWhite from "./whatsapp_white.svg";
 
 // Define o tipo para as chaves de ICONS
@@ -28,7 +30,10 @@ type IconKey =
     | "padlock"
     | "telephone"
     | "rightArrow"
-    | "leftArrow";
+    | "rightArrowWhite"
+    | "leftArrow"
+    | "leftArrowWhite";
+
 
 // Tipa o objeto ICONS
 const ICONS: Record<IconKey, string> = {
@@ -44,7 +49,9 @@ const ICONS: Record<IconKey, string> = {
     padlock,
     telephone,
     rightArrow,
+    rightArrowWhite,
     leftArrow,
+    leftArrowWhite,
 };
 
 export default ICONS;

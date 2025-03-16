@@ -50,11 +50,11 @@ const Slider = ({ cards }: SliderProps) => {
 
                 <S.ManualNavigation>
                     <S.NavButton onClick={prevSlide}>
-                        <img src={ICONS.leftArrow} alt="Anterior" />
+                        <img src={ICONS.leftArrowWhite} alt="Anterior" />
                     </S.NavButton>
 
                     <S.NavButton onClick={nextSlide}>
-                        <img src={ICONS.rightArrow} alt="Próximo" />
+                        <img src={ICONS.rightArrowWhite} alt="Próximo" />
                     </S.NavButton>
                 </S.ManualNavigation>
             </S.Slider>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "@/styles/mediaSizes";
+import COLORS from "@/styles/colors";
 
 export const Container = styled.div`
     display: none;
@@ -76,20 +77,20 @@ export const ManualNavigation = styled.div`
         width: 99%;
         margin-left: 2px;
         transform: translateY(-50%);
+        border: none;
+
     }
 `;
 
-export const NavButton = styled.button`
-
+export const NavButton = styled.div`
+    
 
     @media ${device.mobile} {
         cursor: pointer;
         border: none;
         margin: 10px;
-
-        img {
         width: 24px; // Ajuste o tamanho da seta
         height: 35px; // Ajuste o tamanho da seta
-        }
+        background-color: ${COLORS.primary};
     }
 `;
