@@ -1,4 +1,5 @@
 import COLORS from "@/styles/colors";
+import { device } from "@/styles/mediaSizes";
 import styled from "styled-components";
 
 
@@ -24,4 +25,12 @@ export const Content = styled.div`
     padding: 20px;
     margin-left: 5%;
     margin-right: 5%;
+`;
+
+export const DesktopNav = styled.div`
+    display: flex;
+
+    @media ${device.mobile} {
+        display: none; // Oculta a NavBar em resoluções menores
+    }
 `;

@@ -1,3 +1,4 @@
+import Burger from "./Burger";
 import Contacts from "./Contacts";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
@@ -7,8 +8,12 @@ const Header = () => {
     return (
         <S.Container>
             <S.Content>
+                <Burger />
                 <Logo />
-                <NavBar />
+                {/* NavBar visível apenas em resoluções maiores */}
+                <S.DesktopNav>
+                    <NavBar />
+                </S.DesktopNav>
                 <Contacts />
             </S.Content>
         </S.Container>
