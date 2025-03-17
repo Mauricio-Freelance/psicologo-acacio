@@ -38,14 +38,16 @@ export const NavContainer = styled.div<{ isMenuOpen: boolean }>`
 
     @media ${device.mobile} {
         flex-direction: column;
-        position: absolute;
-        top: 100%;
+        position: static;
+        top: 100%; // Posiciona o menu abaixo do ícone do burger
         left: 0;
         width: 100%;
-        transition: transform 0.3s ease-in-out;
+        background-color: ${COLORS.white}; // Adicione um fundo para garantir visibilidade
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
         transform: ${({ isMenuOpen }) => 
             isMenuOpen ? "translateX(0)" : "translateX(-100%)"};
         opacity: ${({ isMenuOpen }) => (isMenuOpen ? 1 : 0)};
         visibility: ${({ isMenuOpen }) => (isMenuOpen ? "visible" : "hidden")};
+        z-index: 1000; // Garante que o menu apareça acima de outros elementos
     }
 `;

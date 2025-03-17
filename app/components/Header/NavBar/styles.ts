@@ -7,6 +7,15 @@ export const Container = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    @media ${device.mobile} {
+        height: auto; // Ajuste a altura para auto
+        width: 100%; // Ocupa toda a largura do NavContainer
+        flex-direction: column; // Altera para coluna em dispositivos móveis
+        background-color: red;
+        padding: 10px 0; // Adicione padding para espaçamento
+    }
 `; 
 
 export const List = styled.ul`
@@ -20,6 +29,8 @@ export const List = styled.ul`
 
     @media ${device.mobile} {
         gap: 10px;
+        flex-direction: column; // Altera para coluna em dispositivos móveis
+        width: 100%; // Ocupa toda a largura do NavContainer
     }
 `;
 
@@ -37,7 +48,10 @@ export const ListItem = styled.li`
 
 
     @media ${device.mobile} {
+        width: 100%; // Ocupa toda a largura do NavContainer
         font-size: ${SIZES.charMobile};
+        text-align: center; // Centraliza o texto
+        padding: 5px 0; // Adicione padding para espaçamento
     }
 `;
 

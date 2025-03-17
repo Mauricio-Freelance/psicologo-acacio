@@ -13,6 +13,12 @@ export const Container = styled.header`
     height: 60px;
     overflow: hidden;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+
+    
+    @media ${device.mobile} {
+        height: auto; // Altura automática para mobile
+        flex-direction: column; // Altera para coluna em dispositivos móveis
+    }
 `;
 
 export const Content = styled.div`

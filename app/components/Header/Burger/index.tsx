@@ -7,6 +7,7 @@ const Burger = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        console.log("Menu state:", !isMenuOpen); // Verifique no console
     };
 
     return (
