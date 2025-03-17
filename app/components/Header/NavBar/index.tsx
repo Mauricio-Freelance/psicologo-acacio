@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import * as S from "./styles";
 import COLORS from "@/styles/colors";
-import { 
+import {
     about, 
     benefits,
     contact,
@@ -77,26 +77,41 @@ const NavBar = () => {
             <S.List>
                 <S.ListItem onClick={() => handleClick(`/${home}`)}>
                     <S.Link 
-                        style={{ color: route === `/${home}` ? COLORS.primary : "inherit" }}
-                    >
+                        style={{ color: route === `/${home}` ? COLORS.primary : "inherit" }}>
                         Home
                     </S.Link>
                 </S.ListItem>
+
                 <S.ListItem onClick={() => handleClick(`/${work}`)}>
-                    <S.Link style={{ color: route === `/${work}` ? COLORS.primary : "inherit" }}>Meu Trabalho</S.Link>
+                    <S.Link style={{ color: route === `/${work}` ? COLORS.primary : "inherit" }}>
+                        Meu Trabalho
+                    </S.Link>
                 </S.ListItem>
+
                 <S.ListItem onClick={() => handleClick(`/${about}`)}>
-                    <S.Link style={{ color: route === `/${about}` ? COLORS.primary : "inherit" }}>Sobre</S.Link>
+                    <S.Link style={{ color: route === `/${about}` ? COLORS.primary : "inherit" }}>
+                        Sobre
+                    </S.Link>
                 </S.ListItem>
+
                 <S.ListItem onClick={() => handleClick(`/${benefits}`)}>
-                    <S.Link style={{ color: route === `/${benefits}` ? COLORS.primary : "inherit" }}>Benefícios</S.Link>
+                    <S.Link style={{ color: route === `/${benefits}` ? COLORS.primary : "inherit" }}>
+                        Benefícios
+                    </S.Link>
                 </S.ListItem>
+
                 <S.ListItem onClick={() => handleClick(`/${faq}`)}>
-                    <S.Link style={{ color: route === `/${faq}` ? COLORS.primary : "inherit" }}>FAQ</S.Link>
+                    <S.Link style={{ color: route === `/${faq}` ? COLORS.primary : "inherit" }}>
+                        FAQ
+                    </S.Link>
                 </S.ListItem>
+
                 <S.ListItem onClick={() => handleClick(`/${contact}`)}>
-                    <S.Link style={{ color: route === `/${contact}` ? COLORS.primary : "inherit" }}>Contatos</S.Link>
+                    <S.Link style={{ color: route === `/${contact}` ? COLORS.primary : "inherit" }}>
+                        Contatos
+                    </S.Link>
                 </S.ListItem>
+
             </S.List>
         </S.Container>
     );
