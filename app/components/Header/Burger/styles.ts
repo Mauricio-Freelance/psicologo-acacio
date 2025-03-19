@@ -33,12 +33,12 @@ export const BurgerLine = styled.div`
 `;
 
 export const NavContainer = styled.div<{ isMenuOpen: boolean }>`
-    display: flex;
     align-items: center;
 
     @media ${device.mobile} {
+        display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
         flex-direction: column;
-        position: static;
+        position: static; // Alterado para absolute mas aparece se for static
         top: 100%; // Posiciona o menu abaixo do ícone do burger
         left: 0;
         width: 100%;

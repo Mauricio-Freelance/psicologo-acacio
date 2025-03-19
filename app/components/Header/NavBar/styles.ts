@@ -8,7 +8,6 @@ export const Container = styled.nav`
     justify-content: center;
     align-items: center;
 
-
     @media ${device.mobile} {
         height: auto; // Ajuste a altura para auto
         width: 100%; // Ocupa toda a largura do NavContainer

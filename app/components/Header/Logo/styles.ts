@@ -30,6 +30,6 @@ export const Text = styled.p`
 
 
     @media ${device.mobile} {
-        font-size: ${SIZES.subTitleMobile};
+        font-size: ${SIZES.sectionMobile};
     }
 `
