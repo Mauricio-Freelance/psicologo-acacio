@@ -6,17 +6,21 @@ import * as S from "./styles";
 const Header = () => {
     return (
         <S.Container>
-            <S.Content>
-                <Logo />
+            <S.BurgerContainer>
                 <NavBar />
-                <Contacts />
-            </S.Content>
+            </S.BurgerContainer>
+            <S.SubContainer>
+                <S.Content>
+                    <Logo />
+                    <NavBar />
+                    <Contacts />
+                </S.Content>
 
-            <S.Swapper>
-                <NavBar />
-                <Logo />
-                <Contacts />
-            </S.Swapper>
+                <S.Swapper>
+                    <Logo />
+                    <Contacts />
+                </S.Swapper>
+            </S.SubContainer>
         </S.Container>
 
     );

@@ -49,13 +49,9 @@ const Slider = ({ cards }: SliderProps) => {
                 </S.NavigationAuto>
 
                 <S.ManualNavigation>
-                    <S.NavButton onClick={prevSlide}>
-                        <img src={ICONS.leftArrowWhite} alt="Anterior" />
-                    </S.NavButton>
+                    <S.NavButton onClick={prevSlide} src={ICONS.leftArrowWhite} alt="Anterior" />
 
-                    <S.NavButton onClick={nextSlide}>
-                        <img src={ICONS.rightArrowWhite} alt="Próximo" />
-                    </S.NavButton>
+                    <S.NavButton onClick={nextSlide} src={ICONS.rightArrowWhite} alt="Próximo" />
                 </S.ManualNavigation>
             </S.Slider>
         </S.Container>

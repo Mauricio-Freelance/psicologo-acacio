@@ -68,7 +68,7 @@ const NavBar = () => {
         checkVisibleSection();
 
         // Cria uma versão debounce da função checkVisibleSection
-        const debouncedCheckVisibleSection = debounce(checkVisibleSection, 30);
+        const debouncedCheckVisibleSection = debounce(checkVisibleSection, 0);
 
         // Adiciona o listener de scroll com debounce
         window.addEventListener("scroll", debouncedCheckVisibleSection);

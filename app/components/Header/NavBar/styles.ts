@@ -19,7 +19,8 @@ export const Container = styled.nav`
         position: relative;
         width: 20%; // Ocupa toda a largura do NavContainer
         flex-direction: column; // Altera para coluna em dispositivos móveis
-        padding: 10px 0; // Adicione padding para espaçamento
+
+        overflow: hidden;
     }
 `; 
 
@@ -45,16 +46,15 @@ export const List = styled.ul<ListProps>`
         gap: 10px;
         flex-direction: column; // Altera para coluna em dispositivos móveis
         width: 100%; // Ocupa toda a largura do NavContainer
-
+        height: auto;
         display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
-        position: ${({ isMenuOpen }) => (isMenuOpen ? "absolute" : "relative")};; // Alterado para absolute mas aparece se for static
+        position: ${({ isMenuOpen }) => (isMenuOpen ? "static" : "relative")};; // Alterado para absolute mas aparece se for static
         top: 100%; // Deveria posicionar o menu abaixo do ícone do burger
         left: 0;
         background-color: ${COLORS.white}; // Adicione um fundo para garantir visibilidade
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
         transform: ${({ isMenuOpen }) => isMenuOpen ? "translateX(0)" : "translateX(-100%)"};
         opacity: ${({ isMenuOpen }) => (isMenuOpen ? 1 : 0)};
-        z-index: 1000; // Garante que o menu apareça acima de outros elementos
     }
 `;
 

@@ -17,6 +17,11 @@ export const Image = styled.img`
     margin-right: 150px;
     width: ${IconSIZES.iconWidth};
     height: ${IconSIZES.iconHeight};
+
+
+    @media ${device.mobile} {
+        margin-right: 120px;
+    }
 `
 
 export const Text = styled.p`
@@ -30,6 +35,6 @@ export const Text = styled.p`
 
 
     @media ${device.mobile} {
-        font-size: ${SIZES.sectionMobile};
+        font-size: ${SIZES.titleMobile};
     }
 `

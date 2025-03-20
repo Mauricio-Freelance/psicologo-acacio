@@ -82,7 +82,7 @@ export const ManualNavigation = styled.div`
     }
 `;
 
-export const NavButton = styled.div`
+export const NavButton = styled.img`
     
 
     @media ${device.mobile} {
