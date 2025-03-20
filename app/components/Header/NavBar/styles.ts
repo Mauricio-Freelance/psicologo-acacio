@@ -16,6 +16,7 @@ export const Container = styled.nav`
     align-items: center;
 
     @media ${device.mobile} {
+        position: relative;
         width: 20%; // Ocupa toda a largura do NavContainer
         flex-direction: column; // Altera para coluna em dispositivos móveis
         padding: 10px 0; // Adicione padding para espaçamento
@@ -24,12 +25,10 @@ export const Container = styled.nav`
 
 export const BurgerMenu = styled.img`
     display: none; // Esconde o burger menu em telas maiores
-    flex-direction: column;
-    cursor: pointer;
 
     @media ${device.mobile} {
         display: flex;
-        padding-top: 10px;
+        cursor: pointer;
     }
 `;
 
@@ -48,7 +47,7 @@ export const List = styled.ul<ListProps>`
         width: 100%; // Ocupa toda a largura do NavContainer
 
         display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
-        position: ${({ isMenuOpen }) => (isMenuOpen ? "static" : "relative")};; // Alterado para absolute mas aparece se for static
+        position: ${({ isMenuOpen }) => (isMenuOpen ? "absolute" : "relative")};; // Alterado para absolute mas aparece se for static
         top: 100%; // Deveria posicionar o menu abaixo do ícone do burger
         left: 0;
         background-color: ${COLORS.white}; // Adicione um fundo para garantir visibilidade

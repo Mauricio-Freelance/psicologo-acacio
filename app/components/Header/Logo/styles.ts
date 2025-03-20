@@ -15,8 +15,8 @@ export const Container = styled.div`
 `
 export const Image = styled.img`
     margin-right: 150px;
-        width: ${IconSIZES.iconWidth};
-        height: ${IconSIZES.iconHeight};
+    width: ${IconSIZES.iconWidth};
+    height: ${IconSIZES.iconHeight};
 `
 
 export const Text = styled.p`

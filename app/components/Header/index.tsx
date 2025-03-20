@@ -11,7 +11,14 @@ const Header = () => {
                 <NavBar />
                 <Contacts />
             </S.Content>
+
+            <S.Swapper>
+                <NavBar />
+                <Logo />
+                <Contacts />
+            </S.Swapper>
         </S.Container>
+
     );
 }
 
