@@ -16,7 +16,7 @@ export const Container = styled.header`
 
     @media ${device.mobile} {
         height: auto; // Altura automática para mobile
-        flex-direction: column; // Altera para coluna em dispositivos móveis
+        flex-direction: column; // Altera para coluna
     }
 `;
 
@@ -31,12 +31,4 @@ export const Content = styled.div`
     margin-left: 5%;
     margin-right: 5%;
     position: relative; // Adicionado para garantir que o NavContainer seja posicionado corretamente
-`;
-
-export const DesktopNav = styled.div`
-    display: flex;
-
-    @media ${device.mobile} {
-        display: none; // Oculta a NavBar em resoluções menores
-    }
 `;

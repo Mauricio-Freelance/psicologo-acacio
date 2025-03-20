@@ -10,6 +10,9 @@ import rightArrowWhite from "./rightArrow_white.svg";
 import leftArrow from "./leftArrow.svg";
 import leftArrowWhite from "./leftArrow_white.svg";
 
+import burger from "./burger.png";
+import close from "./close.svg";
+
 import email from "./email.svg";
 import instagram from "./instagram.svg";
 import logo from "./logo.svg";
@@ -32,7 +35,9 @@ type IconKey =
     | "rightArrow"
     | "rightArrowWhite"
     | "leftArrow"
-    | "leftArrowWhite";
+    | "leftArrowWhite"
+    | "burger"
+    | "close";
 
 
 // Tipa o objeto ICONS
@@ -52,6 +57,8 @@ const ICONS: Record<IconKey, string> = {
     rightArrowWhite,
     leftArrow,
     leftArrowWhite,
+    burger,
+    close,
 };
 
 export default ICONS;

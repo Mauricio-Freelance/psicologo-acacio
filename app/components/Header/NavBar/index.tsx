@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import * as S from "./styles";
 import COLORS from "@/styles/colors";
+import ICONS from "@/assets/icons";
 import {
     about, 
     benefits,
@@ -11,7 +12,14 @@ import {
 } from "@/constants/routes";
 
 const NavBar = () => {
-    const [route, setRoute] = useState("/${home}`");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+        console.log("Menu state:", !isMenuOpen); // Verifique no console
+    };
+
+    const [route, setRoute] = useState(`/${home}`);
 
     const handleClick = (newRoute: string) => {
         setRoute(newRoute);
@@ -74,7 +82,9 @@ const NavBar = () => {
 
     return (
         <S.Container>
-            <S.List>
+            <S.BurgerMenu onClick={toggleMenu} src={ICONS.burger} alt="Menu">
+            </S.BurgerMenu>
+            <S.List isMenuOpen={isMenuOpen}>
                 <S.ListItem onClick={() => handleClick(`/${home}`)}>
                     <S.Link 
                         style={{ color: route === `/${home}` ? COLORS.primary : "inherit" }}>
