@@ -10,7 +10,7 @@ import rightArrowWhite from "./rightArrow_white.svg";
 import leftArrow from "./leftArrow.svg";
 import leftArrowWhite from "./leftArrow_white.svg";
 
-import burger from "./burger.png";
+import burger from "./burger.svg";
 import close from "./close.svg";
 
 import email from "./email.svg";

@@ -43,7 +43,7 @@ export const Content = styled.div`
     }
 `;
 
-export const Swapper = styled.div`
+export const ContentMobile = styled.div`
     display: none;
 
 
@@ -51,9 +51,10 @@ export const Swapper = styled.div`
         display: flex;
         background-color: ${COLORS.white};
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
-        width: 80%;
+        width: 90%;
+        gap: 20px;
         padding: 20px;
         position: relative;
         margin-left: 10%;
@@ -66,14 +67,14 @@ export const BurgerContainer = styled.div`
 
     @media ${device.mobile} {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: right;
         cursor: pointer;
-        background-color: transparent;
         position: fixed;
-        width: 60vw;
-        height: 35vh;
+        width: 90vw;
+        height: auto;
         margin-top: 5px;
-        margin-left: 10px;
+        margin-left: -72vw;
         z-index: 10000;
     }
 `;

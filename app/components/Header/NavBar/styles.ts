@@ -44,11 +44,13 @@ export const List = styled.ul<ListProps>`
 
     @media ${device.mobile} {
         gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex-direction: column; // Altera para coluna em dispositivos móveis
-        width: 100%; // Ocupa toda a largura do NavContainer
-        height: auto;
-        display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
-        position: ${({ isMenuOpen }) => (isMenuOpen ? "static" : "relative")};; // Alterado para absolute mas aparece se for static
+        min-width: ${({ isMenuOpen }) => (isMenuOpen ? "auto" : "0px")};
+        height: ${({ isMenuOpen }) => (isMenuOpen ? "auto" : "0px")};
+        visibility: ${({ isMenuOpen }) => (isMenuOpen ? "visible" : "hidden")};
+        position: ${({ isMenuOpen }) => (isMenuOpen ? "static" : "relative")};
         top: 100%; // Deveria posicionar o menu abaixo do ícone do burger
         left: 0;
         background-color: ${COLORS.white}; // Adicione um fundo para garantir visibilidade

@@ -9,6 +9,7 @@ const Header = () => {
             <S.BurgerContainer>
                 <NavBar />
             </S.BurgerContainer>
+            
             <S.SubContainer>
                 <S.Content>
                     <Logo />
@@ -16,10 +17,10 @@ const Header = () => {
                     <Contacts />
                 </S.Content>
 
-                <S.Swapper>
+                <S.ContentMobile>
                     <Logo />
                     <Contacts />
-                </S.Swapper>
+                </S.ContentMobile>
             </S.SubContainer>
         </S.Container>
 
