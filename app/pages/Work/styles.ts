@@ -58,7 +58,12 @@ export const Card = styled.div`
         margin: 20px;
     }
 
+
+    @media ${device.tablet} {
+        height: 40vh;
+    }
     
+
     @media ${device.desktop}{
         max-height: 45vh;
     }
@@ -70,8 +75,15 @@ export const CardTitle = styled.h2`
     margin-top: 5%;
     text-align: center;
     width: 70%;
+
+
     @media ${device.mobile} {
         font-size: ${SIZES.subTitleMobile};
+    }
+
+
+    @media ${device.tablet} {
+        font-size: ${SIZES.label};
     }
 `
 
@@ -85,6 +97,11 @@ export const CardContent = styled.h2`
         font-size: ${SIZES.labelMobile};
         width: 60%;
         padding-bottom: 8%;
+    }
+
+    
+    @media ${device.tablet} {
+        font-size: ${SIZES.char};
     }
 
 
