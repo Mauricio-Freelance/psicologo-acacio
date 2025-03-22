@@ -31,11 +31,11 @@ export const Line = styled.div`
 export const Title = styled.h1`
     color: ${COLORS.primary};
     font-size: ${SIZES.title};
+    text-align: center;
 
 
     @media ${device.mobile} {
         font-size: ${SIZES.titleMobile};
-        text-align: center;
     }
 `
 
@@ -101,7 +101,6 @@ export const ListText = styled.li`
         font-size: ${SIZES.labelMobile};
     }
 
-
     &::before {
     content: "•"; /* Adiciona o ponto */
     font-size: ${SIZES.subTitle}; /* Ajusta o tamanho do ponto */
@@ -126,6 +125,12 @@ export const Text = styled.h2`
         text-align: center;
     }
 
+
+    @media ${device.tablet} {
+        width: 70%;
+    }
+
+
     @media ${device.desktop} {
         width: 70%;
     }
@@ -147,11 +152,15 @@ export const ButtonContainer = styled.div`
 
 export const ImageContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: center;
     position: absolute;
     margin-top: 17%;
     margin-left: 45%;
+
+
+    @media ${device.tablet} {
+        margin-top: 25%;
+        margin-left: 50%;
+    }
 
 
     @media ${device.desktop} {

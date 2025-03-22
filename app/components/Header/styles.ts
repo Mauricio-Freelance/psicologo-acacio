@@ -21,7 +21,7 @@ export const SubContainer = styled.header`
 
     @media ${device.mobile} {
         max-height: 100px; // Altura automática para mobile
-        flex-direction: column; // Altera para coluna
+        flex-direction: column;
     }
 `
 

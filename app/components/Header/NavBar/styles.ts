@@ -27,6 +27,7 @@ export const Container = styled.nav`
 export const BurgerMenu = styled.img`
     display: none; // Esconde o burger menu em telas maiores
 
+
     @media ${device.mobile} {
         display: flex;
         cursor: pointer;
