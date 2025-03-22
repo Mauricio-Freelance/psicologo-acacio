@@ -58,6 +58,11 @@ export const List = styled.ul<ListProps>`
         transform: ${({ isMenuOpen }) => isMenuOpen ? "translateX(0)" : "translateX(-100%)"};
         opacity: ${({ isMenuOpen }) => (isMenuOpen ? 1 : 0)};
     }
+
+
+    @media ${device.tablet} {
+        gap: 30px;
+    }
 `;
 
 export const ListItem = styled.li`
@@ -78,6 +83,12 @@ export const ListItem = styled.li`
         font-size: ${SIZES.charMobile};
         text-align: center; // Centraliza o texto
         padding: 5px 0; // Adicione padding para espaçamento
+    }
+
+
+    
+    @media ${device.tablet} {
+        font-size: ${SIZES.labelMobile};
     }
 `;
 

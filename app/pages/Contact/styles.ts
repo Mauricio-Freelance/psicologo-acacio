@@ -12,6 +12,7 @@ export const Container = styled.div`
     background-color: ${COLORS.primary};
     padding-bottom: 3%;
 
+
     @media ${device.desktop} {
         min-height: 86vh;
     }

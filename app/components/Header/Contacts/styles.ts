@@ -14,6 +14,11 @@ export const Container = styled.div`
     }
 
 
+    @media ${device.tablet} {
+        gap: 0.6rem;
+    }
+
+
     @media ${device.desktop} {
         gap: 1rem;
     }
