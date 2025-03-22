@@ -20,6 +20,8 @@ export const Title = styled.h1`
     margin-top: 4%;
     font-size: ${SIZES.title};
     overflow: hidden;
+
+    
     @media ${device.mobile} {
         font-size: ${SIZES.sectionMobile};
         text-align: center;
@@ -81,7 +83,6 @@ export const CardTitle = styled.h2`
         font-size: ${SIZES.subTitleMobile};
     }
 
-
     @media ${device.tablet} {
         font-size: ${SIZES.label};
     }
@@ -98,6 +99,11 @@ export const CardContent = styled.h2`
         width: 60%;
         padding-bottom: 8%;
     }
+
+
+    @media ${device.mediumTablet} {
+        font-size: ${SIZES.charMobile};
+    } 
 
     
     @media ${device.tablet} {
