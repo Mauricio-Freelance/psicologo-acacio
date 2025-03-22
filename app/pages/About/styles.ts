@@ -132,21 +132,16 @@ export const Text = styled.h2`
 `
 
 export const ButtonContainer = styled.div`
-    width: 23%;
-    margin-left: 20%;
+    width: 100%; // 23% antes
+    margin-left: 10%;
+    margin-top: -1rem;
     padding-bottom: 3%;
+    position: static; // não possuia position
 
 
     @media ${device.mobile} {
-        width: 42%;
-        margin-left: 25%;
-    }
-
-
-    @media ${device.desktop} {
-        margin-top: 1%;
-        margin-left: 27.5%;
-        width: 26%;
+        margin-top: 0rem;
+        margin-left: 15%;
     }
 `
 
