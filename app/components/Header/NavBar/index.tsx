@@ -82,7 +82,7 @@ const NavBar = () => {
 
     return (
         <S.Container>
-            <S.BurgerMenu onClick={toggleMenu} src={ICONS.burger} alt="Menu" />
+            <S.BurgerMenu onClick={toggleMenu} src={isMenuOpen ? ICONS.close: ICONS.burger} alt="Menu" />
             <S.List isMenuOpen={isMenuOpen}>
                 <S.ListItem onClick={() => handleClick(`/${home}`)}>
                     <S.Link 
