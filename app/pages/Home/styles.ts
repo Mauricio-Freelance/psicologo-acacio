@@ -31,10 +31,12 @@ export const TextContainer = styled.div`
     gap: 30px;
     max-width: 39vw;
 
+
     @media ${device.desktop} {
         max-width: 42vw;
     }
 
+    
     @media ${device.mobile} {
         max-width: 80vw;
     }
@@ -56,7 +58,6 @@ export const ButtonContainer = styled.div`
     margin-top: 4%;
 
         @media ${device.mobile} {
-        margin-top: 4%;
         margin-left: 15%;
     }
 `

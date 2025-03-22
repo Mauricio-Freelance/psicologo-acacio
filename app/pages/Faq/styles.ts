@@ -95,12 +95,13 @@ export const AnswerText = styled.h2`
 
 export const ButtonContainer = styled.div`
     margin-bottom: 15px;
-    margin-top: 5px;
-    margin-left: -10px;
-    width: 16%;
+    margin-top: -1.6rem;
+    margin-left: -11rem;
+    width: 100%; // 16% antes
 
 
     @media ${device.mobile} {
-        width: 35%;
+        margin-top: -0.5rem;
+        margin-left: -3rem;
     }
 `
