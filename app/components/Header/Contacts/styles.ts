@@ -12,4 +12,9 @@ export const Container = styled.div`
     @media ${device.mobile} {
         gap: 10px;
     }
+
+
+    @media ${device.desktop} {
+        gap: 1rem;
+    }
 `;

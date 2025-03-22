@@ -36,8 +36,10 @@ export const Subtitle = styled.h2`
 `
 
 export const CardsContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
     justify-content: flex-start;
     height: auto;

@@ -60,7 +60,7 @@ export const Card = styled.div`
 
     
     @media ${device.desktop}{
-        height: 44vh;
+        max-height: 45vh;
     }
 `
 
@@ -79,11 +79,15 @@ export const CardContent = styled.h2`
    text-align: center;
    width: 40%;
    margin-top: 7%;
+
+
    @media ${device.mobile} {
         font-size: ${SIZES.labelMobile};
         width: 60%;
         padding-bottom: 8%;
     }
+
+
     @media ${device.desktop}{
         width: 45%;
         margin-top: 10%;
