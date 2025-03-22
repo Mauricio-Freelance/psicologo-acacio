@@ -15,11 +15,10 @@ export const Container = styled.nav`
     justify-content: center;
     align-items: center;
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
         position: relative;
         width: 20%; // Ocupa toda a largura do NavContainer
         flex-direction: column; // Altera para coluna em dispositivos móveis
-
         overflow: hidden;
     }
 `; 
@@ -28,7 +27,7 @@ export const BurgerMenu = styled.img`
     display: none; // Esconde o burger menu em telas maiores
 
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
         display: flex;
         cursor: pointer;
     }
@@ -43,7 +42,7 @@ export const List = styled.ul<ListProps>`
     justify-content: space-around;
 
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
         gap: 10px;
         align-items: flex-start;
         justify-content: flex-start;

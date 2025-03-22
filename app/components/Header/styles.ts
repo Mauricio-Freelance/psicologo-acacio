@@ -38,7 +38,7 @@ export const Content = styled.div`
     margin-left: 5%;
 
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
         display: none;
     }
 `;
@@ -47,7 +47,7 @@ export const ContentMobile = styled.div`
     display: none;
 
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
         display: flex;
         background-color: ${COLORS.white};
         flex-direction: row;
@@ -65,7 +65,7 @@ export const BurgerContainer = styled.div`
     display: none;
 
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
         display: flex;
         align-items: center;
         justify-content: right;
