@@ -56,10 +56,6 @@ export const Text = styled.p`
 
 export const ButtonContainer = styled.div`
     margin-top: 4%;
-
-        @media ${device.mobile} {
-        margin-left: 12%;
-    }
 `
 
 export const ImageContainer = styled.div`

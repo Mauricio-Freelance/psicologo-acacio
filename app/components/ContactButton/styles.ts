@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 
     @media ${device.mobile} {
-        width: 110px;
+        width: 150px;
         height: 30px;
     }
 `;
