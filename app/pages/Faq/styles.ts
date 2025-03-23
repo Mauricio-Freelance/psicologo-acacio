@@ -47,22 +47,14 @@ export const Question = styled.div`
     }
 `
 
-export const RightArrow = styled.img<{ isOpen: boolean }>`
-    display: flex;
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    transform: rotate(${(props) => (props.isOpen ? "90deg" : "0deg")});
-    transition: transform 0.3s ease-in-out;
-`
-
 export const QuestionText = styled.h2`
     font-size: ${SIZES.subTitle};
     color: ${COLORS.primary};
     margin-left: 10px;
 
     @media ${device.mobile} {
-        font-size: ${SIZES.titleMobile};
+        font-size: ${SIZES.subTitleMobile};
+        width: 100%;
     }
 `
 
@@ -97,11 +89,11 @@ export const ButtonContainer = styled.div`
     margin-bottom: 15px;
     margin-top: -1.6rem;
     margin-left: -11rem;
-    width: 100%; // 16% antes
+    width: 100%;
 
 
     @media ${device.mobile} {
         margin-top: -0.5rem;
-        margin-left: -3rem;
+        margin-left: -3.5rem;
     }
 `

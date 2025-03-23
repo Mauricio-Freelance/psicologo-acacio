@@ -146,7 +146,7 @@ export const ButtonContainer = styled.div`
 
     @media ${device.mobile} {
         margin-top: 0rem;
-        margin-left: 15%;
+        margin-left: 12%;
     }
 `
 

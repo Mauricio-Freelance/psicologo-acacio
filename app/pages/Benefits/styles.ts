@@ -18,6 +18,7 @@ export const Title = styled.h1`
 
     @media ${device.mobile} {
         font-size: ${SIZES.sectionMobile};
+        text-align: center;
     }
 `
 
