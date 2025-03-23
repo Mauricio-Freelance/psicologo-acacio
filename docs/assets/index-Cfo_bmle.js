@@ -249,10 +249,6 @@ import{r as Yt,g as $i,a as zi}from"./react-Bw76hHLb.js";(function(){const t=doc
     }
 `,kr=c.div`
     margin-top: 4%;
-
-        @media ${l.mobile} {
-        margin-left: 12%;
-    }
 `,Sr=c.div`
     display: flex;
     flex-direction: column;
@@ -276,7 +272,7 @@ import{r as Yt,g as $i,a as zi}from"./react-Bw76hHLb.js";(function(){const t=doc
 
 
     @media ${l.mobile} {
-        width: 110px;
+        width: 150px;
         height: 30px;
     }
 `,Br=c.p`
@@ -633,7 +629,7 @@ import{r as Yt,g as $i,a as zi}from"./react-Bw76hHLb.js";(function(){const t=doc
 
     @media ${l.mobile} {
         margin-top: 0rem;
-        margin-left: 12%;
+        margin-left: 5%;
     }
 `,uo=c.div`
     display: flex;
@@ -866,7 +862,7 @@ import{r as Yt,g as $i,a as zi}from"./react-Bw76hHLb.js";(function(){const t=doc
 
 
     @media ${l.mobile} {
-        margin-left: 20%;
+        margin-left: 10%;
     }
 `,Oo=c.div`
     display: flex;
