@@ -80,9 +80,9 @@ export const ListItem = styled.li`
 
     @media ${device.mobile} {
         width: 100%; // Ocupa toda a largura do NavContainer
-        font-size: ${SIZES.charMobile};
+        font-size: ${SIZES.labelMobile};
         text-align: center; // Centraliza o texto
-        padding: 5px 0; // Adicione padding para espaçamento
+        padding: 10px 10px; // Adicione padding para espaçamento
     }
 
 

@@ -71,10 +71,10 @@ export const BurgerContainer = styled.div`
         justify-content: right;
         cursor: pointer;
         position: fixed;
-        width: 90vw;
+        width: 100vw;
         height: auto;
         margin-top: 5px;
-        margin-left: -72vw;
+        margin-left: -80vw;
         z-index: 10000;
     }
 `;
