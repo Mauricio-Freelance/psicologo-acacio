@@ -319,6 +319,11 @@ import{r as Yt,g as Mi,a as zi}from"./react-Bw76hHLb.js";(function(){const t=doc
     word-wrap: break-word;
     width: 70%;
     text-align: center;
+
+
+    @media ${l.mobile} {
+        width: 90%;
+    }
 `,At=({imagePath:e,alt:t,legend:i,backgroundColor:n="#07A8b0",color:r="#FFF"})=>o.jsxs(Ir,{children:[o.jsx(Tr,{src:e,alt:t}),o.jsx($r,{style:{backgroundColor:n,color:r},children:o.jsx(Mr,{children:i})})]}),zr=""+new URL("home-Crs8Dc1F.png",import.meta.url).href,Or=""+new URL("about-CjJHMpFW.png",import.meta.url).href,Nr=""+new URL("contact-CGsrFhA8.png",import.meta.url).href,jt={home:zr,about:Or,contact:Nr},Dr=c.section`
     display: flex;
     flex-direction: column;
