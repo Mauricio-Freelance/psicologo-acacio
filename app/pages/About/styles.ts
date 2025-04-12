@@ -54,6 +54,7 @@ export const InfoContainer = styled.div`
     @media ${device.mobile} {
         width: 90vw;
         margin: 2%;
+        align-items: center;
     }
 
 
@@ -138,7 +139,7 @@ export const Text = styled.h2`
 
 export const ButtonContainer = styled.div`
     width: 100%; // 23% antes
-    margin-left: 10%;
+    padding-left: 10%;
     margin-top: -1rem;
     padding-bottom: 3%;
     position: static; // não possuia position
