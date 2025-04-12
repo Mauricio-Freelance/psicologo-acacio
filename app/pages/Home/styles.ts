@@ -16,6 +16,7 @@ export const Container = styled.div`
     @media ${device.mobile} {
         flex-direction: column;
     }
+
 `;
 
 export const InfoContainer = styled.div`
@@ -61,6 +62,7 @@ export const Text = styled.p`
 
 export const ButtonContainer = styled.div`
     margin-top: 4%;
+    margin-right: -25%;
 `
 
 export const ImageContainer = styled.div`
