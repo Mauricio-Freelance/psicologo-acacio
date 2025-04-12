@@ -80,7 +80,7 @@ export const CardTitle = styled.h2`
 
 
     @media ${device.mobile} {
-        font-size: ${SIZES.subTitleMobile};
+        font-size: ${SIZES.label};
     }
 
     @media ${device.tablet} {
@@ -95,7 +95,7 @@ export const CardContent = styled.h2`
 
 
    @media ${device.mobile} {
-        font-size: ${SIZES.labelMobile};
+        font-size: ${SIZES.char};
         width: 60%;
         padding-bottom: 8%;
     }
