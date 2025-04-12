@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "@/styles/mediaSizes";
 import { SIZES } from "@/styles/fonts";
 
 export const Container = styled.div`
