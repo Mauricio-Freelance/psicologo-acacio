@@ -7,8 +7,6 @@ import { SIZES } from "@/styles/fonts"
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    /* margin-left: 20%;
-    margin-top: 4%; */
     gap: 5px;
     cursor: pointer;
     background-color: ${COLORS.primary};

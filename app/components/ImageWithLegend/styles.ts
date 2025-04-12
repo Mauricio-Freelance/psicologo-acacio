@@ -7,11 +7,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-
-
-    @media ${device.mobile} {
-        display: none;
-    }
 `;
 
 export const Image = styled.img`

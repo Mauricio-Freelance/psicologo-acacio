@@ -11,6 +11,12 @@ export const Container = styled.div`
     align-items: center;
     padding-bottom: 4%;
     padding-top: 4%;
+
+
+    @media ${device.mobile} {
+        flex-direction: column;
+    }
+
 `;
 
 export const InfoContainer = styled.div`
@@ -56,6 +62,7 @@ export const Text = styled.p`
 
 export const ButtonContainer = styled.div`
     margin-top: 4%;
+    margin-right: -25%;
 `
 
 export const ImageContainer = styled.div`

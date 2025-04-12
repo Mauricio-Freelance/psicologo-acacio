@@ -78,13 +78,13 @@ export const ListItem = styled.li`
     }
 
 
-    @media ${device.mobile} {
+    @media (max-width: 1000px) {
+        border-top: 1px solid black;
         width: 100%; // Ocupa toda a largura do NavContainer
         font-size: ${SIZES.labelMobile};
         text-align: center; // Centraliza o texto
         padding: 10px 10px; // Adicione padding para espaçamento
     }
-
 
     
     @media ${device.tablet} {

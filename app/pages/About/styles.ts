@@ -54,6 +54,7 @@ export const InfoContainer = styled.div`
     @media ${device.mobile} {
         width: 90vw;
         margin: 2%;
+        align-items: center;
     }
 
 
@@ -98,7 +99,7 @@ export const ListText = styled.li`
 
 
     @media ${device.mobile} {
-        font-size: ${SIZES.labelMobile};
+        font-size: ${SIZES.char};
     }
 
     &::before {
@@ -107,7 +108,7 @@ export const ListText = styled.li`
 
 
     @media ${device.mobile} {
-        font-size: ${SIZES.subTitleMobile};
+        font-size: ${SIZES.subTitle};
     }
   }
 `
@@ -121,7 +122,8 @@ export const Text = styled.h2`
 
     @media ${device.mobile} {
         width: 80%;
-        font-size: ${SIZES.labelMobile};
+        font-size: ${SIZES.char};
+        margin-left: 0%;
         text-align: center;
     }
 
@@ -138,10 +140,10 @@ export const Text = styled.h2`
 
 export const ButtonContainer = styled.div`
     width: 100%; // 23% antes
-    margin-left: 10%;
+    padding-left: 10%;
     margin-top: -1rem;
     padding-bottom: 3%;
-    position: static; // não possuia position
+    /* position: static; // não possuia position */
 
 
     @media ${device.mobile} {
@@ -153,19 +155,24 @@ export const ButtonContainer = styled.div`
 export const ImageContainer = styled.div`
     display: flex;
     position: absolute;
-    margin-top: 17%;
+    margin-top: 2%;
     margin-left: 45%;
 
 
+    @media ${device.mobile} {
+        position: relative;
+        margin-left: 0%;
+        padding-bottom: 5%;
+    }
+
+
     @media ${device.tablet} {
-        margin-top: 25%;
-        margin-left: 50%;
+        margin-top: 15%;
     }
 
 
     @media ${device.desktop} {
         height: 55vh;
-        margin-top: 20%;
-        margin-left: 40%;
+        margin-top: 4%;
     }
 `
