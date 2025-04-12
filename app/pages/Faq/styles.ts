@@ -50,7 +50,7 @@ export const Question = styled.div`
 export const QuestionText = styled.h2`
     font-size: ${SIZES.subTitle};
     color: ${COLORS.primary};
-    margin-left: 20px;
+    margin-left: 5px;
 
 
     @media ${device.mobile} {
