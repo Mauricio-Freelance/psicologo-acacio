@@ -1,3 +1,4 @@
+import { device } from "@/styles/mediaSizes";
 import styled from "styled-components";
 import { SIZES } from "@/styles/fonts";
 
@@ -30,4 +31,9 @@ export const LegendText = styled.p`
     word-wrap: break-word;
     width: 70%;
     text-align: center;
+
+
+    @media ${device.mobile} {
+        width: 90%;
+    }
 `;
