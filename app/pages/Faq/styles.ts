@@ -54,7 +54,7 @@ export const QuestionText = styled.h2`
 
 
     @media ${device.mobile} {
-        width: 100%;
+        width: 85%;
         font-size: ${SIZES.titleMobile};
     }
 `
