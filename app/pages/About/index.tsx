@@ -27,14 +27,14 @@ const AboutPage = () => {
                     <S.ButtonContainer>
                     <ContactButton/>
                     </S.ButtonContainer>
-                </S.InfoContainer>
-                <S.ImageContainer>
+                    <S.ImageContainer>
                         <ImageWithLegend 
                             imagePath={IMAGES.about}
                             alt="Psicólogo Acácio Tórres"
                             legend="Raimundo Acácio Costa Tôrres Filho CRP 11ª - 04373"
                         />
-                </S.ImageContainer>
+                    </S.ImageContainer>
+                </S.InfoContainer>
             </S.Container>
         </Section>
     )

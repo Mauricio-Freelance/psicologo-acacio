@@ -11,6 +11,11 @@ export const Container = styled.div`
     align-items: center;
     padding-bottom: 4%;
     padding-top: 4%;
+
+
+    @media ${device.mobile} {
+        flex-direction: column;
+    }
 `;
 
 export const InfoContainer = styled.div`

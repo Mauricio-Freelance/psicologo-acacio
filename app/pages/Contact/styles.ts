@@ -31,6 +31,11 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     min-width: 100vw;
+
+
+    @media ${device.mobile} {
+        flex-direction: column;
+    }
 `
 
 export const InfoContainer = styled.div`

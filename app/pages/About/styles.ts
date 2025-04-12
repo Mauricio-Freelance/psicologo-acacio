@@ -153,19 +153,23 @@ export const ButtonContainer = styled.div`
 export const ImageContainer = styled.div`
     display: flex;
     position: absolute;
-    margin-top: 17%;
+    margin-top: 2%;
     margin-left: 45%;
 
 
     @media ${device.tablet} {
-        margin-top: 25%;
-        margin-left: 50%;
+        margin-top: 15%;
     }
 
 
     @media ${device.desktop} {
         height: 55vh;
-        margin-top: 20%;
-        margin-left: 40%;
+        margin-top: 4%;
+    }
+
+
+    @media ${device.mobile} {
+        position: relative;
+        margin-left: 0%;
     }
 `
