@@ -79,6 +79,7 @@ export const ListItem = styled.li`
 
 
     @media ${device.mobile} {
+        border-top: 1px solid black;
         width: 100%; // Ocupa toda a largura do NavContainer
         font-size: ${SIZES.labelMobile};
         text-align: center; // Centraliza o texto
